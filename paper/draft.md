@@ -278,9 +278,14 @@ releases the Great Powers letters). The Oracc catalogue snapshot dates to
 2024; Rainey's (2015) collations were consulted only through Moran-era
 adjudication. Entity resolution is registry-v1 and single-passed;
 petrographic transcription is automated-plus-review (key 2 pending).
-Chronology is deliberately ignored: all networks aggregate a ~30-year
-window, and phase-split sensitivity (early/middle/late) remains to be
-run. Geographic coverage reaches 64% of letters at both endpoints;
+Chronology is coarse by design: a two-phase sensitivity split (reign
+identifications plus the Amurru-succession anchor; 71% of letters
+honestly unassigned) reproduces the small-world excess within each phase
+(early CC 0.454 vs. null 0.297; late 0.480 vs. 0.395, marginal) and
+keeps brokerage with the Amurru dynasty in both eras — ʿAbdi-Aširta
+early, Aziru late — though the anchor guarantees their presence (not
+their rank) by construction. Finer temporal claims remain out of
+scope. Geographic coverage reaches 64% of letters at both endpoints;
 region-states without fixed points (Amurru, Mittani) are excluded from
 distance tests rather than imputed.
 
