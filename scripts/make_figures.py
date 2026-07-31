@@ -15,9 +15,11 @@ Figures:
   4. map: located vassals, letter volume, Egyptian admin centers
   5. map: the gazetteer audit (phantom -> corrected points)
   6. signed conflict network (accusation / alliance)
+  7. map: the conflict network in space (paper Figure 6; fig5 is a
+     repo/talk asset, not included in the paper)
 
-Coastline: data/raw/ne_50m_coastline.geojson (Natural Earth; fetch
-command in README).
+Basemap: Natural Earth land/rivers/coastline geojson in data/raw/
+(fetch commands in README).
 """
 
 import csv
@@ -383,20 +385,54 @@ def fig3():
     save(fig, "fig3_ribhadda")
 
 
-def coastline(ax, lonlim, latlim):
-    data = json.loads((ROOT / "data" / "raw" /
-                       "ne_50m_coastline.geojson").read_text())
-    for feat in data["features"]:
-        geom = feat["geometry"]
-        lines = ([geom["coordinates"]] if geom["type"] == "LineString"
-                 else geom["coordinates"])
-        for line in lines:
-            xs = [p[0] for p in line]
-            ys = [p[1] for p in line]
-            if (max(xs) < lonlim[0] or min(xs) > lonlim[1]
-                    or max(ys) < latlim[0] or min(ys) > latlim[1]):
-                continue
-            ax.plot(xs, ys, "-", color=BASE, lw=0.7, zorder=1)
+LAND, SEA, RIVER = "#f4f1ea", "#e8eff5", "#c3d6e6"
+
+
+def _rings(geom):
+    if geom["type"] == "LineString":
+        return [geom["coordinates"]]
+    if geom["type"] == "MultiLineString":
+        return geom["coordinates"]
+    if geom["type"] == "Polygon":
+        return geom["coordinates"]
+    if geom["type"] == "MultiPolygon":
+        return [ring for poly in geom["coordinates"] for ring in poly]
+    return []
+
+
+def _in_bbox(line, lonlim, latlim):
+    xs = [p[0] for p in line]
+    ys = [p[1] for p in line]
+    return not (max(xs) < lonlim[0] or min(xs) > lonlim[1]
+                or max(ys) < latlim[0] or min(ys) > latlim[1])
+
+
+def basemap(ax, lonlim, latlim, detail="10m"):
+    """Filled land, rivers, coastline from Natural Earth (data/raw/,
+    fetch commands in README). Marks and labels go on top (zorder>=2)."""
+    raw = ROOT / "data" / "raw"
+    ax.set_facecolor(SEA)
+    land = json.loads((raw / "ne_10m_land.geojson").read_text())
+    from matplotlib.patches import Polygon as MplPolygon
+    for feat in land["features"]:
+        for ring in _rings(feat["geometry"]):
+            if _in_bbox(ring, lonlim, latlim):
+                ax.add_patch(MplPolygon(ring, closed=True, facecolor=LAND,
+                                        edgecolor="none", zorder=0.5))
+    rivers = json.loads(
+        (raw / "ne_10m_rivers_lake_centerlines.geojson").read_text())
+    for feat in rivers["features"]:
+        for line in _rings(feat["geometry"]):
+            if _in_bbox(line, lonlim, latlim):
+                ax.plot([p[0] for p in line], [p[1] for p in line], "-",
+                        color=RIVER, lw=0.6, zorder=0.8,
+                        solid_capstyle="round")
+    coast = json.loads((raw / f"ne_{detail}_coastline.geojson").read_text())
+    for feat in coast["features"]:
+        for line in _rings(feat["geometry"]):
+            if _in_bbox(line, lonlim, latlim):
+                ax.plot([p[0] for p in line], [p[1] for p in line], "-",
+                        color=BASE, lw=0.6, zorder=1)
     ax.set_xlim(lonlim)
     ax.set_ylim(latlim)
     ax.set_aspect(1 / math.cos(math.radians(sum(latlim) / 2)))
@@ -404,6 +440,16 @@ def coastline(ax, lonlim, latlim):
     ax.set_yticks([])
     for s in ax.spines.values():
         s.set_visible(True); s.set_color(GRID)
+
+
+def halo(size=2.2):
+    import matplotlib.patheffects as pe
+    return [pe.withStroke(linewidth=size, foreground=SURFACE)]
+
+
+# back-compat: fig5 (audit map) still calls coastline() with wide extent
+def coastline(ax, lonlim, latlim):
+    basemap(ax, lonlim, latlim, detail="50m")
 
 
 def load_coords():
@@ -431,7 +477,7 @@ def fig4():
             tier_of_pol.setdefault(n["polity"], n["tier"])
 
     fig, ax = plt.subplots(figsize=(4.4, 5.4))
-    coastline(ax, (28.6, 39.4), (26.8, 36.9))
+    basemap(ax, (28.6, 39.4), (26.8, 36.9))
     for p, n in sent.items():
         x, y = pol[p]
         c = TIER_COLOR.get(tier_of_pol.get(p, ""), MUTED)
@@ -443,7 +489,8 @@ def fig4():
     ax.scatter(*pol["Egypt"], marker="*", s=170, color=BLUE,
                edgecolors=SURFACE, linewidths=0.9, zorder=5)
     ax.annotate("Akhetaten", pol["Egypt"], xytext=(7, -1),
-                textcoords="offset points", fontsize=8, color=INK)
+                textcoords="offset points", fontsize=8, color=INK,
+                path_effects=halo(), zorder=6)
     offsets = {"Byblos": (6, 1), "Tyre": (-7, -2), "Jerusalem": (7, -3),
                "Ugarit": (6, 2), "Qadesh": (6, -5), "Damascus": (6, 1),
                "Megiddo": (7, -1), "Ashkelon": (-7, 1), "Qatna": (6, 3),
@@ -453,13 +500,15 @@ def fig4():
             lbl = {"Gazru": "Gezer", "Alašiya": "Alašiya (Enkomi)"}.get(p, p)
             ax.annotate(lbl, pol[p], xytext=(dx, dy),
                         textcoords="offset points", fontsize=7, color=SEC,
-                        ha="left" if dx > 0 else "right")
+                        ha="left" if dx > 0 else "right",
+                        path_effects=halo(), zorder=6)
     coff = {"Gaza": (-6, -6), "Sumur": (-7, 0), "Kumidi": (-7, -3)}
     for name, (dx, dy) in coff.items():
         x, y = centers[name]
         ax.annotate({"Sumur": "Ṣumur"}.get(name, name), (x, y),
                     xytext=(dx, dy), textcoords="offset points",
-                    fontsize=7, color=SEC, ha="right")
+                    fontsize=7, color=SEC, ha="right",
+                    path_effects=halo(), zorder=6)
     handles = [
         Line2D([], [], marker="o", ls="", color=MAGENTA, markersize=7,
                label="vassal polity (area scales with letters)"),
@@ -470,7 +519,9 @@ def fig4():
         Line2D([], [], marker="*", ls="", color=BLUE, markersize=11,
                label="Akhetaten (the archive)"),
     ]
-    ax.legend(handles=handles, loc="lower right", frameon=False, fontsize=6.8)
+    leg = ax.legend(handles=handles, loc="lower right", frameon=True,
+                    fontsize=6.8, framealpha=0.9, edgecolor=GRID)
+    leg.get_frame().set_facecolor(SURFACE)
     ax.set_title("The corrected geography of the corpus",
                  fontsize=9.5, color=INK, pad=8)
     save(fig, "fig4_map")
@@ -580,6 +631,86 @@ def fig6():
     save(fig, "fig6_conflict")
 
 
+def fig7():
+    """The conflict network drawn geographically: accusation/alliance
+    edges between located polities. Neighbors accuse neighbors."""
+    pol = load_coords()
+    nodes = load_nodes()
+    polity_of = {a: n["polity"] for a, n in nodes.items() if n["polity"]}
+    agg = Counter()          # (polityA, polityB, sign) -> letters
+    skipped_unlocated, intra = set(), 0
+    with (ROOT / "registry" / "conflict_edges.csv").open() as fh:
+        for r in csv.DictReader(fh):
+            pa = polity_of.get(r["src"]); pb = polity_of.get(r["dst"])
+            if not pa or not pb or pa not in pol or pb not in pol:
+                for a, p in ((r["src"], pa), (r["dst"], pb)):
+                    if not p or p not in pol:
+                        skipped_unlocated.add(a)
+                continue
+            if pa == pb:
+                intra += 1
+                continue
+            key = (min(pa, pb), max(pa, pb), r["sign"])
+            agg[key] += 1
+
+    fig, ax = plt.subplots(figsize=(5.2, 5.0))
+    basemap(ax, (33.6, 37.6), (30.9, 36.2))
+    involved = Counter()
+    for (pa, pb, sign), n in agg.items():
+        involved[pa] += n; involved[pb] += n
+        (x1, y1), (x2, y2) = pol[pa], pol[pb]
+        mx, my = (x1 + x2) / 2, (y1 + y2) / 2
+        dx, dy = x2 - x1, y2 - y1
+        norm = math.hypot(dx, dy) or 1
+        cx, cy = mx - dy / norm * 0.18, my + dx / norm * 0.18
+        ts = [t / 24 for t in range(25)]
+        xs = [(1 - t) ** 2 * x1 + 2 * (1 - t) * t * cx + t ** 2 * x2
+              for t in ts]
+        ys = [(1 - t) ** 2 * y1 + 2 * (1 - t) * t * cy + t ** 2 * y2
+              for t in ts]
+        color = RED if sign == "-" else BLUE
+        ax.plot(xs, ys, "-", color=color, lw=0.9 + 0.55 * n,
+                alpha=0.85, zorder=3, solid_capstyle="round")
+    for p, n in involved.items():
+        ax.scatter(*pol[p], s=26 + 12 * n, color=MAGENTA,
+                   edgecolors=SURFACE, linewidths=0.9, zorder=4)
+    lab = {"Byblos": (7, 2), "Tyre": (-8, -1), "Sidon": (-8, 1),
+           "Beirut": (-8, 2), "Qadesh": (7, 2), "Damascus": (7, -2),
+           "Qatna": (7, 2), "Jerusalem": (8, -4), "Gazru": (-8, -6),
+           "Gimtu": (-9, -9), "Megiddo": (8, 0), "Akka": (-8, 2),
+           "Šakmu": (8, -2), "Aštartu": (8, 2), "Pihilu": (8, -4),
+           "Irqata": (-8, 3), "Ugarit": (7, 2), "Hazor": (8, 1),
+           "Lakiša": (-8, -3), "Ashkelon": (-8, 1), "Tunip": (7, 1)}
+    shown = {"Gazru": "Gezer", "Gimtu": "Gath", "Šakmu": "Shechem",
+             "Lakiša": "Lachish"}
+    for p, n in involved.items():
+        dx, dy = lab.get(p, (7, 2))
+        ax.annotate(shown.get(p, p), pol[p], xytext=(dx, dy),
+                    textcoords="offset points", fontsize=7, color=INK,
+                    ha="left" if dx > 0 else "right",
+                    path_effects=halo(), zorder=6)
+    n_acc = sum(n for (a, b, s), n in agg.items() if s == "-")
+    n_all = sum(n for (a, b, s), n in agg.items() if s == "+")
+    handles = [
+        Line2D([], [], color=RED, lw=2,
+               label=f"accusation ({n_acc} located letter-edges)"),
+        Line2D([], [], color=BLUE, lw=2, label=f"alliance ({n_all})"),
+    ]
+    leg = ax.legend(handles=handles, loc="lower left", frameon=True,
+                    fontsize=7, framealpha=0.9, edgecolor=GRID)
+    leg.get_frame().set_facecolor(SURFACE)
+    ax.set_title("The conflict network in space", fontsize=9.5,
+                 color=INK, pad=8)
+    dropped = (f" and {intra} intra-polity edges" if intra else "")
+    fig.text(0.12, 0.02,
+             f"Curved lines connect the polities of accuser and accused; "
+             f"width scales with letters. Edges involving\n"
+             f"unlocated actors (collectives, the ʿApiru, fragmentary "
+             f"names){dropped} are not drawn.",
+             fontsize=6.6, color=SEC)
+    save(fig, "fig7_conflict_map")
+
+
 if __name__ == "__main__":
     print("figures ->", FIGDIR)
     fig1()
@@ -588,3 +719,4 @@ if __name__ == "__main__":
     fig4()
     fig5()
     fig6()
+    fig7()

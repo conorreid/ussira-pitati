@@ -61,12 +61,11 @@ probability of a top-three position, while Aziru of Amurru and the
 Egyptian commissioner Yanḫamu emerge as the stable brokers.
 (3)~Inferential models formalize the tier structure (ERGM: reciprocity
 $+3.78$, tier anti-homophily $-2.21$, both $p<0.001$), and geography
-behaves exactly as pre-registered: distance decays mention and conflict
-ties but not correspondence with the court --- a result we report with
-confidence only because an apparent counter-finding ($\rho=-0.50$ for
-correspondence) dissolved under our own audit into gazetteer mismatches,
-a tie-handling artifact, and political composition: an object lesson in
-the paper's central argument, applied to ourselves. We release the actor
+splits cleanly by layer: distance decays mention and conflict ties ---
+neighbors name and accuse neighbors --- while epistolary volume to the
+court shows no robust distance effect, a contrast that survives
+compositional drops and control for proximity to Egyptian administrative
+centers. We release the actor
 registry, edge lists, provenance joins (including a machine-readable
 transcription of the petrographic determinations of
 \citealp{Goren2004}), and all code.
@@ -143,9 +142,7 @@ the repository.
 folded names; the hand-curated registry (17 entries) records
 Sumerographic readings (IR₃-Ḫebat = ʿAbdi-Ḫeba), orthographic systems
 (Oracc ʿAḏiri = conventional Aziru), contested sign readings, and
-pharaonic throne names, each with a justification; figure preparation
-surfaced one residual split identity (Labʾayu keyed under both lemma and
-catalogue spellings, similarly Milki-ilu), merged before the final run.
+pharaonic throne names, each with a justification.
 All named pharaohs collapse to a single PHARAOH node in the base
 analysis; the per-letter identification is retained for sensitivity
 splits.
@@ -163,11 +160,11 @@ edition-robustness; since both passes share an annotator, an independent
 human recoding remains the outstanding reliability step.
 
 \paragraph{Geography and provenance.} Polities were georeferenced
-against Pleiades (31/55 automated with hand-review flags; regions
-without ancient fixed points remain unlocated by design). Four automated
-matches proved to be classical homonyms at wildly wrong locations and
-were corrected against the Pleiades bulk dump; \S\ref{sec:geography}
-reports what that audit did to a headline number. The petrographic
+against Pleiades (31/55 automated; regions without ancient fixed points
+remain unlocated by design), and every coordinate entering a distance
+test was hand-verified against the Pleiades bulk dump --- a necessary
+step, since classical gazetteers are homonym-rich (Pella, Arca, Tyros,
+and ``Syria'' all have distant namesakes). The petrographic
 provenance determinations of \citet{Goren2004} were transcribed to a
 machine-readable table (292 tablets); where both sources speak, the
 petrographic determination agrees with the catalogue's provenience 87\%
@@ -359,38 +356,37 @@ tier homophily (nodematch) & $-2.21$ & 0.64 & 0.0006 \\
 \end{tabular}
 \end{table}
 
-\subsection{Geography: the pre-registered contrast, recovered by audit}
+\subsection{Geography: distance structures mentions and conflict, not
+correspondence}
 \label{sec:geography}
 
 Distance decays ties in the mention layer (point-biserial $r=-0.147$,
 QAP $p<0.001$): neighbors name neighbors. The conflict layer agrees
-($r=-0.298$, QAP $p=0.001$, $n=14$ located actors). We had predicted
-\emph{no} distance effect in the correspondence layer --- all vassals
-write to distant Egypt regardless --- and an earlier draft reported that
-prediction overturned ($\rho=-0.50$, $p=0.002$). Auditing that finding
-dissolved it, in three layers that are worth recounting because they
-enact the paper's thesis. First, six of 39 data points were gazetteer
-phantoms (Figure~\ref{fig:audit}): four actors coded to a ``Syria''
-\emph{region} whose Pleiades match lies in the Ionian Sea, Pihilu
-matched to Macedonian Pella, Irqata to an Anatolian Arca --- all
-far-with-few-letters, exactly the shape that manufactures decay (Tyre
-was likewise mislocated to a homonymous Hellenistic estate in Jordan).
-Second, with 14 of 35 vassals tied at one letter, Spearman without
-tie-averaged ranks let input row order leak into the statistic;
-correcting both leaves $\rho=-0.32$ ($p=0.07$). Third, the residual
-trend is compositional: it concentrates in polities with political
-reasons to write little --- Hatti-aligned Qadesh and Sidon (EA~174--176,
-148--149) and quasi-independent Ugarit --- without which $\rho=-0.18$
-($p=0.32$); a leave-one-polity-out jackknife retains nominal
-significance in only 7 of 24 deletions. A partialled design against
-hand-coded covariates --- distance to the nearest Egyptian
-administrative center (Gaza, Joppa, Beth-Shean, Kumidi, Ṣumur;
-Figure~\ref{fig:map}; cf.\ \citealp{Morris2005}), coastal access, Hatti
-alignment --- finds no predictor of epistolary volume, court distance
-included (partial $r=-0.26$, $p=0.17$). The sign stays negative in every
-variant, so a weak true decay is not excluded; but the defensible
-statement is the pre-registered one: geography structures whom the
-letters \emph{talk about}, not who talks to Egypt.
+($r=-0.298$, QAP $p=0.001$, $n=14$ located actors), and drawing the
+conflict network in space makes the result visible
+(Figure~\ref{fig:conflictmap}): accusations run between neighbors ---
+along the Phoenician coast, across the Beqaa, and within the crowded
+hill country between Gezer, Gath, Shechem, and Jerusalem --- while the
+one long-range structure is the Qadesh--Damascus axis of the Hittite
+crisis. Correspondence with the court behaves differently. The raw
+correlation between a vassal's letter count and distance from Akhetaten
+is $\rho=-0.32$ ($p=0.07$), and it is not robust: a leave-one-polity-out
+jackknife retains nominal significance in only 7 of 24 deletions;
+dropping the polities with political reasons to write little ---
+Hatti-aligned Qadesh and Sidon (EA~174--176, 148--149) and
+quasi-independent Ugarit --- leaves $\rho=-0.18$ ($p=0.32$); and in a
+partialled design against hand-coded covariates --- distance to the
+nearest Egyptian administrative center (Gaza, Joppa, Beth-Shean, Kumidi,
+Ṣumur; Figure~\ref{fig:map}; cf.\ \citealp{Morris2005}), coastal
+access, Hatti alignment --- nothing predicts epistolary volume, court
+distance included (partial $r=-0.26$, $p=0.17$). The sign stays
+negative in every variant, so a weak true decay is not excluded; but
+the defensible statement is the pre-registered one: geography
+structures whom the letters \emph{talk about}, not who talks to Egypt.
+(The repository documents how an apparently strong correspondence decay
+in an earlier draft traced to gazetteer homonym mismatches and a
+rank-tie artifact --- the coordinate verification described in \S2
+exists because of that episode.)
 
 \begin{figure}[tb]
 \centering
@@ -405,14 +401,15 @@ Mittani, ``Syria'') are excluded rather than imputed.}
 
 \begin{figure}[tb]
 \centering
-\includegraphics[width=\textwidth]{figures/fig5_audit.pdf}
-\caption{The gazetteer audit. Seven ``phantom'' coordinates produced by
-homonym mismatches against a classical gazetteer (crosses), with their
-verified locations (dots). All seven pushed in the decay direction ---
-far-with-few-letters --- and together with a rank-tie artifact they
-manufactured the apparent correspondence distance decay
-(\S\ref{sec:geography}).}
-\label{fig:audit}
+\includegraphics[width=0.72\textwidth]{figures/fig7_conflict_map.pdf}
+\caption{The conflict network in space: accusation (red) and alliance
+(blue) edges between located polities, aggregated over letters.
+Accusations run between neighbors --- the Phoenician coast, the
+Gezer--Gath--Shechem--Jerusalem hill country --- with the
+Qadesh--Damascus axis of the Hittite crisis as the one long-range
+structure. Edges involving unlocated actors (collectives, the ʿApiru)
+are omitted.}
+\label{fig:conflictmap}
 \end{figure}
 
 \FloatBarrier
@@ -429,10 +426,7 @@ when every voice speaks at equal volume and the brokers are the defector
 Amurru dynast and pharaoh's own commissioner. None of these switches is
 illegitimate --- but they must be visible, and their consequences
 measured, before centrality in a survival-biased ego-archive is read as
-ancient history. Our own distance-decay episode
-(\S\ref{sec:geography}) shows the same failure mode operating inside a
-reproducible pipeline, and the same remedy: the error survived exactly
-as long as the underlying data points went unexamined.
+ancient history.
 
 What survives every correction is historically satisfying: a two-tier
 system statistically legible in one coefficient ($+$ reciprocity above,

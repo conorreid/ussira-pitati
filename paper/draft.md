@@ -26,13 +26,11 @@ and on his 60+-letter dossier; volume-equalized, he falls to median rank
 Amurru and the Egyptian commissioner Yanḥamu emerge as the stable
 brokers. (3) Inferential models formalize the tier structure (ERGM:
 reciprocity +3.78, tier anti-homophily −2.21, both p < 0.001), and
-geography behaves exactly as pre-registered: distance decays mention
-and conflict ties but not correspondence with the court — a result we
-report with confidence only because an apparent counter-finding
-(ρ = −0.50 for correspondence) dissolved under our own audit into
-gazetteer mismatches, a tie-handling artifact, and political
-composition, an object lesson in the paper's central argument applied
-to ourselves. We release the actor
+geography splits cleanly by layer: distance decays mention and conflict
+ties — neighbors name and accuse neighbors — while epistolary volume to
+the court shows no robust distance effect, a contrast that survives
+compositional drops and control for proximity to Egyptian
+administrative centers. We release the actor
 registry, edge lists, provenance joins (including a machine-readable
 transcription of Goren, Finkelstein & Na'aman's petrographic
 determinations), and all code.
@@ -112,10 +110,7 @@ names; the hand-curated registry (17 entries) records Sumerographic
 readings (IR₃-Ḫebat = ʿAbdi-Ḫeba), orthographic systems (Oracc ʿAḏiri =
 conventional Aziru), contested sign readings (ᵈIM-DI.KUD = Adda-danu =
 Baʿlu-šipṭi), and pharaonic throne names (Napḫurureya = Akhenaten), each
-with a justification; figure preparation surfaced one residual split
-identity (Labʾayu keyed as both labaya and labayu across lemma and
-catalogue spellings, similarly Milki-ilu), merged before the final
-run. All named pharaohs collapse to a single PHARAOH
+with a justification. All named pharaohs collapse to a single PHARAOH
 node in the base analysis; the per-letter identification is retained for
 sensitivity splits.
 
@@ -254,35 +249,34 @@ recover the tiers: mention-layer communities (modularity ≈ 0.56) are
 political theatres — the Amurru crisis, the Damascus–Qadesh axis, the
 Shechem–Jerusalem conflict, the Tyre–Sidon feud — not diplomatic ranks.
 
-### 5.5 Geography: the pre-registered contrast, recovered by audit
+### 5.5 Geography: distance structures mentions and conflict, not correspondence
 
-Distance decays ties in the mention layer (point-biserial r = −0.147, QAP
-p < 0.001): neighbors name neighbors. The conflict layer agrees
-(r = −0.298, QAP p = 0.001, n = 14 located actors). We had predicted *no*
-distance effect in the correspondence layer — all vassals write to
-distant Egypt regardless — and an earlier draft reported that prediction
-overturned (ρ = −0.50, p = 0.002). Auditing that finding dissolved it,
-in three layers that are worth recounting because they enact the paper's
-thesis. First, six of 39 data points were gazetteer phantoms: four
-actors coded to a "Syria" *region* whose Pleiades match lies in the
-Ionian Sea, Pihilu matched to Macedonian Pella, Irqata to an Anatolian
-Arca — all far-with-few-letters, exactly the shape that manufactures
-decay (Tyre was likewise mislocated to a homonymous Hellenistic estate
-in Jordan). Second, with 14 of 35 vassals tied at one letter, Spearman
-without tie-averaged ranks let input row order leak into the statistic;
-correcting both leaves ρ = −0.32 (p = 0.07). Third, the residual trend
-is compositional: it concentrates in polities with political reasons to
-write little — Hatti-aligned Qadesh and Sidon (EA 174–176, 148–149) and
-quasi-independent Ugarit — without which ρ = −0.18 (p = 0.32); a
-leave-one-polity-out jackknife retains nominal significance in only
-7 of 24 deletions. A partialled design against hand-coded covariates
-(distance to the nearest Egyptian administrative center — Gaza, Joppa,
-Beth-Shean, Kumidi, Ṣumur; coastal access; Hatti alignment) finds no
-predictor of epistolary volume, court distance included (partial
-r = −0.26, p = 0.17). The sign stays negative in every variant, so a
-weak true decay is not excluded; but the defensible statement is the
-pre-registered one: geography structures whom the letters *talk about*,
-not who talks to Egypt.
+Distance decays ties in the mention layer (point-biserial r = −0.147,
+QAP p < 0.001): neighbors name neighbors. The conflict layer agrees
+(r = −0.298, QAP p = 0.001, n = 14 located actors), and drawing the
+conflict network in space makes the result visible: accusations run
+between neighbors — along the Phoenician coast, across the Beqaa, and
+within the crowded hill country between Gezer, Gath, Shechem, and
+Jerusalem — while the one long-range structure is the Qadesh–Damascus
+axis of the Hittite crisis. Correspondence with the court behaves
+differently. The raw correlation between a vassal's letter count and
+distance from Akhetaten is ρ = −0.32 (p = 0.07), and it is not robust:
+a leave-one-polity-out jackknife retains nominal significance in only
+7 of 24 deletions; dropping the polities with political reasons to
+write little — Hatti-aligned Qadesh and Sidon (EA 174–176, 148–149)
+and quasi-independent Ugarit — leaves ρ = −0.18 (p = 0.32); and in a
+partialled design against hand-coded covariates (distance to the
+nearest Egyptian administrative center — Gaza, Joppa, Beth-Shean,
+Kumidi, Ṣumur; coastal access; Hatti alignment) nothing predicts
+epistolary volume, court distance included (partial r = −0.26,
+p = 0.17). The sign stays negative in every variant, so a weak true
+decay is not excluded; but the defensible statement is the
+pre-registered one: geography structures whom the letters *talk
+about*, not who talks to Egypt. (The repository documents how an
+apparently strong correspondence decay in an earlier draft traced to
+gazetteer homonym mismatches and a rank-tie artifact — the coordinate
+verification above exists because of that episode; see
+`distance_confounds.md`.)
 
 ## 6. Discussion
 
