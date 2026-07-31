@@ -33,3 +33,32 @@ EA 189,etakkama,biryawaza,-,accuse,"the wicked Biryawaza has gone on defaming me
 EA 197,biryawaza,biridaswa,-,accuse,"they waged war with Biridašwa against me, constantly saying, 'Come, let's kill Biryawaza'",claude/moran-pass1,1,
 EA 197,biryawaza,arsawuya,-,accuse,"Arsawuya went to Ki[ssa], took (some of) Aziru's [men]",claude/moran-pass1,1,acting with Aziru's forces
 EA 171,aziru,yanhamu,-,accuse,"I would enter the service of the king... but Yanhamu has not allowed me",claude/moran-pass1,1,obstruction grievance; milder than military accusation
+EA 017,tusratta,udhi,-,accuse,"UD-hi had done an unseemly thing to my country and had slain his lord",claude/moran-pass1,2,regicide of Artašumara's circle
+EA 076,ribhadda,abdiasirta,-,accuse,"He has seized [...]; send me [a garris]on of 400 men",claude/moran-pass1,2,
+EA 089,ribhadda,people-of-tyre,-,accuse,"they have killed their mayor, together with my sister and her sons",claude/moran-pass1,2,collective; Tyre coup
+EA 089,ribhadda,abdiasirta,-,accuse,"Abdi-Aširta has taken the sea [in] front of them",claude/moran-pass1,2,
+EA 101,ribhadda,people-of-arwada,-,accuse,"whose ships have attacked me? Is it not the men of Arwada?",claude/moran-pass1,2,collective; letter also reports Abdi-Aširta's killing by his own people
+EA 109,ribhadda,sons-of-abdiasirta,-,accuse,"they seized [12 men of mine]... The rans[om price] between us they have set at 50 (shekels of) silver",claude/moran-pass1,2,collective
+EA 113,ribhadda,yappahhadda,-,accuse,"Yapah-Hadda has commit[ted] a crime... he has plundered two of my ships",claude/moran-pass1,2,
+EA 114,ribhadda,aziru,-,accuse,"Aziru is at war with me. He has seized 12 men of mine",claude/moran-pass1,2,
+EA 114,ribhadda,yappahhadda,-,accuse,"Yapah-Hadda is now on the side of Aziru against me... seized a ship of mine",claude/moran-pass1,2,reported Aziru alignment
+EA 116,ribhadda,sons-of-abdiasirta,-,accuse,"there was an attack on our garrison, and the sons of Abdi-Aširta seized it",claude/moran-pass1,2,collective; Sumur
+EA 116,ribhadda,yappahhadda,-,accuse,"[Yapah-Hadda keeps devising] evil upon evil against me",claude/moran-pass1,2,
+EA 125,ribhadda,aziru,-,accuse,"Aziru has repeatedly raided me... Aziru has taken everything",claude/moran-pass1,2,
+EA 129,ribhadda,sons-of-abdiasirta,-,accuse,"They took Pewur[u and ki]lled him... All my cities belong to them",claude/moran-pass1,2,collective; commissioner killed
+EA 137,ribhadda,brother-of-ribhadda,-,accuse,"my younger brother... committed a crime and drove me from the city",claude/moran-pass1,2,relational actor; possibly = Ili-rapih
+EA 138,ribhadda,abdiasirta,-,accuse,"When Abdi-Aširti seized Sumur, I guarded the city by (my)self",claude/moran-pass1,2,retrospective
+EA 138,ribhadda,sons-of-abdiasirta,-,accuse,"the son of Abdi-Aširti... Then they moved against me, but I killed them",claude/moran-pass1,2,collective
+EA 148,abimilku,zimreddi,-,accuse,"The one who rai[d]s the land of the king is the king of Sidon... He has taken over the land of the king for the Apiru",claude/moran-pass1,2,
+EA 170,baaluyaandbetili,lupakku,-,accuse,"troops of Hatti under Lupakku have captured cities of Amqu",claude/moran-pass1,2,hostile-act report to Aziru
+EA 185,mayarzana,apiru,-,accuse,"the Apiru captured Mahzibtu, a city of the king... plundered (it) and sen[t] it up in flames",claude/moran-pass1,2,collective
+EA 185,mayarzana,amanhatpe,-,accuse,"then the Apiru took refuge with Amanhatpe",claude/moran-pass1,2,harboring; repeated for four cities
+EA 186,mayarzana,amanhatpe,-,accuse,"I knew his crime, but he went [off to] the Ap[ir]u",claude/moran-pass1,2,defection to Apiru
+EA 186,mayarzana,apiru,-,accuse,"the Ap[ir]u captured [Mahzib]tu, a loyal city of the k[ing]",claude/moran-pass1,2,collective
+EA 238,bayadi,son-of-saatna,-,accuse,"the son of Ša[a]tna and Hagurr[u]... they have captured [...] and attacked [me]",claude/moran-pass1,2,relational actor
+EA 238,bayadi,hagurru,-,accuse,"the son of Ša[a]tna and Hagurr[u]... they have captured [...] and attacked [me]",claude/moran-pass1,2,
+EA 286,abdiheba,enhamu,-,accuse,"the king stationed a garrison (here), (but) Enhamu has taken it all away",claude/moran-pass1,2,possibly = Yanhamu; kept distinct pending adjudication
+EA 286,abdiheba,ilimilku,-,accuse,"Ili-Milku has caused the loss of all the land of the king",claude/moran-pass1,2,identity debated; kept distinct from Milkilu of Gezer
+EA 290,abdiheba,milkilu,-,accuse,"they ordered troops from Gazru, troops from Gimtu, and troops from Qiltu. They seized Rubutu",claude/moran-pass1,2,with Šuwardata
+EA 290,abdiheba,suwardata,-,accuse,"they ordered troops from Gazru... They seized Rubutu",claude/moran-pass1,2,with Milkilu
+EA 362,ribhadda,sons-of-abdiasirta,-,accuse,"Who are they that they have committed a crime and killed the commissioner Pewure?",claude/moran-pass1,2,collective

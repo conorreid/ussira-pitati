@@ -107,10 +107,12 @@ sensitivity splits.
 
 **Hand-coded supplements.** EA 1–44's mentioned persons were coded from
 Moran's translations (44 letters; gods excluded, throne names resolved to
-PHARAOH). A signed conflict layer (accusation/alliance) was coded for the
-five classic political theatres (22 letters, 34 edges), each edge carrying
-its Moran quotation; this layer is single-coder as of this draft and is
-reported as provisional throughout.
+PHARAOH). A signed conflict layer (accusation/alliance) was coded via a
+corpus-wide hostile-language sweep of Moran's translations (40 letters,
+63 edges: 59 accusations, 4 alliances), each edge carrying its Moran
+quotation; letters whose hostile language has only unnamed antecedents
+yield no edges by rule. This layer is single-coder as of this draft and
+is reported as provisional throughout.
 
 **Geography and provenance.** Polities were georeferenced against
 Pleiades (30/55 automated with hand-review flags; regions without ancient
@@ -136,8 +138,8 @@ Three layers, all built by code from the tables above:
    appearing in each letter (sender + every PN/RN lemma; PHARAOH only
    when actually named) form a clique; 245 persons, 737 dyads. The
    Great-Power letters enter via the Moran hand-coding.
-3. **Conflict** (signed, directed; provisional): accusation (−) and
-   alliance (+) edges with quotation-level provenance.
+3. **Conflict** (signed, directed; provisional): 63 accusation (−) and
+   alliance (+) edges across 40 letters, with quotation-level provenance.
 
 We additionally rebuild a **Cline-style graph** — correspondence edges
 plus sender→mentioned stars — because replication requires the original's
@@ -231,8 +233,9 @@ Shechem–Jerusalem conflict, the Tyre–Sidon feud — not diplomatic ranks.
 ### 5.5 Geography: one prediction confirmed, one overturned
 
 Distance decays ties in the mention layer (point-biserial r = −0.127, QAP
-p = 0.001): neighbors name neighbors. The provisional conflict layer
-points the same way (r = −0.205, p = 0.057, n = 11 located actors). We
+p = 0.001): neighbors name neighbors. The conflict layer
+agrees, and with the corpus-wide sweep the effect is significant
+(r = −0.177, QAP p = 0.003, n = 13 located actors). We
 had predicted *no* distance effect in the correspondence layer — all
 vassals write to distant Egypt regardless. That prediction fails: among
 located vassals, letters-to-pharaoh volume falls with distance from

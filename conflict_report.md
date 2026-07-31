@@ -4,36 +4,36 @@ Coded from Moran (1992) per `registry/conflict_codebook.md`. A second
 independent pass + Cohen's kappa is required (PLAN.md §7) before these
 edges enter the base analysis. Coverage: the five classic theatres only.
 
-- letters coded: 20; edges: 34 (30 accusations, 4 alliance)
-- actors: 25
+- letters coded: 40; edges: 63 (59 accusations, 4 alliance)
+- actors: 41
 
 ## Most-accused
 
 | actor | accused in n letters |
 |---|---|
-| abdiasirta | 5 |
-| aziru | 5 |
-| milkilu | 3 |
+| abdiasirta | 8 |
+| aziru | 7 |
+| sons-of-abdiasirta | 6 |
+| milkilu | 4 |
+| yappahhadda | 3 |
 | sons-of-labaya | 2 |
 | tagi | 2 |
-| miya | 1 |
-| pubahla | 1 |
-| sons-of-abdiasirta | 1 |
+| zimreddi | 2 |
 
 ## Betweenness in the (undirected) conflict graph
 
 | actor | betweenness | accused_by_n | accuses_n |
 |---|---|---|---|
-| aziru | 68.0 | 5 | 1 |
-| ribhadda | 46.0 | 0 | 10 |
-| ilirapih | 40.0 | 0 | 3 |
-| etakkama | 33.0 | 1 | 1 |
-| abimilku | 25.0 | 0 | 3 |
-| biryawaza | 25.0 | 1 | 2 |
-| abdiheba | 23.5 | 1 | 5 |
-| suwardata | 23.0 | 0 | 1 |
-| surata | 14.0 | 1 | 0 |
-| biridiya | 8.0 | 0 | 2 |
+| ribhadda | 108.0 | 0 | 26 |
+| aziru | 104.0 | 7 | 1 |
+| ilirapih | 56.0 | 0 | 3 |
+| etakkama | 45.0 | 1 | 1 |
+| abdiheba | 42.5 | 1 | 9 |
+| abimilku | 33.0 | 0 | 4 |
+| biryawaza | 33.0 | 1 | 2 |
+| suwardata | 31.0 | 1 | 1 |
+| surata | 18.0 | 1 | 0 |
+| biridiya | 10.0 | 0 | 2 |
 
 ## Reading
 

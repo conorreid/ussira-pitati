@@ -61,7 +61,7 @@ Located actors: 54 (via polity coords; Goren-located letters extend coverage). S
 | layer | n actors | statistic | observed | p |
 |---|---|---|---|---|
 | mention co-occurrence | 42 | point-biserial r(tie, km) | -0.127 | 0.001 (P(r_null <= obs)) |
-| conflict (tranche 1, provisional) | 11 | point-biserial r(tie, km) | -0.205 | 0.057 (P(r_null <= obs)) |
+| conflict (tranches 1-2, provisional) | 13 | point-biserial r(tie, km) | -0.177 | 0.003 (P(r_null <= obs)) |
 | correspondence: letters to pharaoh vs km to Akhetaten (vassals) | 39 | Spearman rho | -0.499 | 0.002 (two-sided) |
 | ... same, without Rib-Hadda | 38 | Spearman rho | -0.542 | 0.002 (two-sided) |
 

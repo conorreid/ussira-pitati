@@ -8,8 +8,8 @@ Tests:
 1. Mention layer: point-biserial correlation between dyadic distance and
    tie presence among located actors, QAP node-permutation null (2000
    perms).
-2. Conflict layer: same, on the signed conflict edges (tranche 1 -
-   provisional).
+2. Conflict layer: same, on the signed conflict edges (tranches 1-2 -
+   single-coder, provisional).
 3. Correspondence layer: Spearman correlation between a vassal's distance
    to Akhetaten and letters sent (prediction: ~0), permutation null.
 
@@ -157,7 +157,7 @@ def main():
     a("|---|---|---|---|---|")
     a(f"| mention co-occurrence | {len(m_actors)} | point-biserial r(tie, km) "
       f"| {obs_m:.3f} | {p_m:.3f} (P(r_null <= obs)) |")
-    a(f"| conflict (tranche 1, provisional) | {len(c_actors)} | point-biserial "
+    a(f"| conflict (tranches 1-2, provisional) | {len(c_actors)} | point-biserial "
       f"r(tie, km) | {obs_c:.3f} | {p_c:.3f} (P(r_null <= obs)) |")
     a(f"| correspondence: letters to pharaoh vs km to Akhetaten (vassals) | {len(pairs)} "
       f"| Spearman rho | {obs_s:.3f} | {p_s:.3f} (two-sided) |")

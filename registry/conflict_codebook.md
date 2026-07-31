@@ -27,10 +27,12 @@ translations. One row per (letter, src, dst, type) in
   (claude/moran-pass1). PLAN.md §7 requires a second independent pass and
   Cohen's κ before the signed network enters the base analysis; until
   then results are labeled provisional.
-- `tranche` 1 covers the five classic theatres: Amurru (Rib-Hadda,
-  Ili-rapih vs ʿAbdi-Aširta/Aziru + sons), Shechem-south (Biridiya/
-  ʿAbdi-Heba/Šuwardata vs Labaya, Milkilu, Tagi + sons), the EA 366
-  rescue coalition, Tyre-Sidon (Abi-Milku vs Zimreddi), and the
-  Damascus-Qadesh axis (Biryawaza vs Etakkama et al.). Remaining
-  dossiers (Rib-Hadda's full run EA 68-138, Jerusalem EA 285-290
-  complete, Gezer EA 268-271, minor northern letters) are tranche 2.
+- `tranche` 1 covers the five classic theatres; tranche 2 completes a
+  keyword-driven sweep of the full Moran corpus (hostile-language filter,
+  every flagged letter read): the remaining Rib-Hadda run, Jerusalem
+  EA 286/290, the Hasi dossier (EA 185-186), Bayadi (EA 238), the Hatti
+  front report (EA 170), and the Mitanni regicide (EA 17). Letters whose
+  hostile language has only unnamed antecedents (e.g. EA 102, 119, 161,
+  252, 281) yield no edges by rule, not by omission; EA 179's sender is
+  unresolvable. Coverage is now corpus-wide at the level of the keyword
+  filter; a second independent coding pass remains required.
