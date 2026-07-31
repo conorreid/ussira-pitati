@@ -111,6 +111,29 @@ def confidence(actor, agree_flag):
     return "probable"
 
 
+def load_adjudications():
+    """(designation, role) -> row, for adjudicated queue entries."""
+    out = {}
+    path = ROOT / "registry" / "adjudication_queue.csv"
+    if path.exists():
+        with path.open() as fh:
+            for r in csv.DictReader(fh):
+                if r.get("adjudicated") == "yes":
+                    out[(r["designation"], r["role"])] = r
+    return out
+
+
+def load_overrides():
+    """designation -> {field: value} catalogue corrections (Moran-sourced)."""
+    out = {}
+    path = ROOT / "registry" / "catalogue_overrides.csv"
+    if path.exists():
+        with path.open() as fh:
+            for r in csv.DictReader(fh):
+                out.setdefault(r["designation"], {})[r["field"]] = r["value"]
+    return out
+
+
 def main():
     cat = load_catalogue()["members"]
     pfiles = corpus_files()
@@ -133,16 +156,42 @@ def main():
             n["polity"] = actor["polity"]
         return n
 
+    adjudications = load_adjudications()
+    overrides = load_overrides()
+
     n_letters = n_no_sender = n_no_addressee = 0
     for pid, v in sorted(cat.items(), key=lambda kv: kv[1]["designation"]):
         if v.get("genre") != "letter":
             continue
         n_letters += 1
         p = parsed.get(pid, {})
-        sender = parse_catalogue_actor(v.get("ancient_author", ""))
-        addressee = parse_catalogue_actor(v.get("recipient", ""))
-        s_conf = confidence(sender, p.get("sender_agree", ""))
-        a_conf = confidence(addressee, p.get("addressee_agree", ""))
+        desig = v["designation"]
+        raw_sender = v.get("ancient_author", "")
+        raw_recipient = v.get("recipient", "")
+        for field, val in overrides.get(desig, {}).items():
+            if field == "ancient_author":
+                raw_sender = val
+            elif field == "recipient":
+                raw_recipient = val
+
+        s_conf_override = a_conf_override = None
+        adj_s = adjudications.get((desig, "sender"))
+        adj_a = adjudications.get((desig, "addressee"))
+        if adj_s:
+            if adj_s["resolved_actor"]:
+                raw_sender = adj_s["resolved_actor"]
+            s_conf_override = ("adjudicated" if adj_s["verdict"] != "unresolvable"
+                              else "disputed")
+        if adj_a:
+            if adj_a["resolved_actor"]:
+                raw_recipient = adj_a["resolved_actor"]
+            a_conf_override = ("adjudicated" if adj_a["verdict"] != "unresolvable"
+                              else "disputed")
+
+        sender = parse_catalogue_actor(raw_sender)
+        addressee = parse_catalogue_actor(raw_recipient)
+        s_conf = s_conf_override or confidence(sender, p.get("sender_agree", ""))
+        a_conf = a_conf_override or confidence(addressee, p.get("addressee_agree", ""))
 
         if sender is None:
             n_no_sender += 1

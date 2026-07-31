@@ -9,21 +9,21 @@ biridiya,Biridiya,Megiddo,vassal,True,7,0
 yidyia,Yidyia,Ashkelon,vassal,True,7,0
 burnaburiasii,Burna-buriaš II,Babylon,great_power,True,6,0
 the-king-of-alasiya,the king of Alašiya,Alašiya,great_power,False,6,0
+an-egyptian-official,an Egyptian official,,egypt,False,0,6
 amanappa,Amanappa,,egypt,True,0,6
 milkiilu,Milki-ilu,Gazru,vassal,True,5,1
 abdiheba,ʿAbdi-Heba,Jerusalem,vassal,True,6,0
-yapahu,Yapahu,Gazru,vassal,True,6,0
+subandu,Šubandu,Ashkelon,vassal,True,6,0
 kadasmanenlili,Kadašman-Enlil I,Babylon,great_power,True,3,2
 akizzi,Akizzi,Qatna,vassal,True,5,0
-an-egyptian-official,an Egyptian official,,egypt,False,0,5
-subandu,Šub-Andu,Ashkelon,vassal,True,5,0
+yapahu,Yapahu,Gazru,vassal,True,5,0
 abdiastarti,ʿAbdi-Aštarti,Gimtu,vassal,True,4,0
-tutu,Tutu,,egypt,True,0,4
 biryawaza,Biryawaza,Damascus,vassal,True,4,0
 balumehir,Baʿlu-mehir,Palestine,vassal,True,4,0
 abdiasirta,ʿAbdi-Aširta,Amurru,vassal,True,3,0
 yanhamu,Yanhamu,,egypt,True,0,3
 ammunira,Ammunira,Beirut,vassal,True,3,0
+tutu,Tutu,,egypt,True,0,3
 sutarna,Šutarna,Mušihuna,vassal,True,3,0
 zitriyara,Zitriyara,,vassal,True,3,0
 satatna,Satatna,Akka,vassal,True,3,0
@@ -56,7 +56,6 @@ dasru,Dašru,Palestine,vassal,True,2,0
 ninurmahmes,NIN-UR.MAH-MEŠ,,vassal,True,2,0
 dagantakala,Dagan-takala,Syria,vassal,True,2,0
 hiziru,Hiziru,Zuhra,vassal,True,2,0
-babylon,Babylon,,vassal,True,0,1
 a-babylonian-princess,a Babylonian princess,,vassal,False,1,0
 teye,Teye,Egypt,egypt,True,0,1
 the-kings-of-canaan,the kings of Canaan,Canaan,vassal,False,0,1
@@ -71,6 +70,7 @@ niqmaddaii,Niqmadda II,Ugarit,vassal,True,1,0
 addunirari,Addu-nirari,Nuhašše,vassal,True,1,0
 tehutessup,Tehu-Teššup,,vassal,True,1,0
 the-citizens-of-tunip,the citizens of Tunip,Tunip,vassal,False,1,0
+pahanate,Pahanate,,egypt,True,0,1
 haya,Haya,,egypt,True,0,1
 an-egyptian-general,an Egyptian general,,egypt,False,1,0
 sumuhaddi,Šumu-Haddi,,vassal,True,0,1

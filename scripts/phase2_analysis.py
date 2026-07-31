@@ -203,9 +203,10 @@ def main():
     letters = load_letters()
     nodes = load_nodes()
 
+    trusted = ("certain", "probable", "adjudicated")
     certain = [e for e in letters
-               if e["src_confidence"] in ("certain", "probable")
-               and e["dst_confidence"] in ("certain", "probable")]
+               if e["src_confidence"] in trusted
+               and e["dst_confidence"] in trusted]
     no_rib = [e for e in letters if e["src"] != "ribhadda" and e["dst"] != "ribhadda"]
 
     variants = {"all letters": letters,

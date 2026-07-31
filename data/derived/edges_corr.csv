@@ -5,7 +5,7 @@ EA 003,3,P270975,kadasmanenlili,pharaoh,great_power,egypt,Amenhotep III of Egypt
 EA 004,4,P271101,kadasmanenlili,pharaoh,great_power,egypt,Amenhotep III of Egypt,restored,restored,False,Babylon
 EA 005,5,P270890,pharaoh,kadasmanenlili,egypt,great_power,Amenhotep III of Egypt,probable,probable,False,Egypt
 EA 006,6,P271035,burnaburiasii,pharaoh,great_power,egypt,Amenhotep III of Egypt,probable,probable,False,Babylon
-EA 007,7,P271036,burnaburiasii,babylon,great_power,vassal,,probable,probable,False,Babylon
+EA 007,7,P271036,burnaburiasii,pharaoh,great_power,egypt,,probable,restored,False,Babylon
 EA 008,8,P271038,burnaburiasii,pharaoh,great_power,egypt,Amenhotep IV of Egypt,probable,probable,False,Babylon
 EA 009,9,P270888,burnaburiasii,pharaoh,great_power,egypt,Tutankhamun of Egypt,probable,probable,False,Babylon
 EA 010,10,P270889,burnaburiasii,pharaoh,great_power,egypt,Amenhotep IV of Egypt,probable,probable,False,Babylon
@@ -52,7 +52,7 @@ EA 058,58,P271152,tehutessup,pharaoh,vassal,egypt,,certain,certain,True,Ullaza
 EA 059,59,P270926,the-citizens-of-tunip,pharaoh,vassal,egypt,,certain,certain,True,Tunip
 EA 060,60,P271205,abdiasirta,pharaoh,vassal,egypt,,certain,certain,True,Amurru
 EA 061,61,P270883,abdiasirta,pharaoh,vassal,egypt,,certain,certain,True,Amurru
-EA 062,62,P271123,abdiasirta,pharaoh,vassal,egypt,,certain,disputed,True,Amurru
+EA 062,62,P271123,abdiasirta,pahanate,vassal,egypt,,certain,adjudicated,True,Amurru
 EA 063,63,P270919,abdiastarti,pharaoh,vassal,egypt,,certain,certain,True,Gath
 EA 064,64,P270918,abdiastarti,pharaoh,vassal,egypt,,certain,certain,True,Gath
 EA 065,65,P271127,abdiastarti,pharaoh,vassal,egypt,,certain,certain,True,Gath
@@ -117,7 +117,7 @@ EA 130,130,P271071,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
 EA 131,131,P270910,ribhadda,pharaoh,vassal,egypt,,restored,restored,True,Byblos
 EA 132,132,P270904,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
 EA 133,133,P271110,ribhadda,pharaoh,vassal,egypt,,restored,restored,True,Byblos
-EA 134,134,P270984,ribhadda,pharaoh,vassal,egypt,,restored,disputed,True,Byblos
+EA 134,134,P270984,ribhadda,pharaoh,vassal,egypt,,restored,adjudicated,True,Byblos
 EA 135,135,P270879,ribhadda,pharaoh,vassal,egypt,,restored,disputed,True,Byblos
 EA 136,136,P270902,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
 EA 137,137,P271021,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
@@ -144,15 +144,15 @@ EA 158,158,P270988,aziru,tutu,vassal,egypt,,certain,certain,True,Amurru
 EA 159,159,P271102,aziru,pharaoh,vassal,egypt,,certain,certain,True,Amurru
 EA 160,160,P271022,aziru,pharaoh,vassal,egypt,,certain,certain,True,Amurru
 EA 161,161,P270920,aziru,pharaoh,vassal,egypt,,certain,certain,True,Amurru
-EA 162,162,P271209,pharaoh,aziru,egypt,vassal,,disputed,certain,True,Egypt
+EA 162,162,P271209,pharaoh,aziru,egypt,vassal,,adjudicated,certain,True,Egypt
 EA 163,163,P271174,aziru,pharaoh,vassal,egypt,,restored,restored,True,Egypt
 EA 164,164,P271182,aziru,tutu,vassal,egypt,,certain,certain,True,Amurru
 EA 165,165,P271187,aziru,pharaoh,vassal,egypt,,certain,certain,True,Amurru
 EA 166,166,P271183,aziru,haay,vassal,egypt,,certain,certain,True,Amurru
 EA 167,167,P271188,aziru,tutu,vassal,egypt,,certain,certain,True,Amurru
 EA 168,168,P271103,aziru,pharaoh,vassal,egypt,,certain,certain,True,Amurru
-EA 169,169,P271104,dutessup,tutu,vassal,egypt,,restored,disputed,True,Amurru
-EA 170,170,P271189,baaluyaandbetili,aziru,vassal,vassal,,disputed,disputed,True,Amurru
+EA 169,169,P271104,dutessup,an-egyptian-official,vassal,egypt,,restored,adjudicated,True,Amurru
+EA 170,170,P271189,baaluyaandbetili,aziru,vassal,vassal,,adjudicated,adjudicated,True,Amurru
 EA 171,171,P271158,aziru,pharaoh,vassal,egypt,,certain,certain,True,Amurru
 EA 174,174,P271044,bieri,pharaoh,vassal,egypt,,certain,certain,True,Hašabu
 EA 175,175,P271046,ildayyi,pharaoh,vassal,egypt,,certain,certain,True,Hazi
@@ -179,10 +179,10 @@ EA 202,202,P271193,amawase,pharaoh,vassal,egypt,,certain,certain,True,Unknown lo
 EA 203,203,P271192,abdimilki,pharaoh,vassal,egypt,,certain,certain,True,Šasʿimu
 EA 204,204,P271190,the-ruler-of-qanu,pharaoh,vassal,egypt,,certain,certain,True,Qanu
 EA 205,205,P270963,the-ruler-of-tubu,pharaoh,vassal,egypt,,certain,certain,True,Ṭubu
-EA 206,206,P270992,the-ruler-of-naziha,pharaoh,vassal,egypt,,disputed,certain,True,Naṣiba
+EA 206,206,P270992,the-ruler-of-naziha,pharaoh,vassal,egypt,,adjudicated,certain,True,Naṣiba
 EA 207,207,P271051,ipte,pharaoh,vassal,egypt,,probable,certain,True,Unknown location
 EA 209,209,P270872,zisamimi,pharaoh,vassal,egypt,,certain,certain,True,Unknown location
-EA 210,210,P271170,zisamimi,an-egyptian-official,vassal,egypt,,certain,disputed,True,Unknown location
+EA 210,210,P271170,zisamimi,an-egyptian-official,vassal,egypt,,certain,adjudicated,True,Unknown location
 EA 211,211,P271094,zitriyara,pharaoh,vassal,egypt,,certain,certain,True,Unknown location
 EA 212,212,P271045,zitriyara,pharaoh,vassal,egypt,,certain,certain,True,Unknown location
 EA 213,213,P270961,zitriyara,pharaoh,vassal,egypt,,certain,certain,True,Unknown location
@@ -198,7 +198,7 @@ EA 226,226,P271066,sipturisa,pharaoh,vassal,egypt,,certain,certain,True,Unknown 
 EA 227,227,P270932,abditirsi,pharaoh,vassal,egypt,,certain,certain,True,Hazor
 EA 228,228,P270933,abditirsi,pharaoh,vassal,egypt,,certain,certain,True,Hazor
 EA 229,229,P271131,abdina,pharaoh,vassal,egypt,,probable,certain,True,Gath
-EA 230,230,P270968,yama,pharaoh,vassal,egypt,,disputed,certain,True,Egypt
+EA 230,230,P270968,yama,pharaoh,vassal,egypt,,adjudicated,certain,True,Egypt
 EA 232,232,P271086,surata,pharaoh,vassal,egypt,,certain,certain,True,Akko
 EA 233,233,P270996,satatna,pharaoh,vassal,egypt,,certain,certain,True,Akko
 EA 234,234,P271087,satatna,pharaoh,vassal,egypt,,certain,certain,True,Akko
@@ -224,7 +224,7 @@ EA 256,256,P270949,murbahlu,yanhamu,vassal,egypt,,certain,certain,True,Pihilu
 EA 257,257,P271151,balumehir,pharaoh,vassal,egypt,,certain,certain,True,Tell Yokneam
 EA 258,258,P271191,balumehir,pharaoh,vassal,egypt,,certain,certain,True,Tell Yokneam
 EA 259,259,P271041,balumehir,pharaoh,vassal,egypt,,certain,certain,True,Tell Yokneam
-EA 260,260,P271027,balumehir,pharaoh,vassal,egypt,,probable,disputed,True,Tinni
+EA 260,260,P271027,balumehir,pharaoh,vassal,egypt,,probable,adjudicated,True,Tinni
 EA 261,261,P270960,dasru,pharaoh,vassal,egypt,,certain,certain,True,Tell Yokneam
 EA 262,262,P271010,dasru,pharaoh,vassal,egypt,,certain,certain,True,Tell Yokneam
 EA 264,264,P270955,tagi,pharaoh,vassal,egypt,,certain,certain,True,Ginti-Kirmil
@@ -254,16 +254,16 @@ EA 287,287,P271090,abdiheba,pharaoh,vassal,egypt,,certain,certain,True,Jerusalem
 EA 288,288,P271089,abdiheba,pharaoh,vassal,egypt,,certain,certain,True,Jerusalem
 EA 289,289,P271091,abdiheba,pharaoh,vassal,egypt,,certain,certain,True,Jerusalem
 EA 290,290,P271092,abdiheba,pharaoh,vassal,egypt,,certain,certain,True,Jerusalem
-EA 292,292,P270969,addadanu,pharaoh,vassal,egypt,,disputed,certain,True,Gezer
-EA 293,293,P271002,addadanu,pharaoh,vassal,egypt,,disputed,certain,True,Gezer
-EA 294,294,P270956,addadanu,pharaoh,vassal,egypt,,disputed,certain,True,Unknown location
+EA 292,292,P270969,addadanu,pharaoh,vassal,egypt,,adjudicated,certain,True,Gezer
+EA 293,293,P271002,addadanu,pharaoh,vassal,egypt,,adjudicated,certain,True,Gezer
+EA 294,294,P270956,addadanu,pharaoh,vassal,egypt,,adjudicated,certain,True,Unknown location
 EA 295,295,P271096,baludanu,pharaoh,vassal,egypt,,disputed,certain,True,Tyre
 EA 296,296,P270942,yahtiru,pharaoh,vassal,egypt,,certain,certain,True,Unknown location
 EA 297,297,P270936,yapahu,pharaoh,vassal,egypt,,certain,certain,True,Gezer
 EA 298,298,P270935,yapahu,pharaoh,vassal,egypt,,certain,certain,True,Gezer
 EA 299,299,P270934,yapahu,pharaoh,vassal,egypt,,certain,certain,True,Gezer
 EA 300,300,P271062,yapahu,pharaoh,vassal,egypt,,certain,certain,True,Gezer
-EA 301,301,P271008,yapahu,pharaoh,vassal,egypt,,disputed,certain,True,Ashkelon
+EA 301,301,P271008,subandu,pharaoh,vassal,egypt,,adjudicated,certain,True,Ashkelon
 EA 302,302,P271194,subandu,pharaoh,vassal,egypt,,certain,certain,True,Ashkelon
 EA 303,303,P270923,subandu,pharaoh,vassal,egypt,,certain,certain,True,Ashkelon
 EA 304,304,P270924,subandu,pharaoh,vassal,egypt,,certain,certain,True,Ashkelon
@@ -272,8 +272,8 @@ EA 306,306,P270925,subandu,pharaoh,vassal,egypt,,certain,certain,True,Ashkelon
 EA 314,314,P271019,pubalu,pharaoh,vassal,egypt,,certain,certain,True,Yurza
 EA 315,315,P270941,pubalu,pharaoh,vassal,egypt,,certain,certain,True,Yurza
 EA 316,316,P270940,pubalu,pharaoh,vassal,egypt,,certain,certain,True,Yurza
-EA 317,317,P271119,dagantakala,pharaoh,vassal,egypt,,probable,disputed,True,Tinni
-EA 318,318,P270959,dagantakala,pharaoh,vassal,egypt,,probable,disputed,True,Tinni
+EA 317,317,P271119,dagantakala,pharaoh,vassal,egypt,,probable,adjudicated,True,Tinni
+EA 318,318,P270959,dagantakala,pharaoh,vassal,egypt,,probable,adjudicated,True,Tinni
 EA 319,319,P271157,surasar,pharaoh,vassal,egypt,,certain,certain,True,Ginti-ašna
 EA 320,320,P271005,yidyia,pharaoh,vassal,egypt,,certain,certain,True,Ashkelon
 EA 321,321,P271114,yidyia,pharaoh,vassal,egypt,,certain,certain,True,Ashkelon
