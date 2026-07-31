@@ -128,6 +128,7 @@ generic node):
 | yanhamu | 4 | 2-10 | 0.28 |
 | biryawaza | 7 | 2-24 | 0.15 |
 | zimreddi | 6 | 3-28 | 0.13 |
+| ribhadda | 7 | 4-12 | 0.02 |
 
 ### 4b. Dossier-equalized (every sender capped at 2 letters = median dossier)
 
@@ -139,6 +140,7 @@ generic node):
 | yanhamu | 3 | 1-7 | 0.67 |
 | biryawaza | 6 | 2-14 | 0.14 |
 | zimreddi | 8 | 3-34 | 0.07 |
+| ribhadda | 15 | 9-25 | 0.0 |
 
 ## 5. Communities
 

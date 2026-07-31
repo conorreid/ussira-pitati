@@ -31,3 +31,20 @@ cluster egypt great_power unknown vassal
 
 BIC (overall): 2742.4
 
+
+## ERGM goodness-of-fit (gof) summary
+
+Full tables in `phase4_gof.txt`. Model-statistic GOF p-values
+(observed vs simulated; large p = well captured):
+
+```
+                             obs min   mean max MC p-value
+edges                        117  91 117.41 148       0.94
+mutual                         6   0   6.09  13       1.00
+nodeifactor.tier.great_power   2   0   2.16   7       1.00
+nodeifactor.tier.vassal        9   4   9.13  17       1.00
+nodeofactor.tier.great_power  12   5  12.10  22       1.00
+nodeofactor.tier.vassal       96  77  96.51 119       1.00
+nodematch.tier                 3   0   2.72   9       1.00
+```
+

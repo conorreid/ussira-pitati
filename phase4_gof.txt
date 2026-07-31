@@ -1,0 +1,73 @@
+
+Goodness-of-fit for model statistics 
+
+                             obs min   mean max MC p-value
+edges                        117  91 117.41 148       0.94
+mutual                         6   0   6.09  13       1.00
+nodeifactor.tier.great_power   2   0   2.16   7       1.00
+nodeifactor.tier.vassal        9   4   9.13  17       1.00
+nodeofactor.tier.great_power  12   5  12.10  22       1.00
+nodeofactor.tier.vassal       96  77  96.51 119       1.00
+nodematch.tier                 3   0   2.72   9       1.00
+
+Goodness-of-fit for minimum geodesic distance 
+
+      obs   min     mean   max MC p-value
+1     117    91   117.41   148       0.94
+2     634    26    78.35   201       0.00
+3     191     4    62.50   173       0.00
+4       2     0    42.18   177       0.12
+5       0     0    27.69   153       0.40
+6       0     0    15.63   131       0.74
+7       0     0    10.07   116       1.00
+8       0     0     5.47    73       1.00
+9       0     0     2.62    50       1.00
+10      0     0     0.88    23       1.00
+11      0     0     0.34    14       1.00
+12      0     0     0.16    12       1.00
+13      0     0     0.13    13       1.00
+14      0     0     0.05     5       1.00
+Inf 11266 11019 11846.52 12075       0.04
+
+Goodness-of-fit for out-degree 
+
+  obs min  mean max MC p-value
+0  13  22 37.39  55       0.00
+1  89  29 41.24  52       0.00
+2   5  14 23.00  34       0.00
+3   2   3  7.61  15       0.00
+4   0   0  1.47   4       0.38
+5   1   0  0.28   2       0.50
+6   0   0  0.01   1       1.00
+7   1   0  0.00   0       0.00
+
+Goodness-of-fit for in-degree 
+
+   obs min  mean max MC p-value
+0   90  79 87.40  94       0.54
+1   17   4  9.99  18       0.04
+2    1   0  0.70   3       1.00
+3    1   0  0.31   2       0.56
+4    0   0  0.63   4       1.00
+5    1   0  1.07   4       1.00
+6    0   0  1.51   5       0.32
+7    0   0  1.90   5       0.18
+8    0   0  1.98   5       0.16
+9    0   0  1.68   4       0.34
+10   0   0  1.28   4       0.50
+11   0   0  1.06   4       0.66
+12   0   0  0.70   3       1.00
+13   0   0  0.41   2       1.00
+14   0   0  0.21   2       1.00
+15   0   0  0.08   2       1.00
+16   0   0  0.02   1       1.00
+17   0   0  0.03   1       1.00
+18   0   0  0.02   1       1.00
+19   0   0  0.02   1       1.00
+90   1   0  0.00   0       0.00
+
+Goodness-of-fit for edgewise shared partner 
+
+      obs min   mean max MC p-value
+.OTP0 117  91 116.21 148       1.00
+.OTP1   0   0   1.20  10       0.84

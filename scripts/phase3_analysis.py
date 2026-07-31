@@ -285,6 +285,8 @@ def main():
     a(fmt_table(bet_rows))
     a("")
     focus = [r["actor"] for r in bet_rows[:6]]
+    if "ribhadda" not in focus:  # RQ1's protagonist stays in the table
+        focus.append("ribhadda")
     a("## 4. RQ1 — rank stability and the dossier correction")
     a("")
     a("### 4a. Plain bootstrap (resample letters with replacement)")
