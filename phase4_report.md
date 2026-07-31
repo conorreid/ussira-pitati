@@ -36,6 +36,23 @@ cluster egypt great_power unknown vassal
 BIC (overall): 2742.4
 
 
+## ERGM goodness-of-fit (gof) summary
+
+Full tables in `phase4_gof.txt`. Model-statistic GOF p-values
+(observed vs simulated; large p = well captured):
+
+```
+                             obs min   mean max MC p-value
+edges                        117  91 117.41 148       0.94
+mutual                         6   0   6.09  13       1.00
+nodeifactor.tier.great_power   2   0   2.16   7       1.00
+nodeifactor.tier.vassal        9   4   9.13  17       1.00
+nodeofactor.tier.great_power  12   5  12.10  22       1.00
+nodeofactor.tier.vassal       96  77  96.51 119       1.00
+nodematch.tier                 3   0   2.72   9       1.00
+```
+
+
 
 ## QAP / permutation tests — the RQ5 geography contrast
 
@@ -43,8 +60,8 @@ Located actors: 54 (via polity coords; Goren-located letters extend coverage). S
 
 | layer | n actors | statistic | observed | p |
 |---|---|---|---|---|
-| mention co-occurrence | 41 | point-biserial r(tie, km) | -0.127 | 0.002 (P(r_null <= obs)) |
-| conflict (tranche 1, provisional) | 11 | point-biserial r(tie, km) | -0.205 | 0.058 (P(r_null <= obs)) |
+| mention co-occurrence | 42 | point-biserial r(tie, km) | -0.127 | 0.001 (P(r_null <= obs)) |
+| conflict (tranche 1, provisional) | 11 | point-biserial r(tie, km) | -0.205 | 0.057 (P(r_null <= obs)) |
 | correspondence: letters to pharaoh vs km to Akhetaten (vassals) | 39 | Spearman rho | -0.499 | 0.002 (two-sided) |
 | ... same, without Rib-Hadda | 38 | Spearman rho | -0.542 | 0.002 (two-sided) |
 

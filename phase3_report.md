@@ -52,33 +52,33 @@ royal letters. Cline & Cline's 246-person graph included EA 1-44.
 
 ## 2b. Cline-style construction (sender-star mentions + correspondence)
 
-- **nodes**: 258
-- **edges(dyads)**: 378
-- **letters**: 827
+- **nodes**: 257
+- **edges(dyads)**: 377
+- **letters**: 826
 - **density**: 0.0057
 - **global CC (transitivity)**: 0.0298
-- **avg local CC**: 0.1039
+- **avg local CC**: 0.1043
 - **components**: 3
-- **largest component**: 253
+- **largest component**: 252
 - **observed CC**: 0.0298
-- **ER-expected CC**: 0.0114
-- **obs/ER ratio (Cline-style)**: 2.62
-- **config-model CC (median)**: 0.0383
-- **config-model CC (2.5%-97.5%)**: 0.0298-0.0463
-- **percentile of observed**: 2.4
+- **ER-expected CC**: 0.0115
+- **obs/ER ratio (Cline-style)**: 2.6
+- **config-model CC (median)**: 0.0379
+- **config-model CC (2.5%-97.5%)**: 0.0302-0.0467
+- **percentile of observed**: 1.9
 
 Top betweenness under the Cline-style construction:
 
 | actor | degree | betweenness |
 |---|---|---|
-| pharaoh | 108 | 26427.3 |
-| ribhadda | 37 | 5294.3 |
-| aziru | 19 | 4396.5 |
-| tusratta | 19 | 4183.7 |
-| burnaburiasii | 16 | 2953.4 |
-| baaluyaandbetili | 12 | 2223.5 |
-| abdiasirta | 11 | 1333.8 |
-| murbahlu | 9 | 1212.2 |
+| pharaoh | 108 | 26177.3 |
+| ribhadda | 37 | 5273.5 |
+| aziru | 19 | 4378.4 |
+| tusratta | 19 | 4166.4 |
+| burnaburiasii | 16 | 2941.2 |
+| baaluyaandbetili | 12 | 2214.5 |
+| abdiasirta | 11 | 1328.1 |
+| murbahlu | 9 | 1207.3 |
 
 ## 2c. Sensitivity: splitting the pharaohs (Cline & Cline's node definition)
 
@@ -90,14 +90,14 @@ generic node):
 
 | actor | degree | betweenness |
 |---|---|---|
-| pharaoh-unidentified | 98 | 25797.4 |
-| tusratta | 21 | 5644.8 |
-| ribhadda | 37 | 5382.3 |
-| burnaburiasii | 19 | 4980.7 |
-| aziru | 19 | 4508.9 |
-| pharaoh-amenhotep-iii | 9 | 2836.0 |
-| baaluyaandbetili | 12 | 2259.5 |
-| akizzi | 10 | 1362.5 |
+| pharaoh-unidentified | 98 | 25620.5 |
+| tusratta | 21 | 5532.8 |
+| ribhadda | 37 | 5361.1 |
+| burnaburiasii | 19 | 4849.8 |
+| aziru | 19 | 4491.0 |
+| pharaoh-amenhotep-iii | 9 | 2582.0 |
+| baaluyaandbetili | 12 | 2250.5 |
+| akizzi | 10 | 1358.7 |
 
 ## 3. Betweenness (mention layer, all letters)
 
@@ -145,12 +145,12 @@ generic node):
 ## 5. Communities
 
 ### louvain
-- k = 37, modularity = 0.631
+- k = 37, modularity = 0.63
 - n=46: pharaoh, tusratta, burnaburias, keliya
-- n=43: aziru, yanhamu, abdiasirta, ribhadda
+- n=44: aziru, yanhamu, abdiasirta, ribhadda
 - n=31: biryawaza, etakkama, akizzi, arzawya
-- n=23: maya, pahanate, addadanu, reanap
 - n=22: haya, labaya, abdiheba, arzayu
+- n=22: maya, addadanu, reanap, bisitanu
 - n=12: hanya, baluma, dasarti, leya
 - n=12: betili, baluya, abdiuras, amurbalu
 - n=10: ayab, murbahlu, binilima, sulummarduk

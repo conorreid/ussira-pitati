@@ -99,7 +99,10 @@ def main():
     if OUT.exists() and not overwrite:
         with OUT.open() as fh:
             for r in csv.DictReader(fh):
-                if r.get("hand_filled") == "yes":
+                # Keep hand-filled rows AND rows with coordinates already
+                # resolved (e.g. live-fetched for places missing from the
+                # bulk dump) - a plain rerun must not degrade the table.
+                if r.get("hand_filled") == "yes" or r.get("lat"):
                     existing[r["polity"]] = r
 
     polities = sorted({r["polity"] for r in

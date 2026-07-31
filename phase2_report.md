@@ -89,7 +89,7 @@ object: sender->addressee ties from 302 letters.
 |---|---|---|---|
 | pharaoh | 1 | 1-1 | 1.0 |
 | aziru | 2 | 2-24 | 0.85 |
-| ribhadda | 3 | 2-54 | 0.62 |
+| ribhadda | 3 | 2-53 | 0.62 |
 | a-babylonian-princess | 4 | 2-93 | 0.3 |
 | a-king-of-ugarit | 4 | 3-91 | 0.18 |
 | abdiasirta | 5 | 3-88 | 0.05 |
