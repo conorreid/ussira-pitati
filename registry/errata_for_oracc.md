@@ -1,9 +1,16 @@
 # Draft errata report for the Oracc aemw/amarna editors
 
 *Prepared but NOT sent. Contact decision pending project completion per
-project policy. Recipients would be the Amarna sub-project editors:
-Jacob Lauinger (Johns Hopkins) and Tyler Yoder; AEMW umbrella directed
-by Lauinger and Matthew Rutz (Brown).*
+project policy.*
+
+*Routing (verified 2026-07-31): TO the Amarna sub-project editors —
+Jacob Lauinger (Johns Hopkins) and Tyler Yoder — CC osc@oracc.org (the
+Oracc Steering Committee's documented contact). Rationale: Oracc docs
+route corrections to CDLI/OSC only "if your project uses the CDLI
+catalogue for its metadata"; CDLI's record for e.g. P271123 (EA 62)
+carries no sender/recipient fields, so these values are project-local
+catalogue content owned by the aemw/amarna editors. AEMW umbrella:
+Lauinger and Matthew Rutz (Brown).*
 
 Catalogue snapshot examined: `aemw-amarna.zip`, UTC-timestamp 2024-07-05.
 
