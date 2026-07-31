@@ -53,32 +53,32 @@ royal letters. Cline & Cline's 246-person graph included EA 1-44.
 ## 2b. Cline-style construction (sender-star mentions + correspondence)
 
 - **nodes**: 257
-- **edges(dyads)**: 377
+- **edges(dyads)**: 376
 - **letters**: 826
 - **density**: 0.0057
-- **global CC (transitivity)**: 0.0298
-- **avg local CC**: 0.1043
+- **global CC (transitivity)**: 0.0299
+- **avg local CC**: 0.1069
 - **components**: 3
 - **largest component**: 252
-- **observed CC**: 0.0298
-- **ER-expected CC**: 0.0115
-- **obs/ER ratio (Cline-style)**: 2.6
+- **observed CC**: 0.0299
+- **ER-expected CC**: 0.0114
+- **obs/ER ratio (Cline-style)**: 2.61
 - **config-model CC (median)**: 0.0379
-- **config-model CC (2.5%-97.5%)**: 0.0302-0.0467
-- **percentile of observed**: 1.9
+- **config-model CC (2.5%-97.5%)**: 0.0295-0.0463
+- **percentile of observed**: 2.6
 
 Top betweenness under the Cline-style construction:
 
 | actor | degree | betweenness |
 |---|---|---|
-| pharaoh | 108 | 26177.3 |
-| ribhadda | 37 | 5273.5 |
-| aziru | 19 | 4378.4 |
+| pharaoh | 108 | 26186.4 |
+| ribhadda | 37 | 5293.4 |
+| aziru | 19 | 4397.9 |
 | tusratta | 19 | 4166.4 |
-| burnaburiasii | 16 | 2941.2 |
+| burnaburiasii | 16 | 2941.3 |
 | baaluyaandbetili | 12 | 2214.5 |
-| abdiasirta | 11 | 1328.1 |
-| murbahlu | 9 | 1207.3 |
+| abdiasirta | 11 | 1328.5 |
+| murbahlu | 9 | 1207.5 |
 
 ## 2c. Sensitivity: splitting the pharaohs (Cline & Cline's node definition)
 
@@ -90,14 +90,14 @@ generic node):
 
 | actor | degree | betweenness |
 |---|---|---|
-| pharaoh-unidentified | 98 | 25620.5 |
-| tusratta | 21 | 5532.8 |
-| ribhadda | 37 | 5361.1 |
-| burnaburiasii | 19 | 4849.8 |
-| aziru | 19 | 4491.0 |
+| pharaoh-unidentified | 98 | 25630.2 |
+| tusratta | 21 | 5533.0 |
+| ribhadda | 37 | 5381.3 |
+| burnaburiasii | 19 | 4850.1 |
+| aziru | 19 | 4509.8 |
 | pharaoh-amenhotep-iii | 9 | 2582.0 |
 | baaluyaandbetili | 12 | 2250.5 |
-| akizzi | 10 | 1358.7 |
+| akizzi | 10 | 1358.1 |
 
 ## 3. Betweenness (mention layer, all letters)
 
@@ -145,15 +145,15 @@ generic node):
 ## 5. Communities
 
 ### louvain
-- k = 37, modularity = 0.63
+- k = 36, modularity = 0.629
 - n=46: pharaoh, tusratta, burnaburias, keliya
 - n=44: aziru, yanhamu, abdiasirta, ribhadda
 - n=31: biryawaza, etakkama, akizzi, arzawya
+- n=22: hanya, baluma, dasarti, leya
 - n=22: haya, labaya, abdiheba, arzayu
 - n=22: maya, addadanu, reanap, bisitanu
-- n=12: hanya, baluma, dasarti, leya
 - n=12: betili, baluya, abdiuras, amurbalu
-- n=10: ayab, murbahlu, binilima, sulummarduk
+- n=5: tiptibalu, paapu, payapu, rapiilu
 
 ### leiden
 - k = 37, modularity = 0.631

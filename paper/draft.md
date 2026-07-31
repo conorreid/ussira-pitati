@@ -87,14 +87,21 @@ demoted formula parsing to a validation instrument.
 stereotyped address formulae (both orders: *ana* ADDRESSEE *qibīma umma*
 SENDER, and the Byblos-type SENDER *qabû ana* ADDRESSEE) agrees with the
 catalogue on 96.1% (sender) and 96.5% (addressee) of comparable letters.
-All 18 disagreements were adjudicated against Moran (1992): thirteen
-resolved for the catalogue, two exposed catalogue errors (EA 62 is
-addressed to the commissioner Paḫanate, not pharaoh; EA 301 is from
-Šubandu, not Yapaḫu), one resolved against both sources (EA 169, addressed
-per Moran to an unnamed high Egyptian official), and two are unresolvable
-on a broken or lost tablet. One further catalogue error (EA 7's recipient
-"Babylon") was corrected from Moran. Every verdict, with its supporting
-quotation, ships in the repository (`registry/adjudication_queue.csv`).
+All 18 disagreements were adjudicated against both English editions —
+Moran (1992) and Rainey (2015). Both editions confirm two catalogue
+errors (EA 62 is addressed to the commissioner Paḫanate, not pharaoh;
+EA 301 is from Šubandu, not Yapaḫu), as well as EA 7's recipient
+("Babylon" corrected to the pharaoh Rainey restores as [Napḫu]rureia).
+Twelve cases resolve for the catalogue with both editions agreeing;
+three remain edition-contested and are graded `disputed`: EA 169
+(Moran: an unnamed high official; Rainey: "the king(?)"), EA 294 (Moran:
+Adda-danu; Rainey's collation: Zimredda(!), agreeing with the Oracc
+lemma against Moran), and EA 135 (lost tablet). Rainey also vindicates
+two of the parser's minority readings (EA 206 Naṣība; EA 294) and reads
+the contested ᵈIM-DI.KUD name a third way (Baʿlu-dāni), reinforcing the
+identity-merge over any one reading. Every verdict, with supporting
+quotations from both editions, ships in the repository
+(`registry/adjudication_queue.csv`).
 
 **Entity resolution.** Actors are keyed on alias-canonicalized folded
 names; the hand-curated registry (15 entries) records Sumerographic
@@ -275,8 +282,9 @@ The conflict layer is tranche-1, single-coder (second pass and Cohen's κ
 pending; PLAN §7). EA 1–44 mentions were hand-coded from translation
 rather than lemmata (a documented source seam that will close when Oracc
 releases the Great Powers letters). The Oracc catalogue snapshot dates to
-2024; Rainey's (2015) collations were consulted only through Moran-era
-adjudication. Entity resolution is registry-v1 and single-passed;
+2024; Rainey's (2015) collations were consulted for all adjudicated
+header cases, though not systematically for the mention and conflict
+coding, which rests on Moran's translations. Entity resolution is registry-v1 and single-passed;
 petrographic transcription is automated-plus-review (key 2 pending).
 Chronology is coarse by design: a two-phase sensitivity split (reign
 identifications plus the Amurru-succession anchor; 71% of letters

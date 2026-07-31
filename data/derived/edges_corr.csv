@@ -151,7 +151,7 @@ EA 165,165,P271187,aziru,pharaoh,vassal,egypt,,certain,certain,True,Amurru
 EA 166,166,P271183,aziru,haay,vassal,egypt,,certain,certain,True,Amurru
 EA 167,167,P271188,aziru,tutu,vassal,egypt,,certain,certain,True,Amurru
 EA 168,168,P271103,aziru,pharaoh,vassal,egypt,,certain,certain,True,Amurru
-EA 169,169,P271104,dutessup,an-egyptian-official,vassal,egypt,,restored,adjudicated,True,Amurru
+EA 169,169,P271104,dutessup,tutu,vassal,egypt,,restored,disputed,True,Amurru
 EA 170,170,P271189,baaluyaandbetili,aziru,vassal,vassal,,adjudicated,adjudicated,True,Amurru
 EA 171,171,P271158,aziru,pharaoh,vassal,egypt,,certain,certain,True,Amurru
 EA 174,174,P271044,bieri,pharaoh,vassal,egypt,,certain,certain,True,Hašabu
@@ -256,8 +256,8 @@ EA 289,289,P271091,abdiheba,pharaoh,vassal,egypt,,certain,certain,True,Jerusalem
 EA 290,290,P271092,abdiheba,pharaoh,vassal,egypt,,certain,certain,True,Jerusalem
 EA 292,292,P270969,addadanu,pharaoh,vassal,egypt,,adjudicated,certain,True,Gezer
 EA 293,293,P271002,addadanu,pharaoh,vassal,egypt,,adjudicated,certain,True,Gezer
-EA 294,294,P270956,addadanu,pharaoh,vassal,egypt,,adjudicated,certain,True,Unknown location
-EA 295,295,P271096,baludanu,pharaoh,vassal,egypt,,disputed,certain,True,Tyre
+EA 294,294,P270956,addadanu,pharaoh,vassal,egypt,,disputed,certain,True,Unknown location
+EA 295,295,P271096,baludanu,pharaoh,vassal,egypt,,adjudicated,certain,True,Tyre
 EA 296,296,P270942,yahtiru,pharaoh,vassal,egypt,,certain,certain,True,Unknown location
 EA 297,297,P270936,yapahu,pharaoh,vassal,egypt,,certain,certain,True,Gezer
 EA 298,298,P270935,yapahu,pharaoh,vassal,egypt,,certain,certain,True,Gezer

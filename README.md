@@ -79,5 +79,7 @@ logistics:
 - Independent second coding of `registry/conflict_edges.csv` + Cohen's κ
 - Second-key spot-checks: adjudication queue, alias registry, Goren
   transcription (all rows quote their evidence)
-- Rainey (2015) collation pass on the 18 adjudicated cases
 - Zenodo deposit + DOI at submission
+
+(Done: Rainey 2015 collation pass — all 18 cases carry `rainey_says`
+quotations; both catalogue-error verdicts double-sourced.)
