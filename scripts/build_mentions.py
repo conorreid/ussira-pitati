@@ -56,8 +56,32 @@ def main():
     actor_letters = defaultdict(set)
     display_of = {}
 
+    # Hand-coded person lists for the unlemmatized Great Powers letters
+    # (registry/ea1_44_mentions.csv, coded from Moran 1992).
+    handcoded = {}
+    with (ROOT / "registry" / "ea1_44_mentions.csv").open() as fh:
+        for r in csv.DictReader(fh):
+            handcoded[r["designation"]] = [p for p in r["persons"].split(";") if p]
+
     for pid, v in sorted(cat.items(), key=lambda kv: kv[1]["designation"]):
-        if v.get("genre") != "letter" or pid not in pfiles:
+        if v.get("genre") != "letter":
+            continue
+        if pid not in pfiles:
+            group_hand = handcoded.get(v["designation"])
+            if not group_hand:
+                continue
+            group = sorted({ALIASES.get(p, p) for p in group_hand})
+            letter_rows.append({
+                "id_text": pid, "designation": v["designation"],
+                "sender": sender_of.get(pid, ""), "n_persons": len(group),
+                "n_ambiguous_tokens": 0, "persons": ";".join(group),
+                "source": "moran-handcoded",
+            })
+            for actor in group:
+                actor_letters[actor].add(v["designation"])
+                display_of.setdefault(actor, actor)
+            for a, b in itertools.combinations(group, 2):
+                cooccur[(a, b)] += 1
             continue
         persons = {}
         n_ambig = 0
@@ -84,6 +108,7 @@ def main():
             "sender": sender, "n_persons": len(group),
             "n_ambiguous_tokens": n_ambig,
             "persons": ";".join(group),
+            "source": "oracc-lemmas",
         })
         for actor in group:
             actor_letters[actor].add(v["designation"])
