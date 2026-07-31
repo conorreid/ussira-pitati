@@ -16,7 +16,18 @@ and publication strategy.
 
 ## Status
 
-Phase 0 — environment and data audit. Nothing to see yet.
+Phase 0 complete — see [coverage_report.md](coverage_report.md), which includes
+two significant corrections to PLAN.md §2.1: the raw `catalogue.json` *does*
+carry structured `ancient_author` (sender) and `recipient` fields, and 42/44
+Great Powers letters (EA 1–44) already have both — so the header parser and
+the Moran/Rainey hand-coding both shrink to validation tasks.
+
+Environment: Python via `uv` (`uv sync`; networkx, igraph, pandas). Deferred
+until Phase 4: R (`statnet`/`ergm`/`latentnet`/`Bergm` — no R installed on this
+machine yet) and `graph-tool` (conda-forge only). Corpus lives in `data/raw/`
+(gitignored): `curl -sLo data/raw/aemw-amarna.zip
+http://oracc.museum.upenn.edu/json/aemw-amarna.zip && unzip -d data/raw
+data/raw/aemw-amarna.zip`.
 
 ## Data
 

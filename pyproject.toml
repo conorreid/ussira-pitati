@@ -1,0 +1,10 @@
+[project]
+name = "ussira-pitati"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "igraph>=1.0.0",
+    "networkx>=3.4.2",
+    "pandas>=2.3.3",
+    "requests>=2.34.2",
+]
