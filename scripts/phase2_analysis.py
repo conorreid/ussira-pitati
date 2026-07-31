@@ -128,7 +128,14 @@ def bootstrap_betweenness(letters, focus, rng):
         g = build(sample)
         bet = g.betweenness(directed=True)
         order = sorted(range(g.vcount()), key=lambda i: -bet[i])
-        rank_of = {g.vs[i]["name"]: r + 1 for r, i in enumerate(order)}
+        # Competition ranks: tied betweenness (esp. the large zero block)
+        # must share a rank, or igraph vertex order leaks into the
+        # bootstrap intervals.
+        rank_of, rk = {}, 0
+        for pos, i in enumerate(order):
+            if pos == 0 or bet[i] != bet[order[pos - 1]]:
+                rk = pos + 1
+            rank_of[g.vs[i]["name"]] = rk
         for a in focus:
             ranks[a].append(rank_of.get(a, g.vcount() + 1))
     out = {}
@@ -281,13 +288,19 @@ def main():
     a("brokerage. His famous betweenness must be manufactured by mentions —")
     a("RQ1's hypothesis, now with a baseline number attached.")
     a("")
-    a("**Betweenness ranks below the hub are unstable.** Bootstrap 95% rank")
-    a("intervals: Aziru 2-24, Rib-Hadda 2-54. Any claim about who is 'second")
-    a("most central' in the correspondence layer is noise. (Aziru's nominal #2")
+    a("**Below the hub there is almost no betweenness to rank.** With")
+    a("competition ranks under ties (an earlier draft assigned arbitrary")
+    a("ranks inside the zero-betweenness block, producing spuriously wide")
+    a("intervals like 2-54), Aziru and Rib-Hadda sit at ranks 2-3 with")
+    a("P(top 3) = 1.0 - not because their brokerage is robust but because")
+    a("in a star virtually every other actor has betweenness exactly zero.")
+    a("The meaningful statement is not 'ranks are unstable' but 'the")
+    a("correspondence layer has no brokerage structure to estimate below")
+    a("the hub'. (Aziru's nominal #2")
     a("comes from being one of the few actors who both sends and receives —")
     a("pharaoh's EA 162 file copy and letters from his own family.)")
     a("")
-    a("**Reciprocity already splits by tier as RQ3 predicts:** 18% of")
+    a("**Reciprocity already splits by tier as RQ3 predicts:** 17% of")
     a("Egypt<->Great-Power dyads are reciprocated vs 4% of Egypt<->vassal")
     a("dyads (the latter are Egyptian file copies, e.g. EA 162, 369-370).")
     a("Formal inference waits for Phase 4, but the direction is right.")

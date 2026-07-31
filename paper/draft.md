@@ -25,10 +25,14 @@ and on his 60+-letter dossier; volume-equalized, he falls to median rank
 15 with zero bootstrap probability of a top-three position, while Aziru of
 Amurru and the Egyptian commissioner Yanḥamu emerge as the stable
 brokers. (3) Inferential models formalize the tier structure (ERGM:
-reciprocity +3.77, tier anti-homophily −2.27, both p < 0.001) and
-geography tests overturn one of our own pre-registered expectations:
-epistolary volume to pharaoh decays significantly with distance even
-within the vassal tier (ρ = −0.50, QAP p = 0.002). We release the actor
+reciprocity +3.78, tier anti-homophily −2.21, both p < 0.001), and
+geography behaves exactly as pre-registered: distance decays mention
+and conflict ties but not correspondence with the court — a result we
+report with confidence only because an apparent counter-finding
+(ρ = −0.50 for correspondence) dissolved under our own audit into
+gazetteer mismatches, a tie-handling artifact, and political
+composition, an object lesson in the paper's central argument applied
+to ourselves. We release the actor
 registry, edge lists, provenance joins (including a machine-readable
 transcription of Goren, Finkelstein & Na'aman's petrographic
 determinations), and all code.
@@ -128,8 +132,12 @@ share an annotator, an independent human recoding remains the remaining
 reliability step.
 
 **Geography and provenance.** Polities were georeferenced against
-Pleiades (30/55 automated with hand-review flags; regions without ancient
-fixed points remain unlocated by design). The petrographic provenance
+Pleiades (31/55 automated with hand-review flags; regions without ancient
+fixed points — Amurru, Mittani, "Syria" — remain unlocated by design).
+Four automated matches proved to be classical homonyms at wildly wrong
+locations (Tyre, Pihilu, Irqata, and the "Syria" region point) and were
+corrected against the Pleiades bulk dump; §5.5 reports what the audit
+did to a headline number. The petrographic provenance
 determinations of Goren, Finkelstein & Na'aman (2004) were transcribed to
 a machine-readable table (292 tablets). Where both sources speak, the
 petrographic determination agrees with the Oracc catalogue's provenience
@@ -232,10 +240,10 @@ he is the figure accused from Byblos, Tyre, and Damascus at once.
 ### 5.4 The diplomatic system as coefficients
 
 The ERGM formalizes the two-tier reading: reciprocity is strong and
-significant (mutual = +3.77 ± 0.83), concentrated at the Great-Power tier
-(18% of Egypt↔Great-Power dyads reciprocated vs. 4% of Egypt↔vassal,
+significant (mutual = +3.78 ± 0.80), concentrated at the Great-Power tier
+(17% of Egypt↔Great-Power dyads reciprocated vs. 4% of Egypt↔vassal,
 the latter being Egyptian file copies), and tier homophily is strongly
-*negative* (nodematch = −2.27 ± 0.64): Amarna correspondence is
+*negative* (nodematch = −2.21 ± 0.64): Amarna correspondence is
 cross-tier by construction — the brotherhood of kings and the servitude
 of vassals both materialize as letters to Egypt, not within-tier
 correspondence. The latent-space model finds three clusters that do not
@@ -243,20 +251,35 @@ recover the tiers: mention-layer communities (modularity ≈ 0.56) are
 political theatres — the Amurru crisis, the Damascus–Qadesh axis, the
 Shechem–Jerusalem conflict, the Tyre–Sidon feud — not diplomatic ranks.
 
-### 5.5 Geography: one prediction confirmed, one overturned
+### 5.5 Geography: the pre-registered contrast, recovered by audit
 
-Distance decays ties in the mention layer (point-biserial r = −0.127, QAP
-p = 0.001): neighbors name neighbors. The conflict layer
-agrees, and with the corpus-wide sweep the effect is significant
-(r = −0.177, QAP p = 0.003, n = 13 located actors). We
-had predicted *no* distance effect in the correspondence layer — all
-vassals write to distant Egypt regardless. That prediction fails: among
-located vassals, letters-to-pharaoh volume falls with distance from
-Akhetaten (Spearman ρ = −0.499, permutation p = 0.002), and the effect
-*strengthens* without Rib-Hadda (ρ = −0.542). Even the Egypt-facing layer
-has a geography: epistolary intensity — plausibly tracking the density of
-Egyptian administrative traffic, though archive-survival gradients cannot
-be excluded — thins with distance from the court.
+Distance decays ties in the mention layer (point-biserial r = −0.123, QAP
+p = 0.001): neighbors name neighbors. The conflict layer agrees
+(r = −0.265, QAP p = 0.006, n = 12 located actors). We had predicted *no*
+distance effect in the correspondence layer — all vassals write to
+distant Egypt regardless — and an earlier draft reported that prediction
+overturned (ρ = −0.50, p = 0.002). Auditing that finding dissolved it,
+in three layers that are worth recounting because they enact the paper's
+thesis. First, six of 39 data points were gazetteer phantoms: four
+actors coded to a "Syria" *region* whose Pleiades match lies in the
+Ionian Sea, Pihilu matched to Macedonian Pella, Irqata to an Anatolian
+Arca — all far-with-few-letters, exactly the shape that manufactures
+decay (Tyre was likewise mislocated to a homonymous Hellenistic estate
+in Jordan). Second, with 14 of 35 vassals tied at one letter, Spearman
+without tie-averaged ranks let input row order leak into the statistic;
+correcting both leaves ρ = −0.32 (p = 0.07). Third, the residual trend
+is compositional: it concentrates in polities with political reasons to
+write little — Hatti-aligned Qadesh and Sidon (EA 174–176, 148–149) and
+quasi-independent Ugarit — without which ρ = −0.18 (p = 0.32); a
+leave-one-polity-out jackknife retains nominal significance in only
+7 of 24 deletions. A partialled design against hand-coded covariates
+(distance to the nearest Egyptian administrative center — Gaza, Joppa,
+Beth-Shean, Kumidi, Ṣumur; coastal access; Hatti alignment) finds no
+predictor of epistolary volume, court distance included (partial
+r = −0.26, p = 0.17). The sign stays negative in every variant, so a
+weak true decay is not excluded; but the defensible statement is the
+pre-registered one: geography structures whom the letters *talk about*,
+not who talks to Egypt.
 
 ## 6. Discussion
 
@@ -293,6 +316,12 @@ releases the Great Powers letters). The Oracc catalogue snapshot dates to
 header cases, though not systematically for the mention and conflict
 coding, which rests on Moran's translations. Entity resolution is registry-v1 and single-passed;
 petrographic transcription is automated-plus-review (key 2 pending).
+Senders whose polity the catalogue string does not state default to the
+vassal tier (14 minor correspondents of 1-3 letters each, after the
+EA 12 correction); Ugarit's rulers are likewise coded vassal though the
+kingdom's standing was closer to client-of-both-courts. At these
+actors' letter volumes neither choice can move the tier coefficients,
+but both are choices, not facts.
 Chronology is coarse by design: a two-phase sensitivity split (reign
 identifications plus the Amurru-succession anchor; 71% of letters
 honestly unassigned) reproduces the small-world excess within each phase
@@ -301,8 +330,13 @@ keeps brokerage with the Amurru dynasty in both eras — ʿAbdi-Aširta
 early, Aziru late — though the anchor guarantees their presence (not
 their rank) by construction. Finer temporal claims remain out of
 scope. Geographic coverage reaches 64% of letters at both endpoints;
-region-states without fixed points (Amurru, Mittani) are excluded from
-distance tests rather than imputed.
+region-states without fixed points (Amurru, Mittani, "Syria") are
+excluded from distance tests rather than imputed — which costs the
+correspondence distance test four actors and Amurru entirely, so the
+compositional analysis of §5.5 cannot see the system's most consequential
+defector. The administrative-center covariate is coded from five
+garrison/commissioner seats attested in the letters themselves; a finer
+gradient (commissioner itineraries, road networks) is future work.
 
 ## 8. Data and code availability
 

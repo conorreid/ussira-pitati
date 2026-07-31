@@ -118,10 +118,19 @@ def main():
 
     def spearman(ps):
         def rank(v):
+            # Tie-averaged ranks: letter counts are tie-heavy (many
+            # one-letter senders), and raw order ranks would make rho
+            # depend on input row order.
             order = sorted(range(len(v)), key=lambda i: v[i])
             rk = [0.0] * len(v)
-            for r_, i in enumerate(order):
-                rk[i] = r_
+            i = 0
+            while i < len(order):
+                j = i
+                while j + 1 < len(order) and v[order[j + 1]] == v[order[i]]:
+                    j += 1
+                for k in range(i, j + 1):
+                    rk[order[k]] = (i + j) / 2.0
+                i = j + 1
             return rk
         xs = rank([p[0] for p in ps])
         ys = rank([p[1] for p in ps])
@@ -150,8 +159,8 @@ def main():
     a = L.append
     a("## QAP / permutation tests — the RQ5 geography contrast")
     a("")
-    a(f"Located actors: {len(coords)} (via polity coords; Goren-located "
-      "letters extend coverage). Seed 4711, 2000 permutations.")
+    a(f"Located actors: {len(coords)} (via registry/polity_coords.csv). "
+      "Seed 4711, 2000 permutations.")
     a("")
     a("| layer | n actors | statistic | observed | p |")
     a("|---|---|---|---|---|")

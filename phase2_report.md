@@ -73,7 +73,7 @@ object: sender->addressee ties from 302 letters.
 | pharaoh | PHARAOH | egypt | 90 | 7 | 266 | 8 | 817.0 | 1.0 |
 | aziru | Aziru | vassal | 2 | 3 | 2 | 13 | 191.0 | 0.163 |
 | ribhadda | Rib-Hadda | vassal | 1 | 5 | 1 | 63 | 14.0 | 0.87 |
-| a-babylonian-princess | a Babylonian princess | vassal | 0 | 1 | 0 | 1 | 0.0 | 0.016 |
+| a-babylonian-princess-of-babylon | a Babylonian princess of Babylon | great_power | 0 | 1 | 0 | 1 | 0.0 | 0.016 |
 | a-king-of-ugarit | a king of Ugarit | vassal | 0 | 1 | 0 | 2 | 0.0 | 0.032 |
 | abdiasirta | ʿAbdi-Aširta | vassal | 0 | 2 | 0 | 3 | 0.0 | 0.032 |
 | abdiastarti | ʿAbdi-Aštarti | vassal | 0 | 1 | 0 | 4 | 0.0 | 0.065 |
@@ -88,19 +88,19 @@ object: sender->addressee ties from 302 letters.
 | actor | median rank | 95% rank interval | P(top 3) |
 |---|---|---|---|
 | pharaoh | 1 | 1-1 | 1.0 |
-| aziru | 2 | 2-24 | 0.85 |
-| ribhadda | 3 | 2-53 | 0.62 |
-| a-babylonian-princess | 4 | 2-93 | 0.3 |
-| a-king-of-ugarit | 4 | 3-91 | 0.18 |
-| abdiasirta | 5 | 3-88 | 0.05 |
+| aziru | 2 | 2-3 | 1.0 |
+| ribhadda | 3 | 2-3 | 1.0 |
+| a-babylonian-princess-of-babylon | 4 | 2-93 | 0.3 |
+| a-king-of-ugarit | 4 | 2-91 | 0.42 |
+| abdiasirta | 4 | 2-88 | 0.45 |
 
 ## 5. Reciprocity by tier pair (RQ3 preview)
 
 | tier pair | dyads | reciprocated | share |
 |---|---|---|---|
 | egypt <-> egypt | 1 | 0 | 0.0 |
-| egypt <-> great_power | 11 | 2 | 0.18 |
-| egypt <-> vassal | 96 | 4 | 0.04 |
+| egypt <-> great_power | 12 | 2 | 0.17 |
+| egypt <-> vassal | 95 | 4 | 0.04 |
 | great_power <-> vassal | 1 | 0 | 0.0 |
 | vassal <-> vassal | 2 | 0 | 0.0 |
 
@@ -108,7 +108,7 @@ object: sender->addressee ties from 302 letters.
 
 ### louvain
 - k = 8, modularity = 0.1
-- n=89: pharaoh, ribhadda, a-babylonian-princess, a-king-of-ugarit, abdiastarti
+- n=89: pharaoh, ribhadda, a-babylonian-princess-of-babylon, a-king-of-ugarit, abdiastarti
 - n=5: aziru, tutu, baaluyaandbetili, dutessup, haay
 - n=4: an-egyptian-official, bayadi, zisamimi, hibiya
 - n=4: yanhamu, murbahlu, yappahhadda, sumuhaddi
@@ -117,7 +117,7 @@ object: sender->addressee ties from 302 letters.
 
 ### leiden
 - k = 8, modularity = 0.113
-- n=85: pharaoh, a-babylonian-princess, a-king-of-ugarit, abdiastarti, abdiheba
+- n=85: pharaoh, a-babylonian-princess-of-babylon, a-king-of-ugarit, abdiastarti, abdiheba
 - n=8: ribhadda, an-egyptian-official, bayadi, zisamimi, amanappa
 - n=5: aziru, tutu, baaluyaandbetili, dutessup, haay
 - n=4: yanhamu, murbahlu, yappahhadda, sumuhaddi
@@ -142,13 +142,19 @@ eigenvector centrality (0.87, i.e. attachment to the hub) but no
 brokerage. His famous betweenness must be manufactured by mentions —
 RQ1's hypothesis, now with a baseline number attached.
 
-**Betweenness ranks below the hub are unstable.** Bootstrap 95% rank
-intervals: Aziru 2-24, Rib-Hadda 2-54. Any claim about who is 'second
-most central' in the correspondence layer is noise. (Aziru's nominal #2
+**Below the hub there is almost no betweenness to rank.** With
+competition ranks under ties (an earlier draft assigned arbitrary
+ranks inside the zero-betweenness block, producing spuriously wide
+intervals like 2-54), Aziru and Rib-Hadda sit at ranks 2-3 with
+P(top 3) = 1.0 - not because their brokerage is robust but because
+in a star virtually every other actor has betweenness exactly zero.
+The meaningful statement is not 'ranks are unstable' but 'the
+correspondence layer has no brokerage structure to estimate below
+the hub'. (Aziru's nominal #2
 comes from being one of the few actors who both sends and receives —
 pharaoh's EA 162 file copy and letters from his own family.)
 
-**Reciprocity already splits by tier as RQ3 predicts:** 18% of
+**Reciprocity already splits by tier as RQ3 predicts:** 17% of
 Egypt<->Great-Power dyads are reciprocated vs 4% of Egypt<->vassal
 dyads (the latter are Egyptian file copies, e.g. EA 162, 369-370).
 Formal inference waits for Phase 4, but the direction is right.

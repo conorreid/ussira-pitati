@@ -21,10 +21,12 @@ measures salience-to-Egypt rather than historical importance.
   and dissolves under correction** (pharaoh-node splitting + dossier
   volume); the stable brokers are **Aziru of Amurru** and the Egyptian
   commissioner **Yanḥamu**.
-- ERGM: reciprocity +3.77, tier anti-homophily −2.27 (both p < 0.001,
-  GOF clean). Distance decays mention ties (QAP p = 0.002) — and,
-  contrary to our own prediction, correspondence volume too
-  (ρ = −0.50, p = 0.002, vassals only, robust to dropping Rib-Hadda).
+- ERGM: reciprocity +3.78, tier anti-homophily −2.21 (both p < 0.001,
+  GOF clean). Distance decays mention and conflict ties (QAP p < 0.01)
+  but **not** correspondence: an apparent correspondence decay
+  (ρ = −0.50) dissolved under our own audit into gazetteer phantoms,
+  a rank-tie artifact, and political composition
+  (see `distance_confounds.md`) — the pre-registered prediction stands.
 - Two Oracc catalogue errors found and adjudicated against Moran (EA 62,
   EA 301), plus EA 7's recipient; 87% petrography-catalogue provenance
   agreement with Goren et al.'s discoveries reproduced machine-readably.
@@ -59,7 +61,8 @@ All stages are seeded; reports regenerate byte-identically.
   codebook, polity coordinates, Goren petrography transcription
 - `data/derived/` — machine-built tables (nodes, edge lists, provenance)
 - `coverage_report.md`, `phase2_report.md`, `phase3_report.md`,
-  `conflict_report.md`, `phase4_report.md` — generated reports
+  `conflict_report.md`, `phase4_report.md`, `distance_confounds.md` —
+  generated reports
 - `paper/` — article draft + data-paper outline
 - `PLAN.md` — the original project plan (kept verbatim; §2.1's premise is
   corrected in coverage_report.md)

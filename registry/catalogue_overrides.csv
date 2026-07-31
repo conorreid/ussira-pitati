@@ -1,2 +1,3 @@
 designation,field,value,source,note
 EA 007,recipient,[an Egyptian pharaoh],"Moran 1992, EA 7 with n.2","Catalogue lists recipient 'Babylon'; Burna-Buriaš addresses the Egyptian king (Rainey p. 97 restores [Napḫu]rureia)"
+EA 012,ancient_author,a Babylonian princess of Babylon,"Moran 1992, EA 12 headnote","Sender is a Babylonian princess at the Egyptian court; without an explicit polity the tier classifier defaulted her to 'vassal'. Appending the polity routes her to great_power."

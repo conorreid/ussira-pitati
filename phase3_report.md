@@ -139,7 +139,7 @@ generic node):
 | abdiasirta | 5 | 2-14 | 0.26 |
 | yanhamu | 3 | 1-7 | 0.67 |
 | biryawaza | 6 | 2-14 | 0.14 |
-| zimreddi | 8 | 3-34 | 0.07 |
+| zimreddi | 8 | 3-31 | 0.07 |
 | ribhadda | 15 | 9-25 | 0.0 |
 
 ## 5. Communities

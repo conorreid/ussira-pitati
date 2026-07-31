@@ -177,7 +177,12 @@ def bootstrap_ranks(rows, focus, rng, dossier_cap=None, n_boot=N_BOOT):
         g = build_mention(sample)
         bet = g.betweenness(directed=False)
         order = sorted(range(g.vcount()), key=lambda i: -bet[i])
-        rank_of = {g.vs[i]["name"]: rk + 1 for rk, i in enumerate(order)}
+        # Competition ranks under ties - see phase2_analysis.py.
+        rank_of, rk = {}, 0
+        for pos, i in enumerate(order):
+            if pos == 0 or bet[i] != bet[order[pos - 1]]:
+                rk = pos + 1
+            rank_of[g.vs[i]["name"]] = rk
         for a in focus:
             ranks[a].append(rank_of.get(a, g.vcount() + 1))
     out = []

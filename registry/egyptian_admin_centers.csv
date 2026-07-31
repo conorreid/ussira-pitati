@@ -1,0 +1,6 @@
+center,pleiades_id,pleiades_title,lat,lon,evidence,source_status
+Gaza,687902,Gaza,31.5202095,34.451719,"Egyptian administrative base of the southern province; EA 296 (Yahtiru): 'I guard the city gate of Azzatu and the city gate of Yapu'; Morris 2005 ch. 4",ea_attested
+Joppa,687931,Ioppe,32.053079,34.7499295,"Egyptian garrison/granary town; EA 294 (granary of Yapu) and EA 296 as above; Morris 2005 ch. 4",ea_attested
+Beth-Shean,678378,Scythopolis/Nysa,32.5036976,35.5030916333,"Egyptian garrison town; EA 289 (Abdi-Heba) names Bit-Sani in a garrison context; Amarna-age Egyptian garrison archaeologically attested at Tel Beth-Shean (Level IX); Morris 2005 ch. 4",ea_attested
+Kumidi,10481849,Kumidi,33.6237320759,35.82105123,"Seat of an Egyptian commissioner in the Beqaa; EA 129 and EA 132 place the commissioner Puhuru there; EA 198 (Arašša of Kumidu); Morris 2005 ch. 5",ea_attested
+Sumur,668372,Simyra?,34.7084831043,35.9862205324,"Seat of the Egyptian commissioner for the Amurru coast (Pahanate/Pahamnata: EA 60, EA 62 - see adjudication_queue EA 062; Rib-Hadda passim on Sumur as Egyptian stronghold); Pleiades identification of Tell Kazel carries a query; Morris 2005 ch. 5",ea_attested

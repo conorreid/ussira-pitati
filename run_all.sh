@@ -21,4 +21,5 @@ echo "== phase4 GOF ==" && Rscript scripts/phase4_gof.R
 echo "== phase4 Bergm ==" && Rscript scripts/phase4_bergm.R
 echo "== phase split ==" && uv run python scripts/phase_split.py
 echo "== phase4 QAP =="  && uv run python scripts/qap_distance.py
+echo "== distance confounds ==" && uv run python scripts/distance_confounds.py > /dev/null && echo ok
 echo "== done =="

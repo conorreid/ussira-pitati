@@ -1,8 +1,11 @@
-# Conflict Network (RQ4) — PROVISIONAL, tranche 1, single coder
+# Conflict Network (RQ4) — corpus-wide sweep (tranches 1-2), single annotator
 
-Coded from Moran (1992) per `registry/conflict_codebook.md`. A second
-independent pass + Cohen's kappa is required (PLAN.md §7) before these
-edges enter the base analysis. Coverage: the five classic theatres only.
+Coded from Moran (1992) per `registry/conflict_codebook.md`,
+corpus-wide (tranche 1: the five classic theatres; tranche 2: full
+hostile-language sweep). Independently recoded from Rainey (2015):
+cross-edition kappa 0.87 (`coding_reliability.md`) - but both passes
+share one annotator, so the PLAN.md 7 second-coder pass is still
+required before these edges enter the base analysis.
 
 - letters coded: 40; edges: 63 (59 accusations, 4 alliance)
 - actors: 41
