@@ -1,0 +1,35 @@
+ea,src,dst,sign,type,evidence_quote,coder,tranche,notes
+EA 073,ribhadda,abdiasirta,-,accuse,"he sent a message to the men of Ammiya, 'Kill your lord and join the Apiru'",claude/moran-pass1,1,incitement to regicide
+EA 075,ribhadda,abdiasirta,-,accuse,"[the Apiru killed Ad]una... Abdi-Aširta, and so they go on tak[in]g (territory for themselves)",claude/moran-pass1,1,
+EA 075,ribhadda,miya,-,accuse,"Miya, the ruler of Arašni, seized Ar[d]ata",claude/moran-pass1,1,
+EA 081,ribhadda,abdiasirta,-,accuse,"the war of Abdi-Aširta is severe, and he has taken all my cities for himself",claude/moran-pass1,1,
+EA 085,ribhadda,abdiasirta,-,accuse,"Abdi-Aširta, the servant and dog... I would drive Abdi-Aširta from the land",claude/moran-pass1,1,
+EA 104,ribhadda,pubahla,-,accuse,"Pu-Bahla, the son of Abdi-Aširta, has taken Ullassa",claude/moran-pass1,1,
+EA 104,ribhadda,sons-of-abdiasirta,-,accuse,"Who are the sons of Abdi-Aširta, the servant and dog?... they take the land of the king for themselves",claude/moran-pass1,1,collective
+EA 124,ribhadda,aziru,-,accuse,"Aziru has taken all my cities... and (even) mayor[s has killed]",claude/moran-pass1,1,
+EA 132,ribhadda,abdiasirta,-,accuse,"Earlier, Abdi-Aširta attacked me",claude/moran-pass1,1,
+EA 132,ribhadda,aziru,-,accuse,"Now Aziru has gathered together all the cities... a commissioner was killed",claude/moran-pass1,1,
+EA 139,ilirapih,aziru,-,accuse,"the crime that Aziru [committed] against the king: [he kill]ed the king of Ammiya... Aziru is a reb[el] against the king",claude/moran-pass1,1,
+EA 140,ilirapih,aziru,-,accuse,"Aziru killed Aduna, the king of Irqata; he killed the king of Ammiya",claude/moran-pass1,1,
+EA 140,ilirapih,etakkama,-,accuse,"He sent [his] men [t]o Itakkama... to seize the lands of Amqu",claude/moran-pass1,1,co-conspiracy with Aziru
+EA 244,biridiya,labaya,-,accuse,"Lab'ayu has waged war against me... He seeks simply to seize Megiddo",claude/moran-pass1,1,
+EA 245,biridiya,surata,-,accuse,"It was Surata that let Lab'ayu go... for it was Surata that had accepted from him his ransom",claude/moran-pass1,1,bribery/release of Labaya
+EA 250,baluursag,sons-of-labaya,-,accuse,"the sons of Lab'ayu keep talking to me... 'Wage war against the king... and if you do not wage war, then we will be your enemies'",claude/moran-pass1,1,collective; coercion
+EA 250,baluursag,milkilu,-,accuse,"over and above what Milkilu and Lab'ayu caused to be [done]",claude/moran-pass1,1,
+EA 280,suwardata,abdiheba,-,accuse,"Lab'ayu is dead, but now [an]other Lab'ayu is Abdi-Heba, and he seizes our towns",claude/moran-pass1,1,inter-loyalist accusation
+EA 287,abdiheba,milkilu,-,accuse,"Milkilu and Tagi brou[ght troop]s into [Qiltu] against [me]",claude/moran-pass1,1,
+EA 287,abdiheba,tagi,-,accuse,"Milkilu and Tagi brou[ght troop]s into [Qiltu] against [me]",claude/moran-pass1,1,
+EA 289,abdiheba,milkilu,-,accuse,"Milkilu has written to Tagi and the sons (of Lab'ayu) [to enter the Hapiru cause]",claude/moran-pass1,1,
+EA 289,abdiheba,tagi,-,accuse,"Such was the deed that Milkilu and Tagi did",claude/moran-pass1,1,
+EA 289,abdiheba,sons-of-labaya,-,accuse,"Milkilu has written to Tagi and the sons (of Lab'ayu)",claude/moran-pass1,1,collective
+EA 366,suwardata,abdiheba,+,ally,"Only Abdi-Heba and I have been at war with (that) Apiru",claude/moran-pass1,1,mutual - see reverse row
+EA 366,abdiheba,suwardata,+,ally,"Only Abdi-Heba and I have been at war with (that) Apiru",claude/moran-pass1,1,mutual
+EA 366,surata,suwardata,+,ally,"Surata, the ruler of Akka, and Endaruta, the ruler of Akšapa... have come to my aid with 50 chariots",claude/moran-pass1,1,
+EA 366,endaruta,suwardata,+,ally,"Surata... and Endaruta... have come to my aid with 50 chariots",claude/moran-pass1,1,
+EA 149,abimilku,zimreddi,-,accuse,"Zimredda of Sidon, the rebel against the king... They captured Sumur through the instructions of Zimredda",claude/moran-pass1,1,
+EA 149,abimilku,aziru,-,accuse,"[Haapi] gave Sumur [t]o Aziru",claude/moran-pass1,1,receiver of Sumur
+EA 149,abimilku,haapi,-,accuse,"Haapi... [g]ave Sumur [t]o Aziru",claude/moran-pass1,1,Egyptian official implicated
+EA 189,etakkama,biryawaza,-,accuse,"the wicked Biryawaza has gone on defaming me in your sight",claude/moran-pass1,1,
+EA 197,biryawaza,biridaswa,-,accuse,"they waged war with Biridašwa against me, constantly saying, 'Come, let's kill Biryawaza'",claude/moran-pass1,1,
+EA 197,biryawaza,arsawuya,-,accuse,"Arsawuya went to Ki[ssa], took (some of) Aziru's [men]",claude/moran-pass1,1,acting with Aziru's forces
+EA 171,aziru,yanhamu,-,accuse,"I would enter the service of the king... but Yanhamu has not allowed me",claude/moran-pass1,1,obstruction grievance; milder than military accusation
