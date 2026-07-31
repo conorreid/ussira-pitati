@@ -5,3 +5,7 @@ __pycache__/
 .Rhistory
 .RData
 data/raw/
+paper/main.log
+paper/main.blg
+paper/main.aux
+paper/main.bbl
