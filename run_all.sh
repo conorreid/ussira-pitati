@@ -17,5 +17,7 @@ echo "== phase3 =="      && uv run python scripts/phase3_analysis.py
 echo "== conflict =="    && uv run python scripts/conflict_analysis.py
 echo "== phase4 R =="    && Rscript scripts/phase4_models.R
 echo "== phase4 GOF ==" && Rscript scripts/phase4_gof.R
+echo "== phase4 Bergm ==" && Rscript scripts/phase4_bergm.R
+echo "== phase split ==" && uv run python scripts/phase_split.py
 echo "== phase4 QAP =="  && uv run python scripts/qap_distance.py
 echo "== done =="

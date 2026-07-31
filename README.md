@@ -72,9 +72,12 @@ Moran/Goren quotations are page-referenced fair use.
 
 ## Remaining before submission
 
-- Conflict tranche 2 (remaining dossier letters) + independent second
-  coding with Cohen's κ; second-key spot-checks of the adjudication,
-  registry, and Goren transcription
-- Bergm posterior + early/middle/late phase-split sensitivity
-- Rainey (2015) collation pass on the adjudicated cases
-- Zenodo deposit + DOI
+Analysis complete (conflict coding corpus-wide, Bergm posterior,
+phase-split sensitivity all done). What's left is human verification and
+logistics:
+
+- Independent second coding of `registry/conflict_edges.csv` + Cohen's κ
+- Second-key spot-checks: adjudication queue, alias registry, Goren
+  transcription (all rows quote their evidence)
+- Rainey (2015) collation pass on the 18 adjudicated cases
+- Zenodo deposit + DOI at submission
