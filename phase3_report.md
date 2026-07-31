@@ -80,6 +80,25 @@ Top betweenness under the Cline-style construction:
 | abdiheba | 15 | 963.4 |
 | biryawaza | 12 | 829.6 |
 
+## 2c. Sensitivity: splitting the pharaohs (Cline & Cline's node definition)
+
+Their headline — Rib-Hadda's betweenness beats Amenhotep III and
+Akhenaten — used *individual* pharaoh nodes. Rebuilding the
+Cline-style graph with the PHARAOH node split per letter by the
+catalogue's named-pharaoh identification (unidentified letters keep a
+generic node):
+
+| actor | degree | betweenness |
+|---|---|---|
+| pharaoh-unidentified | 96 | 18207.5 |
+| ribhadda | 37 | 4624.8 |
+| akizzi | 10 | 4141.0 |
+| aziru | 19 | 4091.6 |
+| pharaoh-amenhotep-iv | 5 | 3303.5 |
+| baaluyaandbetili | 12 | 1926.5 |
+| abdiasirta | 11 | 1132.6 |
+| pharaoh-amenhotep-iii | 6 | 1083.5 |
+
 ## 3. Betweenness (mention layer, all letters)
 
 | actor | degree | betweenness |
@@ -162,9 +181,13 @@ construction and dissolves under bias correction.** In the
 sender-star + correspondence graph (closest to their hand-coded
 object), Rib-Hadda is #2 in betweenness behind only the collapsed
 PHARAOH node — and since they *split* the pharaohs (Amenhotep III vs
-Akhenaten vs 'the king'), each individual pharaoh could fall below
-him, which is plausibly their exact headline result (testable via our
-named_pharaoh column). But in the person-to-person layer he is only
+Akhenaten vs 'the king'), each individual pharaoh falls below him —
+section 2c CONFIRMS this: split the pharaohs and Rib-Hadda (4625)
+beats Amenhotep IV (3304) and Amenhotep III (1084), exactly their
+headline, but only because the residual 'unidentified pharaoh' node
+(18208) absorbs most royal traffic. Their most famous finding is an
+artifact of splitting one actor's identity across three nodes under
+uncertainty. In the person-to-person layer Rib-Hadda is only
 #6, and with dossiers equalized at the median (2 letters/sender) he
 falls to median rank 13 with P(top-3) = 0.0.
 

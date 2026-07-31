@@ -85,6 +85,43 @@ def build_star(rows, include_corr=True):
     return g
 
 
+def build_star_from(rows, named_ph):
+    """build_star over pre-transformed rows (e.g. pharaoh split), applying
+    the same per-letter pharaoh tag to the correspondence edges."""
+    def tag_for(pid):
+        np_ = named_ph.get(pid, "")
+        return ("pharaoh-" + np_.split(" of ")[0].replace(" ", "-").lower()
+                if np_ else "pharaoh-unidentified")
+    w = Counter()
+    actors = set()
+    for r in rows:
+        s = r["sender"]
+        if not s:
+            continue
+        actors.add(s)
+        for p in r["group"]:
+            if p != s:
+                actors.add(p)
+                w[tuple(sorted((s, p)))] += 1
+    with (DERIVED / "edges_corr.csv").open() as fh:
+        for e in csv.DictReader(fh):
+            src, dst = e["src"], e["dst"]
+            if src == "pharaoh":
+                src = tag_for(e["id_text"])
+            if dst == "pharaoh":
+                dst = tag_for(e["id_text"])
+            if src != dst:
+                actors.update((src, dst))
+                w[tuple(sorted((src, dst)))] += 1
+    actors = sorted(actors)
+    idx = {a: i for i, a in enumerate(actors)}
+    g = ig.Graph(directed=False)
+    g.add_vertices(actors)
+    g.add_edges([(idx[a], idx[b]) for a, b in w])
+    g.es["weight"] = list(w.values())
+    return g
+
+
 def bipartite_null_clustering(rows, rng, n_samples=200):
     """The fair null for a clique-projected graph: shuffle which persons
     appear in which letters, preserving each letter's group size and each
@@ -213,6 +250,34 @@ def main():
     a("")
     a(fmt_table(betweenness_rows(star, top=8)))
     a("")
+    a("## 2c. Sensitivity: splitting the pharaohs (Cline & Cline's node definition)")
+    a("")
+    a("Their headline — Rib-Hadda's betweenness beats Amenhotep III and")
+    a("Akhenaten — used *individual* pharaoh nodes. Rebuilding the")
+    a("Cline-style graph with the PHARAOH node split per letter by the")
+    a("catalogue's named-pharaoh identification (unidentified letters keep a")
+    a("generic node):")
+    a("")
+    named_ph = {}
+    with (DERIVED / "edges_corr.csv").open() as fh:
+        for e in csv.DictReader(fh):
+            named_ph[e["id_text"]] = e["named_pharaoh"]
+
+    def split_pharaoh(rows_in):
+        out = []
+        for r in rows_in:
+            np_ = named_ph.get(r["id_text"], "")
+            tag = ("pharaoh-" + np_.split(" of ")[0].replace(" ", "-").lower()
+                   if np_ else "pharaoh-unidentified")
+            out.append({**r,
+                        "sender": tag if r["sender"] == "pharaoh" else r["sender"],
+                        "group": [tag if p == "pharaoh" else p for p in r["group"]]})
+        return out
+
+    split_rows = split_pharaoh(rows)
+    star_split = build_star_from(split_rows, named_ph)
+    a(fmt_table(betweenness_rows(star_split, top=8)))
+    a("")
     a("## 3. Betweenness (mention layer, all letters)")
     a("")
     g = build_mention(rows)
@@ -257,9 +322,13 @@ def main():
     a("sender-star + correspondence graph (closest to their hand-coded")
     a("object), Rib-Hadda is #2 in betweenness behind only the collapsed")
     a("PHARAOH node — and since they *split* the pharaohs (Amenhotep III vs")
-    a("Akhenaten vs 'the king'), each individual pharaoh could fall below")
-    a("him, which is plausibly their exact headline result (testable via our")
-    a("named_pharaoh column). But in the person-to-person layer he is only")
+    a("Akhenaten vs 'the king'), each individual pharaoh falls below him —")
+    a("section 2c CONFIRMS this: split the pharaohs and Rib-Hadda (4625)")
+    a("beats Amenhotep IV (3304) and Amenhotep III (1084), exactly their")
+    a("headline, but only because the residual 'unidentified pharaoh' node")
+    a("(18208) absorbs most royal traffic. Their most famous finding is an")
+    a("artifact of splitting one actor's identity across three nodes under")
+    a("uncertainty. In the person-to-person layer Rib-Hadda is only")
     a("#6, and with dossiers equalized at the median (2 letters/sender) he")
     a("falls to median rank 13 with P(top-3) = 0.0.")
     a("")
