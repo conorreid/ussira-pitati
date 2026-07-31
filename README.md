@@ -15,7 +15,7 @@ measures salience-to-Egypt rather than historical importance.
 - The correspondence network contains **zero triangles** — the famous
   "small world" lives entirely in the mention layer.
 - Rebuilt at full scale the mention network matches Cline & Cline's object
-  (245 vs 246 persons; CC 0.408 vs 0.391) but exceeds a fair bipartite
+  (244 vs 246 persons; CC 0.409 vs 0.391) but exceeds a fair bipartite
   null by **~1.6×, not "48.75×"**.
 - Rib-Hadda's celebrated brokerage **replicates under their construction
   and dissolves under correction** (pharaoh-node splitting + dossier
@@ -40,11 +40,14 @@ unzip -d data/raw data/raw/aemw-amarna.zip
 curl -sLo data/raw/pleiades-places-latest.csv.gz https://atlantides.org/downloads/pleiades/dumps/pleiades-places-latest.csv.gz
 curl -sLo data/raw/pleiades-names-latest.csv.gz https://atlantides.org/downloads/pleiades/dumps/pleiades-names-latest.csv.gz
 gunzip -k data/raw/pleiades-*.gz
+curl -sLo data/raw/ne_50m_coastline.geojson https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_coastline.geojson  # figure basemap
 # OCR'd Moran (1992) and Goren et al. (2004) page texts belong in
 # data/raw/moran1992/ and data/raw/goren2004/ (copyrighted; not
 # distributable - see scripts/extract_goren.py headers for expectations).
 
 # 2. environment: uv sync;  R with install.packages(c("network","sna","ergm","latentnet"))
+#    paper build: tectonic (brew install tectonic) + Libertinus/DejaVu fonts
+#    (brew install --cask font-libertinus font-dejavu)
 
 # 3. everything:
 ./run_all.sh
@@ -63,7 +66,9 @@ All stages are seeded; reports regenerate byte-identically.
 - `coverage_report.md`, `phase2_report.md`, `phase3_report.md`,
   `conflict_report.md`, `phase4_report.md`, `distance_confounds.md` —
   generated reports
-- `paper/` — article draft + data-paper outline
+- `paper/` — article draft (`draft.md` prose master; `main.tex` + 
+  `references.bib` → `main.pdf` via tectonic), `figures/` (six
+  publication figures from `scripts/make_figures.py`), data-paper outline
 - `PLAN.md` — the original project plan (kept verbatim; §2.1's premise is
   corrected in coverage_report.md)
 

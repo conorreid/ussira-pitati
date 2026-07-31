@@ -4,9 +4,9 @@ Same annotator, independent editions (edition-robustness, not
 coder-independence). EA 104 excluded (incomplete Rainey extraction).
 
 - letters compared: 40
-- candidate units (letter-dyads): 157
-- edges in both passes: 56; Moran-only: 5; Rainey-only: 5; coded by neither: 91
-- **raw agreement: 93.6%; edge Jaccard: 0.85; Cohen's kappa: 0.87**
+- candidate units (letter-dyads): 153
+- edges in both passes: 56; Moran-only: 5; Rainey-only: 5; coded by neither: 87
+- **raw agreement: 93.5%; edge Jaccard: 0.85; Cohen's kappa: 0.86**
 
 ## Divergent units
 

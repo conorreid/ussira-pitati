@@ -4,6 +4,7 @@ version = "0.1.0"
 requires-python = ">=3.10"
 dependencies = [
     "igraph>=1.0.0",
+    "matplotlib>=3.10.9",
     "networkx>=3.4.2",
     "pandas>=2.3.3",
     "pymupdf>=1.28.0",

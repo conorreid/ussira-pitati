@@ -14,8 +14,8 @@ lemmatized edition with fully reproducible code, hand-coding only what the
 digital corpus lacks, and subject every headline claim to appropriate null
 models and survival-bias corrections. Three results follow. (1) The
 correspondence network contains *zero* triangles: the celebrated small
-world lives entirely in the mention layer. Reconstructed at full scale (245
-persons; Cline & Cline counted 246), that layer's clustering (0.408 ≈
+world lives entirely in the mention layer. Reconstructed at full scale (244
+persons; Cline & Cline counted 246), that layer's clustering (0.409 ≈
 their 0.391) exceeds a fair bipartite configuration null by a factor of
 ~1.6 — genuine structure, but far from the "48.75×" figure produced by an
 Erdős–Rényi comparison. (2) Rib-Hadda's famous brokerage replicates
@@ -108,11 +108,14 @@ quotations from both editions, ships in the repository
 (`registry/adjudication_queue.csv`).
 
 **Entity resolution.** Actors are keyed on alias-canonicalized folded
-names; the hand-curated registry (15 entries) records Sumerographic
+names; the hand-curated registry (17 entries) records Sumerographic
 readings (IR₃-Ḫebat = ʿAbdi-Ḫeba), orthographic systems (Oracc ʿAḏiri =
 conventional Aziru), contested sign readings (ᵈIM-DI.KUD = Adda-danu =
 Baʿlu-šipṭi), and pharaonic throne names (Napḫurureya = Akhenaten), each
-with a justification. All named pharaohs collapse to a single PHARAOH
+with a justification; figure preparation surfaced one residual split
+identity (Labʾayu keyed as both labaya and labayu across lemma and
+catalogue spellings, similarly Milki-ilu), merged before the final
+run. All named pharaohs collapse to a single PHARAOH
 node in the base analysis; the per-letter identification is retained for
 sensitivity splits.
 
@@ -123,8 +126,8 @@ corpus-wide hostile-language sweep of Moran's translations (40 letters,
 63 edges: 59 accusations, 4 alliances), each edge carrying its Moran
 quotation; letters whose hostile language has only unnamed antecedents
 yield no edges by rule. The full set was then independently recoded from
-Rainey's (2015) translations: cross-edition agreement is 93.6% with
-Cohen's κ = 0.87 (56 edges shared; 5 divergences per edition, all
+Rainey's (2015) translations: cross-edition agreement is 93.5% with
+Cohen's κ = 0.86 (56 edges shared; 5 divergences per edition, all
 traceable to textual differences between the editions — e.g., Miya as
 perpetrator in Moran but victim in Rainey at EA 75 — rather than to the
 coding rules). This establishes edition-robustness; since both passes
@@ -157,7 +160,7 @@ Three layers, all built by code from the tables above:
    grades.
 2. **Mention co-occurrence** (undirected, weighted): the persons
    appearing in each letter (sender + every PN/RN lemma; PHARAOH only
-   when actually named) form a clique; 245 persons, 737 dyads. The
+   when actually named) form a clique; 244 persons, 734 dyads. The
    Great-Power letters enter via the Moran hand-coding.
 3. **Conflict** (signed, directed; provisional): 63 accusation (−) and
    alliance (+) edges across 40 letters, with quotation-level provenance.
@@ -198,17 +201,17 @@ property of who wrote to whom.
 
 ### 5.2 The small world is real, mention-borne, and ~1.6× — not 49×
 
-Rebuilt at full scale, the person-to-person mention network has 245
-persons (Cline & Cline: 246 people) and clustering 0.408 (theirs: 0.391)
+Rebuilt at full scale, the person-to-person mention network has 244
+persons (Cline & Cline: 246 people) and clustering 0.409 (theirs: 0.391)
 — we take this convergence as evidence that we have reconstructed their
 object. An Erdős–Rényi comparison of the kind behind the "48.75×" claim
 yields 16.5× here. But against the bipartite configuration null the
-observed 0.408 stands over a null median of 0.255 (95% band 0.233–0.270):
+observed 0.408 stands over a null median of 0.253 (95% band 0.235–0.271):
 significant — the observed value lies outside the null band in every
-variant, including without the Byblos dossier (0.450 vs. 0.315) — but a
+variant, including without the Byblos dossier (0.452 vs. 0.315) — but a
 factor of ~1.6. The small world of the Amarna letters exists; the
 astronomical multiplier was an artifact of the weakest available null.
-The Cline-style star construction, by contrast, clusters at 0.030, at or
+The Cline-style star construction, by contrast, clusters at 0.034, at or
 below its null — confirming that triadic structure comes from mentions
 connecting *third parties*, not from anyone's correspondence.
 
@@ -253,9 +256,9 @@ Shechem–Jerusalem conflict, the Tyre–Sidon feud — not diplomatic ranks.
 
 ### 5.5 Geography: the pre-registered contrast, recovered by audit
 
-Distance decays ties in the mention layer (point-biserial r = −0.123, QAP
-p = 0.001): neighbors name neighbors. The conflict layer agrees
-(r = −0.265, QAP p = 0.006, n = 12 located actors). We had predicted *no*
+Distance decays ties in the mention layer (point-biserial r = −0.147, QAP
+p < 0.001): neighbors name neighbors. The conflict layer agrees
+(r = −0.298, QAP p = 0.001, n = 14 located actors). We had predicted *no*
 distance effect in the correspondence layer — all vassals write to
 distant Egypt regardless — and an earlier draft reported that prediction
 overturned (ρ = −0.50, p = 0.002). Auditing that finding dissolved it,
@@ -308,7 +311,7 @@ still has structure worth explaining.
 ## 7. Limitations
 
 The conflict layer is corpus-wide and edition-robust (cross-edition
-κ = 0.87) but single-annotator; an independent human recoding (PLAN §7)
+κ = 0.86) but single-annotator; an independent human recoding (PLAN §7)
 remains desirable. EA 1–44 mentions were hand-coded from translation
 rather than lemmata (a documented source seam that will close when Oracc
 releases the Great Powers letters). The Oracc catalogue snapshot dates to

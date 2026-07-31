@@ -17,19 +17,19 @@ everyone writes to Egypt, no one writes within-tier).
 
 ## Latent-space cluster model (ergmm) — mention network
 
-Actors modeled: 117 (appearing in >=2 letters, capped at 120).
+Actors modeled: 116 (appearing in >=2 letters, capped at 120).
 
 Cluster x tier cross-tab (correspondent tiers where known):
 
 ```
        tier
 cluster egypt great_power unknown vassal
-      1     2           0      17     20
-      2     0           0      11      5
-      3     4           3      33     22
+      1     2           0      28     25
+      2     1           2       9      1
+      3     3           1      23     21
 ```
 
-BIC (overall): 2553.9
+BIC (overall): 2578.0
 
 
 ## ERGM goodness-of-fit (gof) summary

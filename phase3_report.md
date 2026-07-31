@@ -9,76 +9,76 @@ royal letters. Cline & Cline's 246-person graph included EA 1-44.
 ## 1. Global descriptives
 
 ### all letters
-- **nodes**: 245
-- **edges(dyads)**: 737
-- **letters**: 1180
-- **density**: 0.0123
-- **global CC (transitivity)**: 0.4078
-- **avg local CC**: 0.5964
+- **nodes**: 244
+- **edges(dyads)**: 734
+- **letters**: 1175
+- **density**: 0.0124
+- **global CC (transitivity)**: 0.4087
+- **avg local CC**: 0.5957
 - **components**: 29
-- **largest component**: 204
+- **largest component**: 203
 
 ### without Byblos dossier
-- **nodes**: 233
-- **edges(dyads)**: 626
-- **letters**: 852
+- **nodes**: 232
+- **edges(dyads)**: 623
+- **letters**: 847
 - **density**: 0.0116
-- **global CC (transitivity)**: 0.45
-- **avg local CC**: 0.5744
+- **global CC (transitivity)**: 0.4516
+- **avg local CC**: 0.5735
 - **components**: 31
-- **largest component**: 189
+- **largest component**: 188
 
 ## 2. Clustering vs nulls — the replication target (CC 0.391, '48.75x')
 
 ### all letters
-- **observed CC**: 0.4078
-- **ER-expected CC**: 0.0247
-- **obs/ER ratio (Cline-style)**: 16.54
-- **config-model CC (median)**: 0.0964
-- **config-model CC (2.5%-97.5%)**: 0.0827-0.1100
+- **observed CC**: 0.4087
+- **ER-expected CC**: 0.0248
+- **obs/ER ratio (Cline-style)**: 16.51
+- **config-model CC (median)**: 0.0959
+- **config-model CC (2.5%-97.5%)**: 0.0847-0.1096
 - **percentile of observed**: 100.0
-- **bipartite-null CC (median)**: 0.2549
-- **bipartite-null CC (2.5%-97.5%)**: 0.2332-0.2697
+- **bipartite-null CC (median)**: 0.2531
+- **bipartite-null CC (2.5%-97.5%)**: 0.2345-0.2707
 
 ### without Byblos dossier
-- **observed CC**: 0.45
+- **observed CC**: 0.4516
 - **ER-expected CC**: 0.0232
-- **obs/ER ratio (Cline-style)**: 19.43
-- **config-model CC (median)**: 0.0828
-- **config-model CC (2.5%-97.5%)**: 0.0701-0.0954
+- **obs/ER ratio (Cline-style)**: 19.42
+- **config-model CC (median)**: 0.0824
+- **config-model CC (2.5%-97.5%)**: 0.0697-0.0947
 - **percentile of observed**: 100.0
-- **bipartite-null CC (median)**: 0.3149
-- **bipartite-null CC (2.5%-97.5%)**: 0.2920-0.3391
+- **bipartite-null CC (median)**: 0.3146
+- **bipartite-null CC (2.5%-97.5%)**: 0.2970-0.3360
 
 ## 2b. Cline-style construction (sender-star mentions + correspondence)
 
-- **nodes**: 257
-- **edges(dyads)**: 376
-- **letters**: 826
+- **nodes**: 256
+- **edges(dyads)**: 375
+- **letters**: 823
 - **density**: 0.0057
-- **global CC (transitivity)**: 0.0299
-- **avg local CC**: 0.1069
+- **global CC (transitivity)**: 0.0337
+- **avg local CC**: 0.1151
 - **components**: 3
-- **largest component**: 252
-- **observed CC**: 0.0299
-- **ER-expected CC**: 0.0114
-- **obs/ER ratio (Cline-style)**: 2.61
-- **config-model CC (median)**: 0.0379
-- **config-model CC (2.5%-97.5%)**: 0.0295-0.0463
-- **percentile of observed**: 2.6
+- **largest component**: 251
+- **observed CC**: 0.0337
+- **ER-expected CC**: 0.0115
+- **obs/ER ratio (Cline-style)**: 2.93
+- **config-model CC (median)**: 0.0386
+- **config-model CC (2.5%-97.5%)**: 0.0298-0.0470
+- **percentile of observed**: 11.5
 
 Top betweenness under the Cline-style construction:
 
 | actor | degree | betweenness |
 |---|---|---|
-| pharaoh | 108 | 26186.4 |
-| ribhadda | 37 | 5293.4 |
-| aziru | 19 | 4397.9 |
-| tusratta | 19 | 4166.4 |
-| burnaburiasii | 16 | 2941.3 |
-| baaluyaandbetili | 12 | 2214.5 |
-| abdiasirta | 11 | 1328.5 |
-| murbahlu | 9 | 1207.5 |
+| pharaoh | 108 | 25981.5 |
+| ribhadda | 37 | 5271.0 |
+| aziru | 19 | 4381.2 |
+| tusratta | 19 | 4149.3 |
+| burnaburiasii | 16 | 2929.2 |
+| baaluyaandbetili | 12 | 2205.5 |
+| abdiasirta | 11 | 1324.3 |
+| murbahlu | 9 | 1169.6 |
 
 ## 2c. Sensitivity: splitting the pharaohs (Cline & Cline's node definition)
 
@@ -90,31 +90,31 @@ generic node):
 
 | actor | degree | betweenness |
 |---|---|---|
-| pharaoh-unidentified | 98 | 25630.2 |
-| tusratta | 21 | 5533.0 |
-| ribhadda | 37 | 5381.3 |
-| burnaburiasii | 19 | 4850.1 |
-| aziru | 19 | 4509.8 |
-| pharaoh-amenhotep-iii | 9 | 2582.0 |
-| baaluyaandbetili | 12 | 2250.5 |
-| akizzi | 10 | 1358.1 |
+| pharaoh-unidentified | 98 | 25423.5 |
+| tusratta | 21 | 5509.6 |
+| ribhadda | 37 | 5359.0 |
+| burnaburiasii | 19 | 4829.0 |
+| aziru | 19 | 4493.1 |
+| pharaoh-amenhotep-iii | 9 | 2572.0 |
+| baaluyaandbetili | 12 | 2241.5 |
+| akizzi | 10 | 1353.2 |
 
 ## 3. Betweenness (mention layer, all letters)
 
 | actor | degree | betweenness |
 |---|---|---|
-| aziru | 44 | 6722.2 |
-| pharaoh | 47 | 6062.8 |
-| abdiasirta | 37 | 2837.4 |
-| yanhamu | 39 | 2720.4 |
-| biryawaza | 24 | 2543.6 |
-| zimreddi | 25 | 2457.7 |
-| haya | 21 | 2270.8 |
-| ribhadda | 34 | 1965.9 |
-| etakkama | 22 | 1560.9 |
-| maya | 18 | 1548.2 |
-| betili | 14 | 1043.7 |
-| labaya | 19 | 979.6 |
+| aziru | 44 | 6714.6 |
+| pharaoh | 47 | 6034.2 |
+| abdiasirta | 37 | 2830.5 |
+| yanhamu | 39 | 2689.0 |
+| biryawaza | 24 | 2496.6 |
+| zimreddi | 25 | 2450.9 |
+| haya | 21 | 2234.8 |
+| ribhadda | 34 | 1956.9 |
+| etakkama | 22 | 1555.3 |
+| maya | 18 | 1537.0 |
+| betili | 14 | 1033.6 |
+| hanya | 17 | 927.9 |
 
 ## 4. RQ1 — rank stability and the dossier correction
 
@@ -122,12 +122,12 @@ generic node):
 
 | actor | median rank | 95% rank interval | P(top 3) |
 |---|---|---|---|
-| aziru | 1 | 1-5 | 0.95 |
-| pharaoh | 2 | 1-6 | 0.94 |
-| abdiasirta | 4 | 2-12 | 0.3 |
+| aziru | 1 | 1-5 | 0.94 |
+| pharaoh | 2 | 1-5 | 0.93 |
+| abdiasirta | 5 | 2-12 | 0.32 |
 | yanhamu | 4 | 2-10 | 0.28 |
-| biryawaza | 7 | 2-24 | 0.15 |
-| zimreddi | 6 | 3-28 | 0.13 |
+| biryawaza | 7 | 2-22 | 0.13 |
+| zimreddi | 7 | 3-25 | 0.13 |
 | ribhadda | 7 | 4-12 | 0.02 |
 
 ### 4b. Dossier-equalized (every sender capped at 2 letters = median dossier)
@@ -135,33 +135,33 @@ generic node):
 | actor | median rank | 95% rank interval | P(top 3) |
 |---|---|---|---|
 | aziru | 1 | 1-3 | 0.98 |
-| pharaoh | 3 | 2-31 | 0.56 |
-| abdiasirta | 5 | 2-14 | 0.26 |
-| yanhamu | 3 | 1-7 | 0.67 |
-| biryawaza | 6 | 2-14 | 0.14 |
+| pharaoh | 3 | 2-30 | 0.57 |
+| abdiasirta | 5 | 2-14 | 0.27 |
+| yanhamu | 3 | 1-7 | 0.66 |
+| biryawaza | 6 | 2-14 | 0.13 |
 | zimreddi | 8 | 3-31 | 0.07 |
-| ribhadda | 15 | 9-25 | 0.0 |
+| ribhadda | 15 | 9-24 | 0.0 |
 
 ## 5. Communities
 
 ### louvain
-- k = 36, modularity = 0.629
+- k = 37, modularity = 0.63
 - n=46: pharaoh, tusratta, burnaburias, keliya
-- n=44: aziru, yanhamu, abdiasirta, ribhadda
+- n=43: aziru, yanhamu, abdiasirta, ribhadda
 - n=31: biryawaza, etakkama, akizzi, arzawya
-- n=22: hanya, baluma, dasarti, leya
-- n=22: haya, labaya, abdiheba, arzayu
-- n=22: maya, addadanu, reanap, bisitanu
+- n=23: maya, pahanate, addadanu, reanap
+- n=21: haya, labayu, abdiheba, arzayu
+- n=12: hanya, baluma, dasarti, leya
 - n=12: betili, baluya, abdiuras, amurbalu
-- n=5: tiptibalu, paapu, payapu, rapiilu
+- n=10: ayab, murbahlu, binilima, sulummarduk
 
 ### leiden
-- k = 37, modularity = 0.631
+- k = 37, modularity = 0.63
 - n=46: pharaoh, tusratta, burnaburias, keliya
 - n=42: aziru, yanhamu, abdiasirta, ribhadda
 - n=32: biryawaza, etakkama, akizzi, arzawya
 - n=23: maya, pahanate, addadanu, reanap
-- n=22: haya, labaya, abdiheba, arzayu
+- n=21: haya, labayu, abdiheba, arzayu
 - n=12: hanya, baluma, dasarti, leya
 - n=12: betili, baluya, abdiuras, amurbalu
 - n=10: ayab, murbahlu, binilima, sulummarduk

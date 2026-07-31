@@ -48,7 +48,7 @@ def main():
     a("Coded from Moran (1992) per `registry/conflict_codebook.md`,")
     a("corpus-wide (tranche 1: the five classic theatres; tranche 2: full")
     a("hostile-language sweep). Independently recoded from Rainey (2015):")
-    a("cross-edition kappa 0.87 (`coding_reliability.md`) - but both passes")
+    a("cross-edition kappa reported in `coding_reliability.md` - but both passes")
     a("share one annotator, so the PLAN.md 7 second-coder pass is still")
     a("required before these edges enter the base analysis.")
     a("")
