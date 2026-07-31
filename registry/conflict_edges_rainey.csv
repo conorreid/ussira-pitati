@@ -1,0 +1,62 @@
+ea,src,dst,sign,type,evidence_quote,coder,notes
+EA 017,tusratta,udhi,-,accuse,"did some unseemly deeds in my land and slew his lord",claude/rainey-pass2,
+EA 073,ribhadda,abdiasirta,-,accuse,"he has said to the men of the town of Ammiya: 'Kill your lad'",claude/rainey-pass2,
+EA 075,ribhadda,abdiasirta,-,accuse,"intense is the hostility... He has seized [the hill co]untry",claude/rainey-pass2,Rainey reads Miya as VICTIM ('th[ey] too[k] Miya') - no Miya edge in this pass
+EA 076,ribhadda,abdiasirta,-,accuse,"the hostility of [ʿAb]di-[Ashirta]... the capture of the town of Bit-Ar[ḫa]",claude/rainey-pass2,
+EA 081,ribhadda,abdiasirta,-,accuse,"the hostility of ʿAbdi-Ashirta... A man attacked me with a bronze dagger",claude/rainey-pass2,
+EA 085,ribhadda,abdiasirta,-,accuse,"three times he has attacked me this year",claude/rainey-pass2,
+EA 089,ribhadda,people-of-tyre,-,accuse,"they killed their city ruler with my sister and her children",claude/rainey-pass2,ʿAbdi-Aširta sea-taking not surfaced in this pass
+EA 101,ribhadda,people-of-arwada,-,accuse,"whose ships have been hostile to me, is it not the men of the city of Arwad?",claude/rainey-pass2,
+EA 101,ribhadda,haya,-,accuse,"who is hostile [to] the king? Is it not Ḫaya?",claude/rainey-pass2,Rainey-only edge; also reads the letter as urging ʿAbdi-Aširta's killing (future) vs Moran's past tense
+EA 109,ribhadda,sons-of-abdiasirta,-,accuse,"the sons of ʿAbdi-Ashirta, the [sl]ave, the dog, [have taken] the cities of the king",claude/rainey-pass2,
+EA 113,ribhadda,yappahhadda,-,accuse,"Yapaʿ-Haddi has co[mmi]tted a crime",claude/rainey-pass2,
+EA 114,ribhadda,aziru,-,accuse,"Aziru is hostile to me and he has seized twelve of my men... a ransom... fifty (shekels of) silver",claude/rainey-pass2,
+EA 114,ribhadda,yappahhadda,-,accuse,"Yapaʿ-Haddi is hostile to me along with Aziru... he has seized my ship",claude/rainey-pass2,
+EA 116,ribhadda,sons-of-abdiasirta,-,accuse,"[the sons of] ʿAbdi-Ashirta have fallen up<on> our garrison and they have seized it",claude/rainey-pass2,
+EA 116,ribhadda,yappahhadda,-,accuse,"[Yapaʿ]-Haddi [plots] evil",claude/rainey-pass2,
+EA 116,ribhadda,aziru,-,accuse,"Aziru and Yapaʿ-Haddi have made a league between them",claude/rainey-pass2,Rainey-only edge (league)
+EA 124,ribhadda,aziru,-,accuse,"Aziru has ta[ken] all of [my cities]",claude/rainey-pass2,
+EA 125,ribhadda,aziru,-,accuse,"Aziru is at war with me... he is seeking (to kill) me",claude/rainey-pass2,
+EA 129,ribhadda,sons-of-abdiasirta,-,accuse,"The city of Ṣumur is taken. The sons of [ʿAbdi-Ashirta]...",claude/rainey-pass2,
+EA 132,ribhadda,abdiasirta,-,accuse,"[ʿAbdi-]Ashirta attacked me and I wrote to your father",claude/rainey-pass2,
+EA 132,ribhadda,aziru,-,accuse,"he (Aziru) has [gathered...]; intense hostility against m[e]",claude/rainey-pass2,Rainey's editorial gloss identifies Aziru
+EA 137,ribhadda,brother-of-ribhadda,-,accuse,"thus treason was committed and he expelled me from the city",claude/rainey-pass2,
+EA 138,ribhadda,abdiasirta,-,accuse,"ʿAbdi-Ashirta seized the town of Ṣumur, then I protected the city",claude/rainey-pass2,
+EA 138,ribhadda,aziru,-,accuse,"Azi[ru has been hostile] for four months against me",claude/rainey-pass2,Rainey-only edge; sons-of-ʿAbdi-Aširta not surfaced
+EA 139,ilirapih,aziru,-,accuse,"the crime which Aziru has committed against the king... Aziru is a trai[tor]",claude/rainey-pass2,
+EA 140,ilirapih,aziru,-,accuse,"Aziru slew Aduna, the king of the land of ʿIrqata",claude/rainey-pass2,
+EA 140,ilirapih,etakkama,-,accuse,"he sent [his] men [to] Itakama [and] he attacked all [the lan]ds of ʿAmqi",claude/rainey-pass2,
+EA 148,abimilku,zimreddi,-,accuse,"Because he made war, he did not return an oath (of peace)",claude/rainey-pass2,
+EA 149,abimilku,zimreddi,-,accuse,"captured the city of Ṣumur at the behest of Zimredda",claude/rainey-pass2,
+EA 149,abimilku,aziru,-,accuse,"Aziru the son of ʿAbdi-Ašrata, the traitor to the king... [he has] given the city of Ṣumur [t]o Aziru",claude/rainey-pass2,Ḫaapi as giver not surfaced in this pass
+EA 149,abimilku,people-of-arwada,-,accuse,"Sidon and Aziru, the traitor to the king, and the men of Arvad have sworn [a pact]",claude/rainey-pass2,Rainey-only edge (naval league)
+EA 161,aziru,kings-of-nuhasse,-,accuse,"The kings of Nuǵasse are hostile to me",claude/rainey-pass2,Rainey-only edge; collective
+EA 170,baaluyaandbetili,lupakku,-,accuse,"[troops of Ḫatti under] Lupakku [captured cities of ʿAmqi]",claude/rainey-pass2,
+EA 171,aziru,yanhamu,-,accuse,"[Yanḥ]amu... may he release him... hostili[ties]",claude/rainey-pass2,obstruction grievance
+EA 185,mayarzana,apiru,-,accuse,"the ʿapîrû seized the city of Maḫṣibti... thoroughly plundered and they sent it up in flames",claude/rainey-pass2,collective
+EA 185,mayarzana,amanhatpe,-,accuse,"the ʿapîrû entered into Aman[ḥatp]e",claude/rainey-pass2,harboring
+EA 186,mayarzana,apiru,-,accuse,"the ʿapîrû seized the city of [Maḫṣib]ti, the loyal city of the k[ing]",claude/rainey-pass2,collective
+EA 186,mayarzana,amanhatpe,-,accuse,"[the ʿapîrû went to] Amanḥatpe [...]",claude/rainey-pass2,harboring
+EA 189,etakkama,biryawaza,-,accuse,"the evil Biryawaza [h]as been slandering me",claude/rainey-pass2,
+EA 197,biryawaza,biridaswa,-,accuse,"they made war on me with Biridashwa... 'Come on! Let's kill Biryawaza'",claude/rainey-pass2,
+EA 197,biryawaza,arsawuya,-,accuse,"And Arsawuya went [to the city of Kissa]",claude/rainey-pass2,
+EA 238,bayadi,son-of-saatna,-,accuse,"the son of Za[...] and Ḫagurru [...] and they have [attacked me]",claude/rainey-pass2,patronym broken differently (Za[...] vs Moran's Ša'atna); same relational actor
+EA 238,bayadi,hagurru,-,accuse,"the son of Za[...] and Ḫagurru [...] and they have [attacked me]",claude/rainey-pass2,
+EA 244,biridiya,labaya,-,accuse,"Labʾayu has made war against me... let not Labʾayu seize it!",claude/rainey-pass2,
+EA 245,biridiya,surata,-,accuse,"Surata took his ransom [and released Labʾayu] to his home from the town of Hannathon",claude/rainey-pass2,
+EA 250,baluursag,sons-of-labaya,-,accuse,"the two sons of Labʾayu are saying to me: 'Make war... But if you do not make war, we are your enemies'",claude/rainey-pass2,collective
+EA 250,baluursag,milkilu,-,accuse,"after Milkilu and Labʾayu caused [...] the territo[ry of the] k[ing]",claude/rainey-pass2,
+EA 280,suwardata,abdiheba,-,accuse,"ʿAbdi-Ḫeba had taken [our towns]... Labʾayu is dead, who used to take our towns, but now [ʿAbdi-Ḫeba]",claude/rainey-pass2,
+EA 286,abdiheba,enhamu,-,accuse,"the king stationed a garrison (here) (but) Yenḫamu took [al]l of it",claude/rainey-pass2,Rainey's Yenḫamu strengthens the = Yanḥamu identification
+EA 286,abdiheba,ilimilku,-,accuse,"Ilimilku is causing the loss of all the lands of the king",claude/rainey-pass2,
+EA 287,abdiheba,milkilu,-,accuse,"[Look,] the deed which [Milkilu] has [committed]",claude/rainey-pass2,Tagi not surfaced in this pass
+EA 289,abdiheba,milkilu,-,accuse,"as for Milkilu and Tagi, this is the deed which they have done",claude/rainey-pass2,
+EA 289,abdiheba,tagi,-,accuse,"as for Milkilu and Tagi, this is the deed which they have done",claude/rainey-pass2,
+EA 289,abdiheba,sons-of-labaya,-,accuse,"Milkilu wrote to Tagi and to the sons (of Arṣaya/Labʾayu)",claude/rainey-pass2,Rainey offers Arṣaya as alternative patronym
+EA 290,abdiheba,milkilu,-,accuse,"the deed which Milkilu and Shuwardata have done... they seized the town of Rubbôte",claude/rainey-pass2,
+EA 290,abdiheba,suwardata,-,accuse,"the deed which Milkilu and Shuwardata have done... they seized the town of Rubbôte",claude/rainey-pass2,
+EA 362,ribhadda,sons-of-abdiasirta,-,accuse,"the sons of ʿAbdi-Ashirta, then the son<s> will tread on all of them",claude/rainey-pass2,
+EA 366,suwardata,abdiheba,+,ally,"I and ʿAbdi-Ḫeba are at war with the [ʿapîru]",claude/rainey-pass2,mutual
+EA 366,abdiheba,suwardata,+,ally,"I and ʿAbdi-Ḫeba are at war with the [ʿapîru]",claude/rainey-pass2,mutual
+EA 366,surata,suwardata,+,ally,"Surata, the ruler of Acco, and Intaruta, the ruler of Achshaph [came to my aid]",claude/rainey-pass2,Rainey: Intaruta = Endaruta
+EA 366,endaruta,suwardata,+,ally,"Surata, the ruler of Acco, and Intaruta, the ruler of Achshaph [came to my aid]",claude/rainey-pass2,

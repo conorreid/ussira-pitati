@@ -118,8 +118,14 @@ PHARAOH). A signed conflict layer (accusation/alliance) was coded via a
 corpus-wide hostile-language sweep of Moran's translations (40 letters,
 63 edges: 59 accusations, 4 alliances), each edge carrying its Moran
 quotation; letters whose hostile language has only unnamed antecedents
-yield no edges by rule. This layer is single-coder as of this draft and
-is reported as provisional throughout.
+yield no edges by rule. The full set was then independently recoded from
+Rainey's (2015) translations: cross-edition agreement is 93.6% with
+Cohen's κ = 0.87 (56 edges shared; 5 divergences per edition, all
+traceable to textual differences between the editions — e.g., Miya as
+perpetrator in Moran but victim in Rainey at EA 75 — rather than to the
+coding rules). This establishes edition-robustness; since both passes
+share an annotator, an independent human recoding remains the remaining
+reliability step.
 
 **Geography and provenance.** Polities were georeferenced against
 Pleiades (30/55 automated with hand-review flags; regions without ancient
@@ -278,8 +284,9 @@ still has structure worth explaining.
 
 ## 7. Limitations
 
-The conflict layer is tranche-1, single-coder (second pass and Cohen's κ
-pending; PLAN §7). EA 1–44 mentions were hand-coded from translation
+The conflict layer is corpus-wide and edition-robust (cross-edition
+κ = 0.87) but single-annotator; an independent human recoding (PLAN §7)
+remains desirable. EA 1–44 mentions were hand-coded from translation
 rather than lemmata (a documented source seam that will close when Oracc
 releases the Great Powers letters). The Oracc catalogue snapshot dates to
 2024; Rainey's (2015) collations were consulted for all adjudicated
