@@ -1,0 +1,306 @@
+id_text,designation,parsed_sender,parsed_sender_kind,parsed_addressee,parsed_addressee_kind,cat_sender,cat_recipient,sender_agree,addressee_agree
+P271133,EA 045,ʿAmmiṯtamru,name,PHARAOH,pharaoh,Ammistamru of Ugarit,[Amenhotep III of Egypt],True,True
+P271135,EA 046,,none,,none,[a king of Ugarit],[an Egyptian pharaoh],,
+P271134,EA 047,,none,,none,[a king of Ugarit],[an Egyptian pharaoh],,
+P271132,EA 048,x-Hebat,name,,none,[the queen of Ugarit],[the queen of Egypt],,
+P271011,EA 049,Niqma-Haddu,name,PHARAOH,pharaoh,Niqmadda II of Ugarit,[Amenhotep IV of Egypt],True,True
+P271052,EA 050,,none,,none,[missing],[the queen of Egypt],,
+P271215,EA 051,HadduORTeššub-nerari,name,PHARAOH,pharaoh,Addu-nirari of Nuhašše,[an Egyptian pharaoh],True,True
+P270989,EA 052,Akizzi,name,PHARAOH,pharaoh,"Akizzi, mayor of Qatna",[an Egyptian pharaoh],True,True
+P270922,EA 053,Akizzi,name,Naphuriya,pharaoh,"Akizzi, mayor of Qatna",Amenhotep IV of Egypt,True,True
+P271164,EA 054,Akizzi,name,PHARAOH,pharaoh,"Akizzi, mayor of Qatna",Amenhotep IV of Egypt,True,True
+P270921,EA 055,Akizzi,name,Naphuriya,pharaoh,"Akizzi, mayor of Qatna",Amenhotep IV of Egypt,True,True
+P271150,EA 056 + EA 361,Akizzi,name,PHARAOH,pharaoh,"[Akizzi, mayor of Qatna?]",[Amenhotep IV of Egypt],True,True
+P271161,EA 057,,none,,none,[missing],[missing],,
+P271152,EA 058,Tehu-Teššub,name,PHARAOH,pharaoh,Tehu-Teššup,[an Egyptian pharaoh],True,True
+P270926,EA 059,Tunip,collective,PHARAOH,pharaoh,the citizens of Tunip,[An Egyptian pharaoh],True,True
+P271205,EA 060,ʿAbdi-ʾAširte,name,PHARAOH,pharaoh,"ʿAbdi-Aširta, a leader of Amurru",[an Egyptian pharaoh],True,True
+P270883,EA 061,ʿAbdi-ʾAširte,name,PHARAOH,pharaoh,"ʿAbdi-Aširta, a leader of Amurru",[an Egyptian pharaoh],True,True
+P271123,EA 062,ʿAbdi-ʾAširte,name,Paḥanaṯe,name,"ʿAbdi-Aširta, a leader of Amurru",[An Egyptian pharaoh],True,False
+P270919,EA 063,ʿAbdi-ʿAštarti,name,PHARAOH,pharaoh,"ʿAbdi-Aštarti, mayor of Gimtu",[An Egyptian pharaoh],True,True
+P270918,EA 064,ʿAbdi-ʿAštarti,name,PHARAOH,pharaoh,"ʿAbdi-Aštarti, mayor of Gimtu",[An Egyptian pharaoh],True,True
+P271127,EA 065,ʿAbdi-ʿAštarti,name,PHARAOH,pharaoh,"ʿAbdi-Aštarti, mayor of Gimtu",[an Egyptian pharaoh],True,True
+P271142,EA 066,,none,PHARAOH,pharaoh,[missing],[missing],,
+P271049,EA 067,PHARAOH,pharaoh,PHARAOH,pharaoh,[missing],[missing],,
+P271031,EA 068,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P270958,EA 069,Rib-Addi,name,,none,Rib-Hadda of Byblos,[an Egyptian official],True,
+P271020,EA 070,Rib-Addi,name,PHARAOH,pharaoh,[missing],[an Egyptian pharaoh],,True
+P271079,EA 071,Rib-Addi,name,Haya,name,Rib-Hadda of Byblos,"Haya, the Egyptian vizier",True,True
+P271148,EA 072,,none,,none,Rib-Hadda of Byblos,[an Egyptian pharaoh],,
+P270901,EA 073,Rib-Addi,name,Amon-appa,name,Rib-Hadda of Byblos,"Amanappa, an Egyptian official",True,True
+P270898,EA 074,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P270987,EA 075,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P271186,EA 076,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P271082,EA 077,Rib-Addi,name,Amon-appa,name,Rib-Hadda of Byblos,"Amanappa, an Egyptian official",True,True
+P271032,EA 078,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P271081,EA 079,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P271147,EA 080,,none,,none,[missing],[an Egyptian pharaoh],,
+P271033,EA 081,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P270970,EA 082,Rib-Addi,name,Amon-appa,name,Rib-Hadda of Byblos,"Amanappa, an Egyptian official",True,True
+P270900,EA 083,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P271080,EA 084,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P271073,EA 085,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P270907,EA 086,Rib-Addi,name,Amon-appa,name,Rib-Hadda of Byblos,"Amanappa, an Egyptian official",True,True
+P270908,EA 087,Rib-Addi,name,Amon-appa,name,Rib-Hadda of Byblos,"Amanappa, an Egyptian official",True,True
+P270903,EA 088,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P271074,EA 089,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P271105,EA 090,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P271218,EA 091,Rib-Addi,name,,none,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,
+P271217,EA 092,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P271106,EA 093,Rib-Addi,name,Amon-appa,name,Rib-Hadda of Byblos,"Amanappa, an Egyptian official",True,True
+P270986,EA 094,,none,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],,True
+P271111,EA 095,Rib-Addi,name,,none,Rib-Hadda of Byblos,[an Egyptian official],True,
+P271030,EA 096,,none,Rib-Addi,name,[an Egyptian general],Rib-Hadda of Byblos,,True
+P271055,EA 097,Yapaʾ-BaʿluORHaddu,name,Šum-Haddu,name,"Yappah-Hadda, mayor of Beirut","Šumu-Haddi, a mayor",True,True
+P271118,EA 098,Yapaʾ-Haddi,name,Yanḥamu,name,"Yappah-Hadda, mayor of Beirut","Yanhamu, the Egyptian commissioner",True,True
+P270974,EA 099,PHARAOH,pharaoh,x-aṣmanu,name,[an Egyptian pharaoh],[missing],True,
+P270927,EA 100,king of Irqata,king-of-GN,PHARAOH,pharaoh,the city of Irqata,[an Egyptian pharaoh],True,True
+P270929,EA 101,,none,,none,[Rib-Hadda of Byblos],[an Egyptian pharaoh],,
+P270909,EA 102,Rib-Addi,name,Yanḥamu,name,Rib-Hadda of Byblos,"[Yanhamu, the Egyptian commissioner]",True,True
+P271029,EA 103,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P270981,EA 104,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P271075,EA 105,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P271206,EA 106,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P271208,EA 107,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P271207,EA 108,,none,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],,True
+P271076,EA 109,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P271109,EA 110,Rib-Addi,name,PHARAOH,pharaoh,[missing],[an Egyptian pharaoh],,True
+P271078,EA 111,Rib-Addi,name,PHARAOH,pharaoh,[Rib-Hadda of Byblos],[an Egyptian pharaoh],True,True
+P271107,EA 112,,none,PHARAOH,pharaoh,[Rib-Hadda of Byblos],[an Egyptian pharaoh],,True
+P270983,EA 113,,none,,none,[missing],[an Egyptian pharaoh],,
+P270899,EA 114,,none,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],,True
+P271077,EA 115,,none,,none,[Rib-Hadda of Byblos],[an Egyptian pharaoh],,
+P270982,EA 116,,none,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],,True
+P271211,EA 117,,none,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],,True
+P270886,EA 118,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P271210,EA 119,,none,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],,True
+P271083,EA 120,,none,,none,[Rib-Hadda of Byblos],[an Egyptian pharaoh],,
+P271108,EA 121,,none,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],,True
+P271072,EA 122,,none,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],,True
+P270906,EA 123,,none,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],,True
+P270985,EA 124,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P270905,EA 125,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P271028,EA 126,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P271129,EA 127,Rib-Addi,name,PHARAOH,pharaoh,[Rib-Hadda of Byblos],[an Egyptian pharaoh],True,True
+P271167,EA 128,,none,,none,[Rib-Hadda of Byblos],[an Egyptian pharaoh],,
+P271084,EA 129,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P271071,EA 130,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P270910,EA 131,,none,,none,[Rib-Hadda of Byblos],[an Egyptian pharaoh],,
+P270904,EA 132,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P271110,EA 133,,none,,none,[Rib-Hadda of Byblos],[an Egyptian pharaoh],,
+P270984,EA 134,,none,Gublu,collective,[Rib-Hadda of Byblos],[an Egyptian pharaoh],,False
+P270879,EA 135,,none,Ṣumur,collective,[Rib-Hadda of Byblos],[an Egyptian pharaoh],,False
+P270902,EA 136,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P271021,EA 137,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P271212,EA 138,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P270930,EA 139,ʾIli-rapiʾ,name,PHARAOH,pharaoh,Ili-rapih of Byblos,[an Egyptian pharaoh],True,True
+P271085,EA 140,ʾIli-rapiʾ,name,PHARAOH,pharaoh,Ili-rapih of Byblos,[an Egyptian pharaoh],True,True
+P270911,EA 141,ʿAmmu-nira,name,PHARAOH,pharaoh,Ammunira of Beirut,[an Egyptian pharaoh],True,True
+P270912,EA 142,ʿAmmu-nira,name,PHARAOH,pharaoh,Ammunira of Beirut,[an Egyptian pharaoh],True,True
+P271043,EA 143,ʿAmmu-nira,name,PHARAOH,pharaoh,Ammunira of Beirut,[an Egyptian pharaoh],True,True
+P271185,EA 144,Zimri-Haddu,name,PHARAOH,pharaoh,Zimreddi of Sidon,[an Egyptian pharaoh],True,True
+P271136,EA 145,Zimri-Haddu,name,X-tti,name,Zimreddi of Sidon,[missing],True,
+P271166,EA 146,ʾAbi-Milki,name,PHARAOH,pharaoh,Abi-Milku of Tyre,[an Egyptian pharaoh],True,True
+P270914,EA 147,ʾAbi-Milki,name,PHARAOH,pharaoh,Abi-Milku of Tyre,[an Egyptian pharaoh],True,True
+P270994,EA 148,ʾAbi-Milki,name,PHARAOH,pharaoh,Abi-Milku of Tyre,[an Egyptian pharaoh],True,True
+P270913,EA 149,ʾAbi-Milki,name,PHARAOH,pharaoh,Abi-Milku of Tyre,[an Egyptian pharaoh],True,True
+P270995,EA 150,ʾAbi-Milki,name,PHARAOH,pharaoh,Abi-Milku of Tyre,[an Egyptian pharaoh],True,True
+P270915,EA 151,ʾAbi-Milki,name,PHARAOH,pharaoh,Abi-Milku of Tyre,[an Egyptian pharaoh],True,True
+P271155,EA 152,ʾAbi-Milki,name,PHARAOH,pharaoh,Abi-Milku of Tyre,[an Egyptian pharaoh],True,True
+P271025,EA 153,ʾAbi-Milki,name,PHARAOH,pharaoh,Abi-Milku of Tyre,[an Egyptian pharaoh],True,True
+P271154,EA 154,ʾAbi-Milki,name,PHARAOH,pharaoh,Abi-Milku of Tyre,[an Egyptian pharaoh],True,True
+P270916,EA 155,ʾAbi-Milki,name,PHARAOH,pharaoh,Abi-Milku of Tyre,[an Egyptian pharaoh],True,True
+P271199,EA 156,ʿAḏiri,name,PHARAOH,pharaoh,Aziru of Amurru,[an Egyptian pharaoh],True,True
+P271216,EA 157,ʿAḏiri,name,PHARAOH,pharaoh,Aziru of Amurru,[an Egyptian pharaoh],True,True
+P270988,EA 158,ʿAḏiri,name,Tutu,name,Aziru of Amurru,"Tutu, an Egyptian official",True,True
+P271102,EA 159,ʿAḏiri,name,PHARAOH,pharaoh,Aziru of Amurru,[an Egyptian pharaoh],True,True
+P271022,EA 160,ʿAḏiri,name,PHARAOH,pharaoh,Aziru of Amurru,[an Egyptian pharaoh],True,True
+P270920,EA 161,ʿAḏiri,name,PHARAOH,pharaoh,Aziru of Amurru,[an Egyptian pharaoh],True,True
+P271209,EA 162,king of Gublu,king-of-GN,ʿAḏiri,name,[an Egyptian pharaoh],Aziru of Amurru,False,True
+P271174,EA 163,,none,,none,[Aziru of Amurru],[an Egyptian pharaoh],,
+P271182,EA 164,ʿAḏiri,name,Tutu,name,Aziru of Amurru,"Tutu, an Egyptian official",True,True
+P271187,EA 165,ʿAḏiri,name,PHARAOH,pharaoh,Aziru of Amurru,[an Egyptian pharaoh],True,True
+P271183,EA 166,ʿAḏiri,name,Haya,name,Aziru of Amurru,"Haay, an Egyptian official",True,True
+P271188,EA 167,ʿAḏiri,name,Tutu,name,[Aziru of Amurru],"[Tutu, an Egyptian official]",True,True
+P271103,EA 168,ʿAḏiri,name,PHARAOH,pharaoh,Aziru of Amurru,[an Egyptian pharaoh],True,True
+P271104,EA 169,,none,PHARAOH,pharaoh,[DU-Teššup of Amurru],"Tutu, an Egyptian official",,False
+P271189,EA 170,Baʿluya,name,PHARAOH,pharaoh,"Baʿaluya and Bet-ili, officials of Amurru",Aziru of Amurru,False,False
+P271158,EA 171,ʿAḏiri,name,PHARAOH,pharaoh,[Aziru of Amurru],[an Egyptian pharaoh],True,True
+P271176,EA 172,,none,,none,[missing],[missing],,
+P271169,EA 173,,none,ʿAmqu,collective,[missing],[missing],,
+P271044,EA 174,Biʾri,name,PHARAOH,pharaoh,Bieri of Hašabu,[an Egyptian pharaoh],True,True
+P271046,EA 175,ʾIli-dayyani,name,PHARAOH,pharaoh,ʿIldayyi of Hasi,[an Egyptian pharaoh],True,True
+P270931,EA 176,,none,PHARAOH,pharaoh,[missing],[an Egyptian pharaoh],,True
+P271126,EA 177,Yamiʾuta,name,PHARAOH,pharaoh,Yamiuta of Guddašuna,[an Egyptian pharaoh],True,True
+P271120,EA 178,Hibiya,name,,none,"Hibiya, an official",[an Egyptian official],True,
+P271143,EA 179,,none,,none,[missing],[an Egyptian pharaoh],,
+P271015,EA 180,,none,,none,[missing],[an Egyptian pharaoh],,
+P271070,EA 181,,none,,none,[missing],[an Egyptian pharaoh],,
+P271067,EA 182,Šuttarna,name,PHARAOH,pharaoh,Šutarna of Mušihuna,[an Egyptian pharaoh],True,True
+P271053,EA 183,Šuttarna,name,PHARAOH,pharaoh,Šutarna of Mušihuna,[an Egyptian pharaoh],True,True
+P270882,EA 184,Šuttarna,name,PHARAOH,pharaoh,Šutarna of Mušihuna,[an Egyptian pharaoh],True,True
+P271160,EA 185,Mayarzana,name,PHARAOH,pharaoh,Mayarzana of Hasi,[an Egyptian pharaoh],True,True
+P271159,EA 186,Mayarzana,name,PHARAOH,pharaoh,Mayarzana of Hasi,[an Egyptian pharaoh],True,True
+P270962,EA 187,Śadîya,name,PHARAOH,pharaoh,Šatiya of Enišasi,[an Egyptian pharaoh],True,True
+P271018,EA 188,,none,PHARAOH,pharaoh,[missing],[an Egyptian pharaoh],,True
+P271198,EA 189,Etakkama,name,PHARAOH,pharaoh,Etakkama of Qadesh,[an Egyptian pharaoh],True,True
+P270880,EA 190,,none,,none,[an Egyptian pharaoh],Etakkama of Qadesh,,
+P270990,EA 191,Arzawya,name,PHARAOH,pharaoh,Arsawuya of Ruhizza,[an Egyptian pharaoh],True,True
+P271117,EA 192,Arzawya,name,PHARAOH,pharaoh,Arsawuya of Ruhizza,[an Egyptian pharaoh],True,True
+P271064,EA 193,Tiwate,name,PHARAOH,pharaoh,"Tiwati, mayor of Lapana",[an Egyptian pharaoh],True,True
+P271144,EA 194,Biryawaza,name,PHARAOH,pharaoh,"Biryawaza, mayor of Damascus",[an Egyptian pharaoh],True,True
+P270991,EA 195,Biryawaza,name,PHARAOH,pharaoh,"Biryawaza, mayor of Damascus",[an Egyptian pharaoh],True,True
+P271050,EA 196,Biryawaza,name,PHARAOH,pharaoh,"Biryawaza, mayor of Damascus",[an Egyptian pharaoh],True,True
+P270928,EA 197,,none,A-X,collective,"Biryawaza, mayor of Damascus",[an Egyptian pharaoh],,
+P270993,EA 198,Arašša,name,PHARAOH,pharaoh,Arašša of Kumidu,[an Egyptian pharaoh],True,True
+P271016,EA 199,,none,PHARAOH,pharaoh,[missing],[an Egyptian pharaoh],,True
+P271069,EA 200,,none,PHARAOH,pharaoh,[missing],[an Egyptian pharaoh],,True
+P271200,EA 201,Artamanya,name,PHARAOH,pharaoh,Artamanya of Ṣiribašani,[an Egyptian pharaoh],True,True
+P271193,EA 202,Amayaše,name,PHARAOH,pharaoh,"Amawaše, mayor of Bašan(?)",[an Egyptian pharaoh],True,True
+P271192,EA 203,ʿAbdi-Milki,name,PHARAOH,pharaoh,ʿAbdi-Milki of Šashimi,[an Egyptian pharaoh],True,True
+P271190,EA 204,king of Qanu,king-of-GN,PHARAOH,pharaoh,the ruler of Qanu,[an Egyptian pharaoh],True,True
+P270963,EA 205,king of Ṭubu,king-of-GN,PHARAOH,pharaoh,the ruler of Ṭubu,[an Egyptian pharaoh],True,True
+P270992,EA 206,king of Naṣiba,king-of-GN,PHARAOH,pharaoh,the ruler of Naziha,[an Egyptian pharaoh],False,True
+P271051,EA 207,Ipte-x,name,PHARAOH,pharaoh,Ipte[...],[an Egyptian pharaoh],,True
+P271140,EA 208,,none,,none,[missing],[an Egyptian pharaoh],,
+P270872,EA 209,Zišamimi,name,PHARAOH,pharaoh,"Zišamimi, a mayor(?)",[an Egyptian pharaoh],True,True
+P271170,EA 210,Zišamimi,name,Nibhuriya,name,"Zišamimi, a mayor(?)",[an Egyptian official],True,False
+P271094,EA 211,Zitri-Yarah,name,PHARAOH,pharaoh,"Zitriyara, a mayor(?)",[an Egyptian pharaoh],True,True
+P271045,EA 212,Zitri-Yarah,name,PHARAOH,pharaoh,"Zitriyara, a mayor(?)",[an Egyptian pharaoh],True,True
+P270961,EA 213,Zitri-Yarah,name,PHARAOH,pharaoh,"Zitriyara, a mayor(?)",[an Egyptian pharaoh],True,True
+P271063,EA 214,,none,PHARAOH,pharaoh,[missing],[an Egyptian pharaoh],,True
+P270945,EA 215,Bayawa,name,PHARAOH,pharaoh,"Bayawa, a mayor in Syria(?)",[an Egyptian pharaoh],True,True
+P271012,EA 216,Bayawa,name,PHARAOH,pharaoh,"Bayawa, a mayor in Syria(?)",[an Egyptian pharaoh],True,True
+P271060,EA 217,PHARAOH,pharaoh,PHARAOH,pharaoh,[missing],[an Egyptian pharaoh],,True
+P271137,EA 218,,none,PHARAOH,pharaoh,[missing],[an Egyptian pharaoh],,True
+P271156,EA 219,,none,PHARAOH,pharaoh,[missing],[an Egyptian pharaoh],,True
+P271013,EA 220,Nukurtuya,name,PHARAOH,pharaoh,Kurtuya of ...nu,[an Egyptian pharaoh],,True
+P271203,EA 221,Yiktasu,name,PHARAOH,pharaoh,"Wiktasu, a mayor(?)",[an Egyptian pharaoh],True,True
+P271125,EA 222,Yiktasu,name,PHARAOH,pharaoh,"Wiktasu, a mayor(?)",[an Egyptian pharaoh],True,True
+P271165,EA 223,Intaruta,name,PHARAOH,pharaoh,"Endaruta, mayor of Akšapa",[an Egyptian pharaoh],True,True
+P270951,EA 224,Šum-Haddu,name,PHARAOH,pharaoh,"Šum-Adda, mayor of Šamhuna",[an Egyptian pharaoh],True,True
+P271014,EA 225,Šum-Haddu,name,PHARAOH,pharaoh,"Šum-Adda, mayor of Šamhuna",[an Egyptian pharaoh],True,True
+P271066,EA 226,Ṯipṭu-ri-ZA,name,PHARAOH,pharaoh,"Šipṭu-Riṣa, a mayor(?)",[an Egyptian pharaoh],True,True
+P270932,EA 227,king of Haṣura,king-of-GN,PHARAOH,pharaoh,"ʿAbdi-Tirši, king of Hazor",[an Egyptian pharaoh],True,True
+P270933,EA 228,ʿAbdi-Tirši,name,PHARAOH,pharaoh,"ʿAbdi-Tirši, king of Hazor",[an Egyptian pharaoh],True,True
+P271131,EA 229,ʿAbdi-Na-x,name,PHARAOH,pharaoh,ʿAbdina of Gimtu,[an Egyptian pharaoh],,True
+P270968,EA 230,Maya,name,PHARAOH,pharaoh,"Yama, a mayor(?)",[an Egyptian pharaoh],False,True
+P271056,EA 231,,none,PHARAOH,pharaoh,[missing],[an Egyptian pharaoh],,True
+P271086,EA 232,Surata,name,PHARAOH,pharaoh,Surata of Akka,[an Egyptian pharaoh],True,True
+P270996,EA 233,Satatna,name,PHARAOH,pharaoh,Satatna of Akka,[an Egyptian pharaoh],True,True
+P271087,EA 234,Satatna,name,PHARAOH,pharaoh,Satatna of Akka,[an Egyptian pharaoh],True,True
+P270917,EA 235 (+) EA 327,Satatna,name,PHARAOH,pharaoh,Satatna of Akka,[an Egyptian pharaoh],True,True
+P270881,EA 236,,none,,none,[missing],[missing],,
+P271141,EA 237,,none,,none,"Bayadi, a mayor in Syria(?)",[an Egyptian pharaoh],,
+P271163,EA 238,Bayadi,name,,none,"Bayadi, a mayor in Syria(?)",[an Egyptian official],True,
+P271196,EA 239,Baduzana,name,PHARAOH,pharaoh,"Baduzana, mayor in Syria(?)",[an Egyptian pharaoh],True,True
+P271180,EA 240,,none,PHARAOH,pharaoh,[missing],[missing],,
+P271121,EA 241,Ruṣmanya,name,PHARAOH,pharaoh,Rusmanya of Šaruna,[an Egyptian pharaoh],True,True
+P271113,EA 242,Biridiya,name,PHARAOH,pharaoh,Biridiya of Megiddo,[an Egyptian pharaoh],True,True
+P271112,EA 243,Biridiya,name,PHARAOH,pharaoh,Biridiya of Megiddo,[an Egyptian pharaoh],True,True
+P270997,EA 244,Biridiya,name,PHARAOH,pharaoh,Biridiya of Megiddo,[an Egyptian pharaoh],True,True
+P270957,EA 245,,none,,none,Biridiya of Megiddo,[an Egyptian pharaoh],,
+P271095,EA 246,Biridiya,name,PHARAOH,pharaoh,Biridiya of Megiddo,[an Egyptian pharaoh],True,True
+P271017,EA 247,Biridiya,name,PHARAOH,pharaoh,[Biridiya of Megiddo],[an Egyptian pharaoh],True,True
+P270944,EA 248,Yašdata,name,PHARAOH,pharaoh,"Yašdata, a mayor(?)",[an Egyptian pharaoh],True,True
+P271059,EA 249,Baʿlu-UR.SAG,name,PHARAOH,pharaoh,"Baʿlu-UR.SAG, a mayor in Palestine",[an Egyptian pharaoh],True,True
+P270998,EA 250,Baʿlu-UR.SAG,name,PHARAOH,pharaoh,"Baʿlu-UR.SAG, a mayor in Palestine",[an Egyptian pharaoh],True,True
+P270964,EA 251,,none,,none,[missing],[an Egyptian pharaoh],,
+P270946,EA 252,Labʾaya,name,PHARAOH,pharaoh,"Labʾayu, mayor of Šakmu",[an Egyptian pharaoh],True,True
+P271047,EA 253,Labʾaya,name,PHARAOH,pharaoh,"Labʾayu, mayor of Šakmu",[an Egyptian pharaoh],True,True
+P271197,EA 254,Labʾaya,name,PHARAOH,pharaoh,"Labʾayu, mayor of Šakmu",[an Egyptian pharaoh],True,True
+P271195,EA 255,Mut-Baʿli,name,PHARAOH,pharaoh,"Mur-Bahlu, mayor of Pihilu",[an Egyptian pharaoh],True,True
+P270949,EA 256,Mut-Baʿli,name,Yanḥamu,name,"Mur-Bahlu, mayor of Pihilu","Yanhamu, the Egyptian commissioner",True,True
+P271151,EA 257,Baʿlu-meher,name,PHARAOH,pharaoh,"Baʿlu-mehir, a mayor in Palestine",[an Egyptian pharaoh],True,True
+P271191,EA 258,Baʿlu-meher,name,PHARAOH,pharaoh,"Baʿlu-mehir, a mayor in Palestine",[an Egyptian pharaoh],True,True
+P271041,EA 259,Baʿlu-meher,name,PHARAOH,pharaoh,"Baʿlu-mehir, a mayor in Palestine",[an Egyptian pharaoh],True,True
+P271027,EA 260,,none,Baʿlu-Mer,name,"Baʿlu-mehir, a mayor in Palestine",[an Egyptian pharaoh],,False
+P270960,EA 261,Dašru,name,PHARAOH,pharaoh,"Dašru, a mayor in Palestine(?)",[an Egyptian pharaoh],True,True
+P271010,EA 262,Dašru,name,PHARAOH,pharaoh,"Dašru, a mayor in Palestine(?)",[an Egyptian pharaoh],True,True
+P271130,EA 263,,none,PHARAOH,pharaoh,[missing],[an Egyptian pharaoh],,True
+P270955,EA 264,Tagi,name,PHARAOH,pharaoh,"Tagi, mayor of Gintikirmil",[an Egyptian pharaoh],True,True
+P271138,EA 265,Tagi,name,PHARAOH,pharaoh,"Tagi, mayor of Gintikirmil",[an Egyptian pharaoh],True,True
+P271048,EA 266,Tagi,name,PHARAOH,pharaoh,"Tagi, mayor of Gintikirmil",[an Egyptian pharaoh],True,True
+P270999,EA 267,Milki-ʾili,name,PHARAOH,pharaoh,"Milki-ilu, mayor of Gazru",[an Egyptian pharaoh],True,True
+P270838,EA 268,Milki-ʾili,name,PHARAOH,pharaoh,"Milki-ilu, mayor of Gazru",[an Egyptian pharaoh],True,True
+P270948,EA 269,Milki-ʾili,name,PHARAOH,pharaoh,"Milki-ilu, mayor of Gazru",[an Egyptian pharaoh],True,True
+P270947,EA 270,Milki-ʾili,name,PHARAOH,pharaoh,"Milki-ilu, mayor of Gazru",[an Egyptian pharaoh],True,True
+P271040,EA 271,Milki-ʾili,name,PHARAOH,pharaoh,"Milki-ilu, mayor of Gazru",[an Egyptian pharaoh],True,True
+P270965,EA 272,Baʿlu-ṯipṭi,name,PHARAOH,pharaoh,Šum-[...],[an Egyptian pharaoh],,True
+P271128,EA 273,Belet-UR.MAH.MEŠ,name,PHARAOH,pharaoh,"NIN-UR.MAH-MEŠ, a queen mother",[an Egyptian pharaoh],True,True
+P271001,EA 274,Belet-UR.MAH.MEŠ,name,PHARAOH,pharaoh,"NIN-UR.MAH-MEŠ, a queen mother",[an Egyptian pharaoh],True,True
+P271124,EA 275,Yaʿḏib-Haddu,name,PHARAOH,pharaoh,"Yahzib-Adda, a mayor(?)",[an Egyptian pharaoh],True,True
+P271145,EA 276,Yaʿḏib-Haddu,name,PHARAOH,pharaoh,"Yahzib-Adda, a mayor(?)",[an Egyptian pharaoh],True,True
+P270966,EA 277,,none,PHARAOH,pharaoh,"[Yahzib-Adda, a mayor(?)]",[an Egyptian pharaoh],,True
+P270954,EA 278,Šuwardata,name,PHARAOH,pharaoh,"Šuwardata, mayor of Gimtu",[an Egyptian pharaoh],True,True
+P271093,EA 279,Šuwardata,name,PHARAOH,pharaoh,"Šuwardata, mayor of Gimtu",[an Egyptian pharaoh],True,True
+P271000,EA 280,Šuwardata,name,PHARAOH,pharaoh,"Šuwardata, mayor of Gimtu",[an Egyptian pharaoh],True,True
+P271162,EA 281,Šuwardata,name,PHARAOH,pharaoh,"Šuwardata, mayor of Gimtu",[an Egyptian pharaoh],True,True
+P270953,EA 282,Šuwardata,name,PHARAOH,pharaoh,"Šuwardata, mayor of Gimtu",[an Egyptian pharaoh],True,True
+P271201,EA 283,Šuwardata,name,PHARAOH,pharaoh,"Šuwardata, mayor of Gimtu",[an Egyptian pharaoh],True,True
+P270952,EA 284,Šuwardata,name,PHARAOH,pharaoh,"Šuwardata, mayor of Gimtu",[an Egyptian pharaoh],True,True
+P271057,EA 285,IR₃-Hebat,name,PHARAOH,pharaoh,ʿAbdi-Heba of Jerusalem,[an Egyptian pharaoh],True,True
+P271088,EA 286,IR₃-Hebat,name,PHARAOH,pharaoh,ʿAbdi-Heba of Jerusalem,[an Egyptian pharaoh],True,True
+P271090,EA 287,IR₃-Hebat,name,PHARAOH,pharaoh,ʿAbdi-Heba of Jerusalem,[an Egyptian pharaoh],True,True
+P271089,EA 288,IR₃-Hebat,name,PHARAOH,pharaoh,ʿAbdi-Heba of Jerusalem,[an Egyptian pharaoh],True,True
+P271091,EA 289,IR₃-Hebat,name,PHARAOH,pharaoh,ʿAbdi-Heba of Jerusalem,[an Egyptian pharaoh],True,True
+P271092,EA 290,IR₃-Hebat,name,PHARAOH,pharaoh,ʿAbdi-Heba of Jerusalem,[an Egyptian pharaoh],True,True
+P271149,EA 291,,none,,none,[missing],[an Egyptian pharaoh],,
+P270969,EA 292,Baʿlu-ṯipṭi,name,PHARAOH,pharaoh,"Adda-danu, mayor of Gazru",[an Egyptian pharaoh],False,True
+P271002,EA 293,Baʿlu-ṯipṭi,name,PHARAOH,pharaoh,"Adda-danu, mayor of Gazru",[an Egyptian pharaoh],False,True
+P270956,EA 294,Zimri-Haddu,name,PHARAOH,pharaoh,"Adda-danu(?), mayor of Gazru",[an Egyptian pharaoh],False,True
+P271096,EA 295,Baʿlu-ṯipṭi,name,PHARAOH,pharaoh,Baʿlu-Danu of Tyre,[an Egyptian pharaoh],False,True
+P270942,EA 296,Yahtiru,name,PHARAOH,pharaoh,"Yahtiru, mayor of Ashdod",[an Egyptian pharaoh],True,True
+P270936,EA 297,Yapaʾu,name,PHARAOH,pharaoh,"Yapahu, mayor of Gazru",[an Egyptian pharaoh],True,True
+P270935,EA 298,Yapaʾu,name,PHARAOH,pharaoh,"Yapahu, mayor of Gazru",[an Egyptian pharaoh],True,True
+P270934,EA 299,Yapaʾu,name,PHARAOH,pharaoh,"Yapahu, mayor of Gazru",[an Egyptian pharaoh],True,True
+P271062,EA 300,Yapaʾu,name,PHARAOH,pharaoh,"Yapahu, mayor of Gazru",[an Egyptian pharaoh],True,True
+P271008,EA 301,Šubandu,name,PHARAOH,pharaoh,"Yapahu, mayor of Gazru",[an Egyptian pharaoh],False,True
+P271194,EA 302,Šubandu,name,PHARAOH,pharaoh,"Šub-Andu, mayor of Ashkelon",[an Egyptian pharaoh],True,True
+P270923,EA 303,Šubandu,name,PHARAOH,pharaoh,"Šub-Andu, mayor of Ashkelon",[an Egyptian pharaoh],True,True
+P270924,EA 304,Šubandu,name,PHARAOH,pharaoh,"Šub-Andu, mayor of Ashkelon",[an Egyptian pharaoh],True,True
+P271007,EA 305,Šubandu,name,PHARAOH,pharaoh,"Šub-Andu, mayor of Ashkelon",[an Egyptian pharaoh],True,True
+P270925,EA 306,Šubandu,name,PHARAOH,pharaoh,"Šub-Andu, mayor of Ashkelon",[an Egyptian pharaoh],True,True
+P271042,EA 307,,none,,none,[missing],[an Egyptian pharaoh],,
+P271058,EA 308,,none,,none,[missing],[an Egyptian pharaoh],,
+P271168,EA 309,,none,PHARAOH,pharaoh,[missing],[an Egyptian pharaoh],,True
+P271139,EA 310,,none,,none,[missing],[missing],,
+P271054,EA 311,,none,PHARAOH,pharaoh,[missing],[an Egyptian pharaoh],,True
+P271175,EA 312,,none,PHARAOH,pharaoh,[missing],[missing],,
+P271009,EA 313,,none,,none,[missing],[missing],,
+P271019,EA 314,Pu-Baʿlu,name,PHARAOH,pharaoh,"Pu-Baʿlu, mayor of Yurṣa",[an Egyptian pharaoh],True,True
+P270941,EA 315,Pu-Baʿlu,name,PHARAOH,pharaoh,"Pu-Baʿlu, mayor of Yurṣa",[an Egyptian pharaoh],True,True
+P270940,EA 316,Pu-Baʿlu,name,PHARAOH,pharaoh,"Pu-Baʿlu, mayor of Yurṣa",[an Egyptian pharaoh],True,True
+P271119,EA 317,,none,Dagan-takala,name,"Dagan-takala, a mayor in Syria",[an Egyptian pharaoh],,False
+P270959,EA 318,,none,Dagan-takala,name,"Dagan-takala, a mayor in Syria",[an Egyptian pharaoh],,False
+P271157,EA 319,Ṣur-ʾAšar,name,PHARAOH,pharaoh,"Ṣur-Ašar, ruler of Ahtiašna(?)",[an Egyptian pharaoh],True,True
+P271005,EA 320,Yidya,name,PHARAOH,pharaoh,"Yidyia, ruler of Ashkelon",[an Egyptian pharaoh],True,True
+P271114,EA 321,Yidya,name,PHARAOH,pharaoh,"Yidyia, ruler of Ashkelon",[an Egyptian pharaoh],True,True
+P271004,EA 322,Yidya,name,PHARAOH,pharaoh,"Yidyia, ruler of Ashkelon",[an Egyptian pharaoh],True,True
+P270938,EA 323,Yidya,name,PHARAOH,pharaoh,"Yidyia, ruler of Ashkelon",[an Egyptian pharaoh],True,True
+P270939,EA 324,Yidya,name,PHARAOH,pharaoh,"Yidyia, ruler of Ashkelon",[an Egyptian pharaoh],True,True
+P270937,EA 325,Yidya,name,PHARAOH,pharaoh,"Yidyia, ruler of Ashkelon",[an Egyptian pharaoh],True,True
+P271115,EA 326,Yidya,name,PHARAOH,pharaoh,"Yidyia, ruler of Ashkelon",[an Egyptian pharaoh],True,True
+P271003,EA 328,Yabni-ʾili,name,PHARAOH,pharaoh,"Yabni-Ilu, ruler of Lakiša",[an Egyptian pharaoh],True,True
+P271116,EA 329,Zimri-Haddu,name,PHARAOH,pharaoh,"Zimreddi, ruler of Lakiša",[an Egyptian pharaoh],True,True
+P270950,EA 330,Ṯipṭi-BaʿluORHAddu,name,PHARAOH,pharaoh,"Šipṭi-Baʿla, ruler of Lakiša",[an Egyptian pharaoh],True,True
+P271006,EA 331,Ṯipṭi-BaʿluORHAddu,name,PHARAOH,pharaoh,"Šipṭi-Baʿla, ruler of Lakiša",[an Egyptian pharaoh],True,True
+P271172,EA 332,Ṯipṭi-BaʿluORHAddu,name,PHARAOH,pharaoh,"Šipṭi-Baʿla, ruler of Lakiša",[an Egyptian pharaoh],True,True
+P271023,EA 333,Payapu,name,,none,"Paapu, an Egyptian official",[an Egyptian pharaoh],True,
+P271065,EA 334,x-ya,name,PHARAOH,pharaoh,the ruler of Zuhra(?),[an Egyptian pharaoh],,True
+P271068,EA 335,ʿAbdi-ʿAštarti,name,PHARAOH,pharaoh,"ʿAbdi-Aštarti, mayor of Gimtu",[an Egyptian pharaoh],True,True
+P271146,EA 336,Hizziri,name,PHARAOH,pharaoh,"Hiziru, mayor of Zuhra",[an Egyptian pharaoh],True,True
+P271122,EA 337,Hizziri,name,PHARAOH,pharaoh,"Hiziru, mayor of Zuhra",[an Egyptian pharaoh],True,True
+P271173,EA 338,Zi-x,name,PHARAOH,pharaoh,[missing],[missing],,
+P271177,EA 339,,none,PHARAOH,pharaoh,[missing],[missing],,
+P270873,EA 362,Rib-Addi,name,PHARAOH,pharaoh,Rib-Hadda of Byblos,[an Egyptian pharaoh],True,True
+P270876,EA 363,ʿAbdi-ri-ša,name,PHARAOH,pharaoh,"ʿAbdi-Riša, mayor of Enišasi",[an Egyptian pharaoh],True,True
+P270874,EA 364,ʾAy-ʾab,name,PHARAOH,pharaoh,"Ayyab, mayor of Aštartu",[an Egyptian pharaoh],True,True
+P270877,EA 365,Biridiya,name,PHARAOH,pharaoh,Biridiya of Megiddo,[an Egyptian pharaoh],True,True
+P270875,EA 366,Šuwardata,name,PHARAOH,pharaoh,"Šuwardata, mayor of Gimtu",[an Egyptian pharaoh],True,True
+P270861,EA 367,PHARAOH,pharaoh,Intaruta,name,[an Egyptian pharaoh],"Endaruta, mayor of Akšapa",True,True
+P271026,EA 369,PHARAOH,pharaoh,Milki-ʾili,name,[an Egyptian pharaoh],"Milki-Ilu, mayor of Gazru",True,True
+P270885,EA 370,PHARAOH,pharaoh,Yidya,name,[an Egyptian pharaoh],"Idiya, mayor of Ashkelon",True,True
+P270884,EA 371,,none,,none,[missing],[an Egyptian pharaoh],,
+P270971,EA 378,Yapaʾu,name,PHARAOH,pharaoh,"Yapahu, mayor of Gazru",[an Egyptian pharaoh],True,True
+P270871,EA 381,,none,,none,,,,

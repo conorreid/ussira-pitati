@@ -16,6 +16,16 @@ and publication strategy.
 
 ## Status
 
+Weeks 3–4 milestone hit: `scripts/parse_headers.py` extracts sender/addressee
+from the lemmatized address formulae of all 305 letters and agrees with the
+catalogue's structured fields on **96.1% (sender) / 96.5% (addressee)** of
+comparable cases (milestone was ≥90%). Output: `data/derived/headers.csv`;
+18 residual disagreements are queued for hand-adjudication against
+Moran/Rainey — several look like catalogue errors (e.g. EA 62) or genuine
+edition-vs-edition attribution differences (EA 292–301). The hand-curated
+alias table seeded in `registry/canonical_registry.csv` is the embryo of the
+Phase 1 entity-resolution registry.
+
 Phase 0 complete — see [coverage_report.md](coverage_report.md), which includes
 two significant corrections to PLAN.md §2.1: the raw `catalogue.json` *does*
 carry structured `ancient_author` (sender) and `recipient` fields, and 42/44
