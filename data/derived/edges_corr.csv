@@ -1,0 +1,303 @@
+ea,ea_num,id_text,src,dst,src_tier,dst_tier,named_pharaoh,src_confidence,dst_confidence,has_text,provenience
+EA 001,1,P270887,pharaoh,kadasmanenlili,egypt,great_power,Amenhotep III of Egypt,probable,probable,False,Egypt
+EA 002,2,P271034,kadasmanenlili,pharaoh,great_power,egypt,Amenhotep III of Egypt,probable,probable,False,Babylon
+EA 003,3,P270975,kadasmanenlili,pharaoh,great_power,egypt,Amenhotep III of Egypt,probable,probable,False,Babylon
+EA 004,4,P271101,kadasmanenlili,pharaoh,great_power,egypt,Amenhotep III of Egypt,restored,restored,False,Babylon
+EA 005,5,P270890,pharaoh,kadasmanenlili,egypt,great_power,Amenhotep III of Egypt,probable,probable,False,Egypt
+EA 006,6,P271035,burnaburiasii,pharaoh,great_power,egypt,Amenhotep III of Egypt,probable,probable,False,Babylon
+EA 007,7,P271036,burnaburiasii,babylon,great_power,vassal,,probable,probable,False,Babylon
+EA 008,8,P271038,burnaburiasii,pharaoh,great_power,egypt,Amenhotep IV of Egypt,probable,probable,False,Babylon
+EA 009,9,P270888,burnaburiasii,pharaoh,great_power,egypt,Tutankhamun of Egypt,probable,probable,False,Babylon
+EA 010,10,P270889,burnaburiasii,pharaoh,great_power,egypt,Amenhotep IV of Egypt,probable,probable,False,Babylon
+EA 011,11,P271037,burnaburiasii,pharaoh,great_power,egypt,Amenhotep IV of Egypt,probable,probable,False,Babylon
+EA 012,12,P271061,a-babylonian-princess,pharaoh,vassal,egypt,,restored,restored,False,Babylon
+EA 015,15,P271024,assuruballiti,pharaoh,great_power,egypt,,probable,restored,False,Assyria
+EA 016,16,P270976,assuruballiti,pharaoh,great_power,egypt,,probable,restored,False,Assyria
+EA 017,17,P270895,tusratta,pharaoh,great_power,egypt,Amenhotep III of Egypt,probable,probable,False,Mittani
+EA 019,19,P270894,tusratta,pharaoh,great_power,egypt,Amenhotep III of Egypt,probable,probable,False,Mittani
+EA 020,20,P271179,tusratta,pharaoh,great_power,egypt,Amenhotep III of Egypt,probable,probable,False,Mittani
+EA 021,21,P271178,tusratta,pharaoh,great_power,egypt,Amenhotep III of Egypt,probable,probable,False,Mittani
+EA 023,23,P270896,tusratta,pharaoh,great_power,egypt,Amenhotep III of Egypt,probable,probable,False,Mittani
+EA 024,24,P271214,tusratta,pharaoh,great_power,egypt,Amenhotep III of Egypt,probable,probable,False,Mittani
+EA 026,26,P270897,tusratta,teye,great_power,egypt,,probable,probable,False,Mittani
+EA 027,27,P271181,tusratta,pharaoh,great_power,egypt,Amenhotep IV of Egypt,probable,probable,False,Mittani
+EA 028,28,P270967,tusratta,pharaoh,great_power,egypt,Amenhotep IV of Egypt,probable,probable,False,Mittani
+EA 029,29,P271184,tusratta,pharaoh,great_power,egypt,Amenhotep IV of Egypt,probable,probable,False,Mittani
+EA 030,30,P270943,tusratta,the-kings-of-canaan,great_power,vassal,,restored,probable,False,Mittani
+EA 031,31,P270973,pharaoh,tarhundaradu,egypt,great_power,Amenhotep III of Egypt,probable,probable,False,Egypt
+EA 032,32,P271204,tarhundaradu,pharaoh,great_power,egypt,Amenhotep III of Egypt,restored,restored,False,Arzawa
+EA 033,33,P271098,the-king-of-alasiya,pharaoh,great_power,egypt,Amenhotep IV of Egypt,probable,restored,False,Alashiya
+EA 034,34,P270892,the-king-of-alasiya,pharaoh,great_power,egypt,Amenhotep IV of Egypt,probable,restored,False,Alashiya
+EA 035,35,P270891,the-king-of-alasiya,pharaoh,great_power,egypt,Amenhotep IV of Egypt,probable,restored,False,Alashiya
+EA 037,37,P270893,the-king-of-alasiya,pharaoh,great_power,egypt,Amenhotep IV of Egypt,probable,restored,False,Alashiya
+EA 038,38,P271039,the-king-of-alasiya,pharaoh,great_power,egypt,Amenhotep IV of Egypt,probable,restored,False,Alashiya
+EA 039,39,P270978,the-king-of-alasiya,pharaoh,great_power,egypt,Amenhotep IV of Egypt,probable,restored,False,Alashiya
+EA 040,40,P270979,the-governor-of-alasiya,the-governor-of-egypt,great_power,egypt,,probable,probable,False,Alashiya
+EA 041,41,P270977,suppiluliumai,pharaoh,great_power,egypt,Smenkhkare of Egypt,probable,restored,False,Hatti
+EA 042,42,P271099,the-king-of-hatti,pharaoh,great_power,egypt,,restored,restored,False,Hatti
+EA 043,43,P270878,the-king-of-hatti,pharaoh,great_power,egypt,,restored,restored,False,Hatti
+EA 044,44,P271100,princevita,pharaoh,great_power,egypt,Amenhotep III of Egypt,probable,restored,False,Hatti
+EA 045,45,P271133,ammistamru,pharaoh,vassal,egypt,Amenhotep III of Egypt,certain,certain,True,Ugarit
+EA 046,46,P271135,a-king-of-ugarit,pharaoh,vassal,egypt,,restored,restored,True,Ugarit
+EA 047,47,P271134,a-king-of-ugarit,pharaoh,vassal,egypt,,restored,restored,True,Ugarit
+EA 048,48,P271132,the-queen-of-ugarit,the-queen-of-egypt,vassal,egypt,,restored,restored,True,Ugarit
+EA 049,49,P271011,niqmaddaii,pharaoh,vassal,egypt,Amenhotep IV of Egypt,certain,certain,True,Ugarit
+EA 051,51,P271215,addunirari,pharaoh,vassal,egypt,,certain,certain,True,Nuhašše
+EA 052,52,P270989,akizzi,pharaoh,vassal,egypt,,certain,certain,True,Qaṭna
+EA 053,53,P270922,akizzi,pharaoh,vassal,egypt,Amenhotep IV of Egypt,certain,certain,True,Qaṭna
+EA 054,54,P271164,akizzi,pharaoh,vassal,egypt,Amenhotep IV of Egypt,certain,certain,True,Qaṭna
+EA 055,55,P270921,akizzi,pharaoh,vassal,egypt,Amenhotep IV of Egypt,certain,certain,True,Qaṭna
+EA 056 + EA 361,56,P271150,akizzi,pharaoh,vassal,egypt,Amenhotep IV of Egypt,certain,certain,True,Qaṭna
+EA 058,58,P271152,tehutessup,pharaoh,vassal,egypt,,certain,certain,True,Ullaza
+EA 059,59,P270926,the-citizens-of-tunip,pharaoh,vassal,egypt,,certain,certain,True,Tunip
+EA 060,60,P271205,abdiasirta,pharaoh,vassal,egypt,,certain,certain,True,Amurru
+EA 061,61,P270883,abdiasirta,pharaoh,vassal,egypt,,certain,certain,True,Amurru
+EA 062,62,P271123,abdiasirta,pharaoh,vassal,egypt,,certain,disputed,True,Amurru
+EA 063,63,P270919,abdiastarti,pharaoh,vassal,egypt,,certain,certain,True,Gath
+EA 064,64,P270918,abdiastarti,pharaoh,vassal,egypt,,certain,certain,True,Gath
+EA 065,65,P271127,abdiastarti,pharaoh,vassal,egypt,,certain,certain,True,Gath
+EA 068,68,P271031,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 069,69,P270958,ribhadda,an-egyptian-official,vassal,egypt,,certain,restored,True,Byblos
+EA 071,71,P271079,ribhadda,haya,vassal,egypt,,certain,certain,True,Byblos
+EA 072,72,P271148,ribhadda,pharaoh,vassal,egypt,,probable,restored,True,Byblos
+EA 073,73,P270901,ribhadda,amanappa,vassal,egypt,,certain,certain,True,Byblos
+EA 074,74,P270898,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 075,75,P270987,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 076,76,P271186,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 077,77,P271082,ribhadda,amanappa,vassal,egypt,,certain,certain,True,Byblos
+EA 078,78,P271032,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 079,79,P271081,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 081,81,P271033,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 082,82,P270970,ribhadda,amanappa,vassal,egypt,,certain,certain,True,Byblos
+EA 083,83,P270900,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 084,84,P271080,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 085,85,P271073,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 086,86,P270907,ribhadda,amanappa,vassal,egypt,,certain,certain,True,Byblos
+EA 087,87,P270908,ribhadda,amanappa,vassal,egypt,,certain,certain,True,Byblos
+EA 088,88,P270903,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 089,89,P271074,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 090,90,P271105,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 091,91,P271218,ribhadda,pharaoh,vassal,egypt,,certain,restored,True,Byblos
+EA 092,92,P271217,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 093,93,P271106,ribhadda,amanappa,vassal,egypt,,certain,certain,True,Byblos
+EA 094,94,P270986,ribhadda,pharaoh,vassal,egypt,,probable,certain,True,Byblos
+EA 095,95,P271111,ribhadda,an-egyptian-official,vassal,egypt,,certain,restored,True,Byblos
+EA 096,96,P271030,an-egyptian-general,ribhadda,egypt,vassal,,restored,certain,True,Egypt
+EA 097,97,P271055,yappahhadda,sumuhaddi,vassal,vassal,,certain,certain,True,Unknown location
+EA 098,98,P271118,yappahhadda,yanhamu,vassal,egypt,,certain,certain,True,Unknown location
+EA 100,100,P270927,the-city-of-irqata,pharaoh,vassal,egypt,,certain,certain,True,Irqata
+EA 101,101,P270929,ribhadda,pharaoh,vassal,egypt,,restored,restored,True,Byblos
+EA 102,102,P270909,ribhadda,yanhamu,vassal,egypt,,certain,certain,True,Byblos
+EA 103,103,P271029,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 104,104,P270981,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 105,105,P271075,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 106,106,P271206,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 107,107,P271208,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 108,108,P271207,ribhadda,pharaoh,vassal,egypt,,probable,certain,True,Byblos
+EA 109,109,P271076,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 111,111,P271078,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 112,112,P271107,ribhadda,pharaoh,vassal,egypt,,restored,certain,True,Byblos
+EA 114,114,P270899,ribhadda,pharaoh,vassal,egypt,,probable,certain,True,Byblos
+EA 115,115,P271077,ribhadda,pharaoh,vassal,egypt,,restored,restored,True,Byblos
+EA 116,116,P270982,ribhadda,pharaoh,vassal,egypt,,probable,certain,True,Byblos
+EA 117,117,P271211,ribhadda,pharaoh,vassal,egypt,,probable,certain,True,Byblos
+EA 118,118,P270886,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 119,119,P271210,ribhadda,pharaoh,vassal,egypt,,probable,certain,True,Byblos
+EA 120,120,P271083,ribhadda,pharaoh,vassal,egypt,,restored,restored,True,Byblos
+EA 121,121,P271108,ribhadda,pharaoh,vassal,egypt,,probable,certain,True,Byblos
+EA 122,122,P271072,ribhadda,pharaoh,vassal,egypt,,probable,certain,True,Byblos
+EA 123,123,P270906,ribhadda,pharaoh,vassal,egypt,,probable,certain,True,Byblos
+EA 124,124,P270985,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 125,125,P270905,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 126,126,P271028,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 127,127,P271129,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 128,128,P271167,ribhadda,pharaoh,vassal,egypt,,restored,restored,True,Byblos
+EA 129,129,P271084,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 130,130,P271071,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 131,131,P270910,ribhadda,pharaoh,vassal,egypt,,restored,restored,True,Byblos
+EA 132,132,P270904,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 133,133,P271110,ribhadda,pharaoh,vassal,egypt,,restored,restored,True,Byblos
+EA 134,134,P270984,ribhadda,pharaoh,vassal,egypt,,restored,disputed,True,Byblos
+EA 135,135,P270879,ribhadda,pharaoh,vassal,egypt,,restored,disputed,True,Byblos
+EA 136,136,P270902,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 137,137,P271021,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 138,138,P271212,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 139,139,P270930,ilirapih,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 140,140,P271085,ilirapih,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 141,141,P270911,ammunira,pharaoh,vassal,egypt,,certain,certain,True,Beirut
+EA 142,142,P270912,ammunira,pharaoh,vassal,egypt,,certain,certain,True,Beirut
+EA 143,143,P271043,ammunira,pharaoh,vassal,egypt,,certain,certain,True,Beirut
+EA 144,144,P271185,zimreddi,pharaoh,vassal,egypt,,certain,certain,True,Sidon
+EA 146,146,P271166,abimilku,pharaoh,vassal,egypt,,certain,certain,True,Tyre
+EA 147,147,P270914,abimilku,pharaoh,vassal,egypt,,certain,certain,True,Tyre
+EA 148,148,P270994,abimilku,pharaoh,vassal,egypt,,certain,certain,True,Tyre
+EA 149,149,P270913,abimilku,pharaoh,vassal,egypt,,certain,certain,True,Tyre
+EA 150,150,P270995,abimilku,pharaoh,vassal,egypt,,certain,certain,True,Tyre
+EA 151,151,P270915,abimilku,pharaoh,vassal,egypt,,certain,certain,True,Tyre
+EA 152,152,P271155,abimilku,pharaoh,vassal,egypt,,certain,certain,True,Tyre
+EA 153,153,P271025,abimilku,pharaoh,vassal,egypt,,certain,certain,True,Tyre
+EA 154,154,P271154,abimilku,pharaoh,vassal,egypt,,certain,certain,True,Tyre
+EA 155,155,P270916,abimilku,pharaoh,vassal,egypt,,certain,certain,True,Tyre
+EA 156,156,P271199,aziru,pharaoh,vassal,egypt,,certain,certain,True,Amurru
+EA 157,157,P271216,aziru,pharaoh,vassal,egypt,,certain,certain,True,Amurru
+EA 158,158,P270988,aziru,tutu,vassal,egypt,,certain,certain,True,Amurru
+EA 159,159,P271102,aziru,pharaoh,vassal,egypt,,certain,certain,True,Amurru
+EA 160,160,P271022,aziru,pharaoh,vassal,egypt,,certain,certain,True,Amurru
+EA 161,161,P270920,aziru,pharaoh,vassal,egypt,,certain,certain,True,Amurru
+EA 162,162,P271209,pharaoh,aziru,egypt,vassal,,disputed,certain,True,Egypt
+EA 163,163,P271174,aziru,pharaoh,vassal,egypt,,restored,restored,True,Egypt
+EA 164,164,P271182,aziru,tutu,vassal,egypt,,certain,certain,True,Amurru
+EA 165,165,P271187,aziru,pharaoh,vassal,egypt,,certain,certain,True,Amurru
+EA 166,166,P271183,aziru,haay,vassal,egypt,,certain,certain,True,Amurru
+EA 167,167,P271188,aziru,tutu,vassal,egypt,,certain,certain,True,Amurru
+EA 168,168,P271103,aziru,pharaoh,vassal,egypt,,certain,certain,True,Amurru
+EA 169,169,P271104,dutessup,tutu,vassal,egypt,,restored,disputed,True,Amurru
+EA 170,170,P271189,baaluyaandbetili,aziru,vassal,vassal,,disputed,disputed,True,Amurru
+EA 171,171,P271158,aziru,pharaoh,vassal,egypt,,certain,certain,True,Amurru
+EA 174,174,P271044,bieri,pharaoh,vassal,egypt,,certain,certain,True,Hašabu
+EA 175,175,P271046,ildayyi,pharaoh,vassal,egypt,,certain,certain,True,Hazi
+EA 177,177,P271126,yamiuta,pharaoh,vassal,egypt,,certain,certain,True,Guddašuna
+EA 178,178,P271120,hibiya,an-egyptian-official,vassal,egypt,,certain,restored,True,Unknown location
+EA 182,182,P271067,sutarna,pharaoh,vassal,egypt,,certain,certain,True,Mušihuna
+EA 183,183,P271053,sutarna,pharaoh,vassal,egypt,,certain,certain,True,Mušihuna
+EA 184,184,P270882,sutarna,pharaoh,vassal,egypt,,certain,certain,True,Mušihuna
+EA 185,185,P271160,mayarzana,pharaoh,vassal,egypt,,certain,certain,True,Hazi
+EA 186,186,P271159,mayarzana,pharaoh,vassal,egypt,,certain,certain,True,Hazi
+EA 187,187,P270962,satiya,pharaoh,vassal,egypt,,certain,certain,True,ʿEnu-Šasi
+EA 189,189,P271198,etakkama,pharaoh,vassal,egypt,,certain,certain,True,Qadesh
+EA 190,190,P270880,pharaoh,etakkama,egypt,vassal,,restored,probable,True,Egypt
+EA 191,191,P270990,arsawuya,pharaoh,vassal,egypt,,certain,certain,True,Ruhizu
+EA 192,192,P271117,arsawuya,pharaoh,vassal,egypt,,certain,certain,True,Ruhizu
+EA 193,193,P271064,tiwati,pharaoh,vassal,egypt,,certain,certain,True,Labana
+EA 194,194,P271144,biryawaza,pharaoh,vassal,egypt,,certain,certain,True,Mušihuna
+EA 195,195,P270991,biryawaza,pharaoh,vassal,egypt,,certain,certain,True,Mušihuna
+EA 196,196,P271050,biryawaza,pharaoh,vassal,egypt,,certain,certain,True,Mušihuna
+EA 197,197,P270928,biryawaza,pharaoh,vassal,egypt,,probable,restored,True,Mušihuna
+EA 198,198,P270993,arassa,pharaoh,vassal,egypt,,certain,certain,True,Kumidu
+EA 201,201,P271200,artamanya,pharaoh,vassal,egypt,,certain,certain,True,Ṣiri-Bašani
+EA 202,202,P271193,amawase,pharaoh,vassal,egypt,,certain,certain,True,Unknown location
+EA 203,203,P271192,abdimilki,pharaoh,vassal,egypt,,certain,certain,True,Šasʿimu
+EA 204,204,P271190,the-ruler-of-qanu,pharaoh,vassal,egypt,,certain,certain,True,Qanu
+EA 205,205,P270963,the-ruler-of-tubu,pharaoh,vassal,egypt,,certain,certain,True,Ṭubu
+EA 206,206,P270992,the-ruler-of-naziha,pharaoh,vassal,egypt,,disputed,certain,True,Naṣiba
+EA 207,207,P271051,ipte,pharaoh,vassal,egypt,,probable,certain,True,Unknown location
+EA 209,209,P270872,zisamimi,pharaoh,vassal,egypt,,certain,certain,True,Unknown location
+EA 210,210,P271170,zisamimi,an-egyptian-official,vassal,egypt,,certain,disputed,True,Unknown location
+EA 211,211,P271094,zitriyara,pharaoh,vassal,egypt,,certain,certain,True,Unknown location
+EA 212,212,P271045,zitriyara,pharaoh,vassal,egypt,,certain,certain,True,Unknown location
+EA 213,213,P270961,zitriyara,pharaoh,vassal,egypt,,certain,certain,True,Unknown location
+EA 215,215,P270945,bayawa,pharaoh,vassal,egypt,,certain,certain,True,Unknown location
+EA 216,216,P271012,bayawa,pharaoh,vassal,egypt,,certain,certain,True,Unknown location
+EA 220,220,P271013,kurtuyaofnu,pharaoh,vassal,egypt,,probable,certain,True,Zunu
+EA 221,221,P271203,wiktasu,pharaoh,vassal,egypt,,certain,certain,True,Unknown location
+EA 222,222,P271125,wiktasu,pharaoh,vassal,egypt,,certain,certain,True,Unknown location
+EA 223,223,P271165,endaruta,pharaoh,vassal,egypt,,certain,certain,True,Akšapa
+EA 224,224,P270951,sumadda,pharaoh,vassal,egypt,,certain,certain,True,Šamhuna
+EA 225,225,P271014,sumadda,pharaoh,vassal,egypt,,certain,certain,True,Šamhuna
+EA 226,226,P271066,sipturisa,pharaoh,vassal,egypt,,certain,certain,True,Unknown location
+EA 227,227,P270932,abditirsi,pharaoh,vassal,egypt,,certain,certain,True,Hazor
+EA 228,228,P270933,abditirsi,pharaoh,vassal,egypt,,certain,certain,True,Hazor
+EA 229,229,P271131,abdina,pharaoh,vassal,egypt,,probable,certain,True,Gath
+EA 230,230,P270968,yama,pharaoh,vassal,egypt,,disputed,certain,True,Egypt
+EA 232,232,P271086,surata,pharaoh,vassal,egypt,,certain,certain,True,Akko
+EA 233,233,P270996,satatna,pharaoh,vassal,egypt,,certain,certain,True,Akko
+EA 234,234,P271087,satatna,pharaoh,vassal,egypt,,certain,certain,True,Akko
+EA 235 (+) EA 327,235,P270917,satatna,pharaoh,vassal,egypt,,certain,certain,True,Akko
+EA 237,237,P271141,bayadi,pharaoh,vassal,egypt,,probable,restored,True,Anaharat
+EA 238,238,P271163,bayadi,an-egyptian-official,vassal,egypt,,certain,restored,True,Anaharat
+EA 239,239,P271196,baduzana,pharaoh,vassal,egypt,,certain,certain,True,Anaharat
+EA 241,241,P271121,rusmanya,pharaoh,vassal,egypt,,certain,certain,True,Šaruna
+EA 242,242,P271113,biridiya,pharaoh,vassal,egypt,,certain,certain,True,Megiddo
+EA 243,243,P271112,biridiya,pharaoh,vassal,egypt,,certain,certain,True,Megiddo
+EA 244,244,P270997,biridiya,pharaoh,vassal,egypt,,certain,certain,True,Megiddo
+EA 245,245,P270957,biridiya,pharaoh,vassal,egypt,,probable,restored,True,Megiddo
+EA 246,246,P271095,biridiya,pharaoh,vassal,egypt,,certain,certain,True,Megiddo
+EA 247,247,P271017,biridiya,pharaoh,vassal,egypt,,certain,certain,True,Megiddo
+EA 248,248,P270944,yasdata,pharaoh,vassal,egypt,,certain,certain,True,Taanach
+EA 249,249,P271059,baluursag,pharaoh,vassal,egypt,,certain,certain,True,Rahabu
+EA 250,250,P270998,baluursag,pharaoh,vassal,egypt,,certain,certain,True,Rahabu
+EA 252,252,P270946,labayu,pharaoh,vassal,egypt,,certain,certain,True,Shechem
+EA 253,253,P271047,labayu,pharaoh,vassal,egypt,,certain,certain,True,Shechem
+EA 254,254,P271197,labayu,pharaoh,vassal,egypt,,certain,certain,True,Shechem
+EA 255,255,P271195,murbahlu,pharaoh,vassal,egypt,,certain,certain,True,Pihilu
+EA 256,256,P270949,murbahlu,yanhamu,vassal,egypt,,certain,certain,True,Pihilu
+EA 257,257,P271151,balumehir,pharaoh,vassal,egypt,,certain,certain,True,Tell Yokneam
+EA 258,258,P271191,balumehir,pharaoh,vassal,egypt,,certain,certain,True,Tell Yokneam
+EA 259,259,P271041,balumehir,pharaoh,vassal,egypt,,certain,certain,True,Tell Yokneam
+EA 260,260,P271027,balumehir,pharaoh,vassal,egypt,,probable,disputed,True,Tinni
+EA 261,261,P270960,dasru,pharaoh,vassal,egypt,,certain,certain,True,Tell Yokneam
+EA 262,262,P271010,dasru,pharaoh,vassal,egypt,,certain,certain,True,Tell Yokneam
+EA 264,264,P270955,tagi,pharaoh,vassal,egypt,,certain,certain,True,Ginti-Kirmil
+EA 265,265,P271138,tagi,pharaoh,vassal,egypt,,certain,certain,True,Ginti-Kirmil
+EA 266,266,P271048,tagi,pharaoh,vassal,egypt,,certain,certain,True,Ginti-Kirmil
+EA 267,267,P270999,milkiilu,pharaoh,vassal,egypt,,certain,certain,True,Gezer
+EA 268,268,P270838,milkiilu,pharaoh,vassal,egypt,,certain,certain,True,Gezer
+EA 269,269,P270948,milkiilu,pharaoh,vassal,egypt,,certain,certain,True,Gezer
+EA 270,270,P270947,milkiilu,pharaoh,vassal,egypt,,certain,certain,True,Gezer
+EA 271,271,P271040,milkiilu,pharaoh,vassal,egypt,,certain,certain,True,Gezer
+EA 272,272,P270965,sum,pharaoh,vassal,egypt,,probable,certain,True,Gezer
+EA 273,273,P271128,ninurmahmes,pharaoh,vassal,egypt,,certain,certain,True,ṢaBUma
+EA 274,274,P271001,ninurmahmes,pharaoh,vassal,egypt,,certain,certain,True,ṢaBUma
+EA 275,275,P271124,yahzibadda,pharaoh,vassal,egypt,,certain,certain,True,Unknown location
+EA 276,276,P271145,yahzibadda,pharaoh,vassal,egypt,,certain,certain,True,Unknown location
+EA 277,277,P270966,yahzibadda,pharaoh,vassal,egypt,,restored,certain,True,Unknown location
+EA 278,278,P270954,suwardata,pharaoh,vassal,egypt,,certain,certain,True,Gath
+EA 279,279,P271093,suwardata,pharaoh,vassal,egypt,,certain,certain,True,Gath
+EA 280,280,P271000,suwardata,pharaoh,vassal,egypt,,certain,certain,True,Gath
+EA 281,281,P271162,suwardata,pharaoh,vassal,egypt,,certain,certain,True,Gath
+EA 282,282,P270953,suwardata,pharaoh,vassal,egypt,,certain,certain,True,Gath
+EA 283,283,P271201,suwardata,pharaoh,vassal,egypt,,certain,certain,True,Gath
+EA 284,284,P270952,suwardata,pharaoh,vassal,egypt,,certain,certain,True,Gath
+EA 285,285,P271057,abdiheba,pharaoh,vassal,egypt,,certain,certain,True,Jerusalem
+EA 286,286,P271088,abdiheba,pharaoh,vassal,egypt,,certain,certain,True,Jerusalem
+EA 287,287,P271090,abdiheba,pharaoh,vassal,egypt,,certain,certain,True,Jerusalem
+EA 288,288,P271089,abdiheba,pharaoh,vassal,egypt,,certain,certain,True,Jerusalem
+EA 289,289,P271091,abdiheba,pharaoh,vassal,egypt,,certain,certain,True,Jerusalem
+EA 290,290,P271092,abdiheba,pharaoh,vassal,egypt,,certain,certain,True,Jerusalem
+EA 292,292,P270969,addadanu,pharaoh,vassal,egypt,,disputed,certain,True,Gezer
+EA 293,293,P271002,addadanu,pharaoh,vassal,egypt,,disputed,certain,True,Gezer
+EA 294,294,P270956,addadanu,pharaoh,vassal,egypt,,disputed,certain,True,Unknown location
+EA 295,295,P271096,baludanu,pharaoh,vassal,egypt,,disputed,certain,True,Tyre
+EA 296,296,P270942,yahtiru,pharaoh,vassal,egypt,,certain,certain,True,Unknown location
+EA 297,297,P270936,yapahu,pharaoh,vassal,egypt,,certain,certain,True,Gezer
+EA 298,298,P270935,yapahu,pharaoh,vassal,egypt,,certain,certain,True,Gezer
+EA 299,299,P270934,yapahu,pharaoh,vassal,egypt,,certain,certain,True,Gezer
+EA 300,300,P271062,yapahu,pharaoh,vassal,egypt,,certain,certain,True,Gezer
+EA 301,301,P271008,yapahu,pharaoh,vassal,egypt,,disputed,certain,True,Ashkelon
+EA 302,302,P271194,subandu,pharaoh,vassal,egypt,,certain,certain,True,Ashkelon
+EA 303,303,P270923,subandu,pharaoh,vassal,egypt,,certain,certain,True,Ashkelon
+EA 304,304,P270924,subandu,pharaoh,vassal,egypt,,certain,certain,True,Ashkelon
+EA 305,305,P271007,subandu,pharaoh,vassal,egypt,,certain,certain,True,Ashkelon
+EA 306,306,P270925,subandu,pharaoh,vassal,egypt,,certain,certain,True,Ashkelon
+EA 314,314,P271019,pubalu,pharaoh,vassal,egypt,,certain,certain,True,Yurza
+EA 315,315,P270941,pubalu,pharaoh,vassal,egypt,,certain,certain,True,Yurza
+EA 316,316,P270940,pubalu,pharaoh,vassal,egypt,,certain,certain,True,Yurza
+EA 317,317,P271119,dagantakala,pharaoh,vassal,egypt,,probable,disputed,True,Tinni
+EA 318,318,P270959,dagantakala,pharaoh,vassal,egypt,,probable,disputed,True,Tinni
+EA 319,319,P271157,surasar,pharaoh,vassal,egypt,,certain,certain,True,Ginti-ašna
+EA 320,320,P271005,yidyia,pharaoh,vassal,egypt,,certain,certain,True,Ashkelon
+EA 321,321,P271114,yidyia,pharaoh,vassal,egypt,,certain,certain,True,Ashkelon
+EA 322,322,P271004,yidyia,pharaoh,vassal,egypt,,certain,certain,True,Ashkelon
+EA 323,323,P270938,yidyia,pharaoh,vassal,egypt,,certain,certain,True,Ashkelon
+EA 324,324,P270939,yidyia,pharaoh,vassal,egypt,,certain,certain,True,Ashkelon
+EA 325,325,P270937,yidyia,pharaoh,vassal,egypt,,certain,certain,True,Ashkelon
+EA 326,326,P271115,yidyia,pharaoh,vassal,egypt,,certain,certain,True,Ashkelon
+EA 328,328,P271003,yabniilu,pharaoh,vassal,egypt,,certain,certain,True,Lachish
+EA 329,329,P271116,zimreddi,pharaoh,vassal,egypt,,certain,certain,True,Lachish
+EA 330,330,P270950,siptibala,pharaoh,vassal,egypt,,certain,certain,True,Lachish
+EA 331,331,P271006,siptibala,pharaoh,vassal,egypt,,certain,certain,True,Lachish
+EA 332,332,P271172,siptibala,pharaoh,vassal,egypt,,certain,certain,True,Lachish
+EA 333,333,P271023,paapu,pharaoh,egypt,egypt,,certain,restored,True,Egypt
+EA 334,334,P271065,the-ruler-of-zuhra,pharaoh,vassal,egypt,,probable,certain,True,Zuhru
+EA 335,335,P271068,abdiastarti,pharaoh,vassal,egypt,,certain,certain,True,Gath
+EA 336,336,P271146,hiziru,pharaoh,vassal,egypt,,certain,certain,True,Zuhru
+EA 337,337,P271122,hiziru,pharaoh,vassal,egypt,,certain,certain,True,Zuhru
+EA 362,362,P270873,ribhadda,pharaoh,vassal,egypt,,certain,certain,True,Byblos
+EA 363,363,P270876,abdirisa,pharaoh,vassal,egypt,,certain,certain,True,ʿEnu-Šasi
+EA 364,364,P270874,ayyab,pharaoh,vassal,egypt,,certain,certain,True,ʿAštartu
+EA 365,365,P270877,biridiya,pharaoh,vassal,egypt,,certain,certain,True,Megiddo
+EA 366,366,P270875,suwardata,pharaoh,vassal,egypt,,certain,certain,True,Gath
+EA 367,367,P270861,pharaoh,endaruta,egypt,vassal,,certain,certain,True,Egypt
+EA 369,369,P271026,pharaoh,milkiilu,egypt,vassal,,certain,certain,True,Egypt
+EA 370,370,P270885,pharaoh,idiya,egypt,vassal,,certain,certain,True,Egypt
+EA 378,378,P270971,yapahu,pharaoh,vassal,egypt,,certain,certain,True,Gezer

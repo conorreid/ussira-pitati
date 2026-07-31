@@ -1,0 +1,56 @@
+polity,pleiades_id,pleiades_title,lat,lon,match_method,needs_review,hand_filled
+Ahtiašna,,,,,none,yes,no
+Akka,678010,ʿAkka,32.9218295,35.091044,name,no,no
+Akšapa,,,,,none,yes,no
+Alašiya,991392,Cyprus,37.5,32.5,classical:title,yes,no
+Amurru,,,,,none,yes,no
+Arzawa,35475912,Arzawa,37.2550425793,32.3484461457,title,no,no
+Ashdod,687838,Ashdod/Azotos (Mesogeios),31.7559372333,34.6580570667,title,no,no
+Ashkelon,687839,Ašqǝlon,31.6659785,34.545947,name,no,no
+Assyria,844869,Assyria,41.5,34.5,name,yes,no
+Aštartu,678227,Astartu,32.837408,36.029358,name+live,no,no
+Babylon,893951,Babylon,32.53729695,44.42497815,title,yes,no
+Bašan,,,,,none,yes,no
+Beirut,678060,Beirut,33.8985935,35.511241,title,no,no
+Byblos,668216,Byblos,34.1192487924,35.6461246598,title,no,no
+Canaan,,,,,none,yes,no
+Damascus,678106,Damascus,33.511612,36.309102,title,no,no
+Egypt,,Akhetaten (Tell el-Amarna),27.645,30.896,hand,yes,yes
+Enišasi,,,,,none,yes,no
+Gazru,687904,Gazru,31.859790750000002,34.920993100000004,name+live,no,no
+Gimtu,889522884,Gimtu,31.7019809,34.8474001,title,no,no
+Gintikirmil,718809993,Ginti-Kirmil,32.97396069268557,35.23055496370524,name+live,no,no
+Guddašuna,,,,,none,yes,no
+Hasi,,,,,none,yes,no
+Hatti,56567731,Hatti,37.03,37.09,name,no,no
+Hazor,779967430,Hazor,33.017462128,35.568137176,name,no,no
+Hašabu,,,,,none,yes,no
+Irqata,628929,Arca,38.33454,37.9711315,classical:title,yes,no
+Jerusalem,687928,Jerusalem,31.7774646,35.23474835,name,no,no
+Kumidu,10481849,Kumidi,33.6237320759,35.82105123,classical:title,yes,no
+Lakiša,687951,Lachish,31.5655212,34.8491898,classical:title,yes,no
+Lapana,,,,,none,yes,no
+Megiddo,26356565,Megiddo,32.58377626673209,35.18373148466008,name+live,no,no
+Mittani,,,,,none,yes,no
+Mušihuna,,,,,none,yes,no
+Naziha,,,,,none,yes,no
+Nuhašše,,,,,none,yes,no
+Palestine,,,,,none,yes,no
+Pihilu,491688,Pella,40.75,22.75,classical:title,yes,no
+Qadesh,668291,Qadesh on the Orontes,34.557074935680944,36.51937786424415,name+live,no,no
+Qanu,,,,,none,yes,no
+Qatna,412342122,Qatna,34.8346712181,36.8663053869,title,no,no
+Ruhizza,,,,,none,yes,no
+Sidon,678393,Sidon/Col. Aurelia Pia,33.56194725,35.3727895,title,no,no
+Syria,531109,Syria,38.1986325,20.679333,title,yes,no
+Tunip,668200,Tunip,35.2833333,36.4,name,no,no
+Tyre,697757,Tyrus,31.9150722,35.7538951,classical:title,yes,no
+Ugarit,668295,Ugarit,35.6078548,35.7764238,name+live,no,no
+Yurṣa,,,,,none,yes,no
+Zuhra,,,,,none,yes,no
+Šakmu,678403,Shechem,32.2135284,35.2821112,classical:name+live,yes,no
+Šamhuna,,,,,none,yes,no
+Šaruna,,,,,none,yes,no
+Šashimi,,,,,none,yes,no
+Ṣiribašani,,,,,none,yes,no
+Ṭubu,,,,,none,yes,no
