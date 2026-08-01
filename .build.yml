@@ -1,0 +1,18 @@
+image: alpine/edge
+oauth: pages.sr.ht/PAGES:RW
+packages:
+- hut
+environment:
+  repo: ussira-pitati
+  domain: calgacus.srht.site
+  subdir: /ussira-pitati/
+tasks:
+- package: |
+    cd $repo
+    mkdir -p staging/figures
+    cp site/index.html site/audit.html site/style.css staging/
+    cp paper/figures/*.png staging/figures/
+    cp paper/main.pdf staging/paper.pdf
+    tar -C staging -cvz . > ~/site.tar.gz
+- upload: |
+    hut pages publish -d $domain -s $subdir ~/site.tar.gz

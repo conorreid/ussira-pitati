@@ -67,8 +67,11 @@ All stages are seeded; reports regenerate byte-identically.
   `conflict_report.md`, `phase4_report.md`, `distance_confounds.md` —
   generated reports
 - `paper/` — article draft (`draft.md` prose master; `main.tex` + 
-  `references.bib` → `main.pdf` via tectonic), `figures/` (six
+  `references.bib` → `main.pdf` via tectonic), `figures/` (seven
   publication figures from `scripts/make_figures.py`), data-paper outline
+- `site/` — static project site (hand-written HTML; published to
+  https://calgacus.srht.site/ussira-pitati/ by `.build.yml` on push to
+  sr.ht — it assembles committed files only, no generator)
 - `PLAN.md` — the original project plan (kept verbatim; §2.1's premise is
   corrected in coverage_report.md)
 

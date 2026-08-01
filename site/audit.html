@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The gazetteer audit — uššira piṭāti</title>
+<meta name="description" content="How seven phantom coordinates and a rank-tie bug manufactured a finding, and how the pipeline caught it.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>The gazetteer audit</h1>
+<p class="tagline">How seven phantom coordinates manufactured a finding
+&mdash; a cautionary tale for anyone geocoding the Bronze Age against a
+classical gazetteer.</p>
+
+<nav><ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="paper.pdf">Paper (PDF)</a></li>
+<li><a href="https://git.sr.ht/~calgacus/ussira-pitati">Code &amp; data</a></li>
+</ul></nav>
+
+<p>An early draft of this project reported something surprising: vassals
+farther from Egypt sent fewer letters to pharaoh
+(<span class="num">&rho; = &minus;0.50, p = 0.002</span>). It
+contradicted our own pre-registered prediction &mdash; writing to the
+king was a loyalty obligation, and obligations shouldn&rsquo;t thin with
+distance &mdash; and it looked like a genuine discovery about how Late
+Bronze Age empire worked.</p>
+
+<p>It wasn&rsquo;t. Asking <i>why</i> distance mattered forced someone
+to finally look at the 39 data points one by one, and the finding
+dissolved in three stages.</p>
+
+<h2>Stage one: the phantoms</h2>
+
+<figure>
+<img src="figures/fig5_audit.png" alt="Map of the eastern Mediterranean showing seven wrong coordinates as red crosses with arrows to their verified locations">
+<figcaption>Seven phantom coordinates (crosses) and their verified
+locations (dots). Every phantom was far from Egypt and carried few
+letters &mdash; exactly the shape that manufactures distance
+decay.</figcaption>
+</figure>
+
+<p>Our automated join against the
+<a href="https://pleiades.stoa.org/">Pleiades</a> gazetteer had matched
+Bronze Age toponyms to classical homonyms in the wrong places:</p>
+
+<ul>
+<li>Four one-letter senders coded to the <i>region</i>
+&ldquo;Syria&rdquo; &mdash; whose representative point sits in the
+<b>Ionian Sea</b>, off Kefalonia;</li>
+<li><b>Pihilu</b> (Pella in the Jordan valley) matched to Pella in
+<b>Macedonia</b> &mdash; birthplace of Alexander, 1,600&nbsp;km from
+home;</li>
+<li><b>Irqata</b> (Tell Arqa, Lebanon) matched to an <b>Arca in
+Anatolia</b>;</li>
+<li><b>Tyre</b> matched to <i>Tyros</i> &mdash; a Hellenistic estate in
+<b>Jordan</b> that happens to share the name;</li>
+<li><b>Hatti</b> matched to the Iron-Age Syro-Hittite region near
+Gaziantep rather than Hattusa;</li>
+<li><b>Assyria</b> matched to <i>Leukosyria</i> &mdash; a region on the
+<b>Black Sea coast</b> that carries &ldquo;Assyria&rdquo; as a name
+variant;</li>
+<li><b>Alašiya</b> (Cyprus) placed in <b>inland Anatolia</b> &mdash;
+this one is an error in the source itself: Pleiades&rsquo; own
+representative point for place
+<a href="https://pleiades.stoa.org/places/991392">991392
+&ldquo;Cyprus&rdquo;</a> lies ~250&nbsp;km off the island. (Reported
+upstream.)</li>
+</ul>
+
+<p>All seven pushed the correlation the same way. Correcting them &mdash;
+every coordinate now verified against the Pleiades bulk dump &mdash;
+weakened the effect from <span class="num">&rho; = &minus;0.50</span>
+to <span class="num">&minus;0.45</span>.</p>
+
+<h2>Stage two: the tie bug</h2>
+
+<p>Fourteen of the 35 located vassals sent exactly one letter. The
+Spearman implementation didn&rsquo;t average ranks across ties, which
+means arbitrary input order leaked into the statistic &mdash; the
+published number depended on the row order of a CSV file. Fixed,
+<span class="num">&rho; = &minus;0.32, p = 0.07</span>. No longer
+significant, before any further scrutiny.</p>
+
+<h2>Stage three: politics, not geography</h2>
+
+<p>What trend remained was carried by polities with political reasons
+to write little: Qadesh and Sidon had gone over to the Hittite side
+(EA&nbsp;174&ndash;176, 148&ndash;149), and Ugarit was quasi-independent.
+Without them: <span class="num">&rho; = &minus;0.18, p = 0.32</span>.
+A leave-one-polity-out jackknife kept significance in only
+<span class="num">7 of 24</span> deletions, and in a partialled design
+against distance-to-nearest-garrison, coastal access, and Hatti
+alignment, nothing predicted letter volume at all.</p>
+
+<h2>The moral</h2>
+
+<blockquote><p>The finding died not because the hypothesis was tested
+and rejected, but because asking &ldquo;what would explain this?&rdquo;
+forced someone to actually look at the data points. Six of them had
+been flagged <span class="num">needs_review</span> the whole time. The
+analysis just never checked the flag &mdash; and the seventh error
+wasn&rsquo;t flagged at all.</p></blockquote>
+
+<p>The paper this project produced argues that the famous quantitative
+claims about the Amarna archive are outputs of unexamined construction
+choices. This page is the demonstration that the argument applies to
+everyone &mdash; including us. The full audit trail, with every
+verdict quoted to its source, is in
+<a href="https://git.sr.ht/~calgacus/ussira-pitati">the repository</a>
+(<span class="num">distance_confounds.md</span>).</p>
+
+<footer>
+<p><a href="index.html">&larr; back to uššira piṭāti</a> &middot;
+Conor Reid &middot; 2026 &middot; CC-BY 4.0</p>
+</footer>
+
+</body>
+</html>

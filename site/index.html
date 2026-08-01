@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>uššira piṭāti — the Amarna letters as a network, done carefully</title>
+<meta name="description" content="A reproducible, bias-aware network analysis of the Amarna letters: the famous small world is real but 1.6x, not 49x; Rib-Hadda's brokerage is an artifact; the stable brokers are Aziru and Yanhamu.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>uššira piṭāti</h1>
+<p class="tagline">&ldquo;Send the archers!&rdquo; &mdash; Rib-Hadda of Byblos, <i>passim</i>.
+A network analysis of the Amarna letters, done carefully.</p>
+
+<nav><ul>
+<li><a href="#findings">Findings</a></li>
+<li><a href="#figures">Figures</a></li>
+<li><a href="paper.pdf">Paper (PDF)</a></li>
+<li><a href="audit.html">The gazetteer audit</a></li>
+<li><a href="https://git.sr.ht/~calgacus/ussira-pitati">Code &amp; data</a></li>
+</ul></nav>
+
+<p>The Amarna letters (c.&nbsp;1360&ndash;1330 BC) are the diplomatic
+correspondence of the Egyptian court under Amenhotep III and
+Akhenaten &mdash; 382 clay tablets in Akkadian, found in 1887 at Tell
+el-Amarna: letters from the &ldquo;Great Powers&rdquo; (Babylon, Mittani,
+Hatti&hellip;) and from the small vassal kings of the Levant, most of
+them begging pharaoh for troops that never came.</p>
+
+<p>A well-known study (Cline &amp; Cline 2015, popularized in
+Cline&rsquo;s <i>Love, War, and Diplomacy</i>, 2025) read the archive as
+a social network and reported a &ldquo;small world&rdquo; with clustering
+<span class="num">48.75&times;</span> a random graph, brokered above all
+by Rib-Hadda of Byblos, the archive&rsquo;s most prolific complainer.
+This project rebuilds the Amarna networks from the
+<a href="http://oracc.museum.upenn.edu/aemw/amarna/">Oracc lemmatized
+edition</a> with fully reproducible code &mdash; one command regenerates
+every number, table, figure, and the typeset paper, byte for byte
+&mdash; and asks which of those findings survive proper null models and
+corrections for the archive&rsquo;s structure. It is, after all, an
+ego-network of Egypt, excavated in Egypt: centrality in it measures
+salience <i>to Egypt</i>, not historical importance.</p>
+
+<h2 id="findings">What survives, what doesn't</h2>
+
+<dl>
+<dt>The correspondence network has zero triangles.</dt>
+<dd>Everyone writes to Egypt; almost no one writes to each other
+(two vassal&ndash;vassal letter-pairs in 302 letters). Whatever the
+&ldquo;small world of the Amarna letters&rdquo; is, it is not a property
+of who wrote to whom.</dd>
+
+<dt>The small world is real &mdash; but <span class="num">&times;1.6</span>, not <span class="num">&times;49</span>.</dt>
+<dd>Rebuilt at full scale, the <i>mention</i> network (persons named
+together in a letter) matches Cline &amp; Cline&rsquo;s object
+(<span class="num">244</span> persons to their
+<span class="num">246</span>; clustering <span class="num">0.409</span>
+to their <span class="num">0.391</span>). Against a null model that
+knows letters come in groups &mdash; a bipartite configuration null
+&mdash; the observed clustering exceeds chance by a factor of about
+<span class="num">1.6</span>. The astronomical multiplier came from
+comparing against the weakest available baseline.</dd>
+
+<dt>Rib-Hadda's celebrated brokerage is an artifact.</dt>
+<dd>It replicates exactly under the original construction &mdash; and
+depends on it: split the pharaoh&rsquo;s identity across nodes and
+Rib-Hadda outranks each fragment; collapse it and he doesn&rsquo;t.
+Equalize every sender&rsquo;s dossier at the median (2 letters) and he
+falls to rank <span class="num">15</span> with zero bootstrap
+probability of a top-three position. His 63-letter dossier bought him
+fame, not position.</dd>
+
+<dt>The stable brokers are Aziru and Yanḫamu.</dt>
+<dd>In every corrected design, top betweenness belongs to Aziru of
+Amurru &mdash; the defector who bridged Egypt&rsquo;s orbit and
+Hatti&rsquo;s, and the most-accused man in the archive &mdash; with the
+Egyptian commissioner Yanḫamu rising to second once volume is
+corrected. The network&rsquo;s connective tissue was Egyptian
+administration and the one boundary-crosser, not the loudest
+correspondent.</dd>
+
+<dt>Geography structures whom letters talk about, not who talks to Egypt.</dt>
+<dd>Distance decays mention ties (<span class="num">r = &minus;0.147,
+p &lt; 0.001</span>) and conflict ties (<span class="num">r =
+&minus;0.298, p = 0.001</span>): neighbors name and accuse neighbors.
+Letters <i>to the court</i> show no robust distance effect &mdash; the
+obligation to write did not thin with the road to Akhetaten.</dd>
+
+<dt>The two-tier system fits in two coefficients.</dt>
+<dd>An ERGM finds strong reciprocity (<span class="num">+3.78</span>,
+concentrated in the Great-Power &ldquo;brotherhood of kings&rdquo;) and
+strong tier <i>anti</i>-homophily (<span class="num">&minus;2.21</span>):
+brotherhood above, servitude below, both materializing as letters to
+Egypt and almost never within tier.</dd>
+</dl>
+
+<h2 id="figures">Figures</h2>
+
+<figure>
+<img src="figures/fig1_two_layers.png" alt="Two network diagrams: the correspondence layer as a star centered on Pharaoh, and the clustered mention layer">
+<figcaption><b>The two layers.</b> (a)&nbsp;Correspondence is a star on
+the court &mdash; its clustering is exactly zero. (b)&nbsp;The mention
+layer &mdash; who is named together &mdash; is where all the triadic
+structure lives.</figcaption>
+</figure>
+
+<figure>
+<img src="figures/fig2_nulls.png" alt="Dot and interval chart comparing observed clustering against three null models">
+<figcaption><b>Which null?</b> The multiplier you report is a choice of
+baseline: <span class="num">&times;16.5</span> against
+Erd&#337;s&ndash;R&eacute;nyi, <span class="num">&times;1.6</span>
+against the fair bipartite null. The correspondence layer sits below its
+own null band, at zero.</figcaption>
+</figure>
+
+<figure>
+<img src="figures/fig3_ribhadda.png" alt="Bump chart of betweenness rank across four constructions for Rib-Hadda, Aziru, and Yanhamu">
+<figcaption><b>Rib-Hadda, decomposed.</b> His rank across four
+constructions, from the original split-pharaoh graph to the
+dossier-equalized mention layer: <span class="num">3 &rarr; 2 &rarr; 7
+&rarr; 15</span>. Aziru holds rank&nbsp;1 in every corrected design;
+Yanḫamu &mdash; invisible in the star constructions &mdash; rises once
+volume is equalized.</figcaption>
+</figure>
+
+<figure>
+<img src="figures/fig7_conflict_map.png" alt="Map of the Levant with accusation and alliance edges drawn between polities">
+<figcaption><b>The conflict network in space.</b> Accusations
+(hand-coded from hostile language, every edge carrying its source
+quotation) run between neighbors: the Phoenician coast, the crowded
+hill country between Gezer, Gath, Shechem, and Jerusalem. The one
+long-range structure is the Qadesh&ndash;Damascus axis of the Hittite
+crisis.</figcaption>
+</figure>
+
+<figure>
+<img src="figures/fig4_map.png" alt="Map of the eastern Mediterranean showing located vassal polities, Egyptian administrative centers, and Akhetaten">
+<figcaption><b>The corrected geography of the corpus.</b> Vassal
+polities sized by letters to pharaoh, the five Egyptian
+garrison/commissioner seats, and Akhetaten, where the archive was
+found. Every coordinate is verified against the Pleiades bulk dump
+&mdash; <a href="audit.html">there is a story there</a>.</figcaption>
+</figure>
+
+<h2>The paper</h2>
+
+<p><a href="paper.pdf"><i>The Small World of the Amarna Letters,
+Revisited: A Reproducible, Bias-Aware Network Analysis</i></a>
+(working draft; target venue <i>Journal of Historical Network
+Research</i>). Thirteen pages, six figures, and every number in it
+regenerates from <span class="num">./run_all.sh</span> at the
+repository root.</p>
+
+<h2>Reproduce it</h2>
+
+<p>Code (MIT) and hand-curated registries (CC-BY) live at
+<a href="https://git.sr.ht/~calgacus/ussira-pitati">git.sr.ht/~calgacus/ussira-pitati</a>.
+The corpus itself is the Oracc <span class="num">aemw/amarna</span>
+edition (Lauinger &amp; Yoder, CC-BY-SA), fetched at build time and
+never redistributed. Every hand-coded row &mdash; entity aliases,
+conflict edges, adjudications against Moran (1992) and Rainey (2015)
+&mdash; quotes its evidence.</p>
+
+<footer>
+<p>uššira piṭāti &middot; Conor Reid &middot; 2026 &middot;
+figures and text CC-BY 4.0 &middot;
+built by the same pipeline that builds the paper</p>
+</footer>
+
+</body>
+</html>
