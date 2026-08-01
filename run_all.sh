@@ -5,6 +5,9 @@
 # across runs.
 set -e
 cd "$(dirname "$0")"
+# fixed timestamp so figure PDFs and the paper PDF are byte-identical
+# across runs (matplotlib and tectonic both honor SOURCE_DATE_EPOCH)
+export SOURCE_DATE_EPOCH=0
 
 echo "== audit =="       && uv run python scripts/audit_coverage.py
 echo "== headers =="     && uv run python scripts/parse_headers.py > /dev/null && echo ok

@@ -134,7 +134,8 @@ def draw_graph(ax, g, layout, nodes, size_by, label_ids, label_size=6.5,
                         textcoords="offset points",
                         ha="center" if dx == 0 else ("left" if dx > 0
                                                      else "right"),
-                        fontsize=label_size, color=INK, zorder=4)
+                        fontsize=label_size, color=INK, zorder=4,
+                        path_effects=halo(2.0))
     ax.set_aspect("equal")
     ax.axis("off")
 
@@ -190,10 +191,10 @@ def fig1():
     ax1.text(0.5, -0.04, "111 actors · 302 letters · clustering = 0",
              transform=ax1.transAxes, ha="center", fontsize=7.5, color=SEC)
 
-    keep = {"pharaoh": ("Pharaoh", -6, 4), "tusratta": ("Tušratta", -8, -8),
-            "aziru": ("Aziru", 7, -7), "yanhamu": ("Yanḫamu", 8, 3),
-            "labayu": ("Labʾayu", 0, 6), "etakkama": ("Etakkama", 0, -10),
-            "ribhadda": ("Rib-Hadda", -9, 1)}
+    keep = {"pharaoh": ("Pharaoh", -8, 5), "tusratta": ("Tušratta", -9, -9),
+            "aziru": ("Aziru", 9, -8), "yanhamu": ("Yanḫamu", 11, 6),
+            "labayu": ("Labʾayu", 2, 10), "etakkama": ("Etakkama", 2, -12),
+            "ribhadda": ("Rib-Hadda", -13, 4)}
     ment_labels = {k: v for k, v in keep.items() if k in set(gm.vs["name"])}
     draw_graph(ax2, gm, lay_b, nodes,
                lambda v: 4 + 1.9 * math.sqrt(mdeg[v["name"]]),
@@ -491,7 +492,7 @@ def fig4():
     ax.annotate("Akhetaten", pol["Egypt"], xytext=(7, -1),
                 textcoords="offset points", fontsize=8, color=INK,
                 path_effects=halo(), zorder=6)
-    offsets = {"Byblos": (6, 1), "Tyre": (-7, -2), "Jerusalem": (7, -3),
+    offsets = {"Byblos": (9, -4), "Tyre": (-7, -2), "Jerusalem": (7, -3),
                "Ugarit": (6, 2), "Qadesh": (6, -5), "Damascus": (6, 1),
                "Megiddo": (7, -1), "Ashkelon": (-7, 1), "Qatna": (6, 3),
                "Alašiya": (7, 2), "Gazru": (-7, 6)}
