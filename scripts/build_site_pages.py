@@ -31,6 +31,7 @@ HEAD = """<!DOCTYPE html>
 
 <nav><ul>
 <li><a href="index.html">Home</a></li>
+<li><a href="letters.html">Letters index</a></li>
 <li><a href="people.html">Dramatis personae</a></li>
 <li><a href="accusations.html">The accusations</a></li>
 <li><a href="audit.html">The gazetteer audit</a></li>
@@ -243,10 +244,83 @@ def accusations_page(nodes):
     print("  accusations.html")
 
 
+def letters_page(nodes):
+    import json
+    cat = json.loads((ROOT / "data" / "raw" / "aemw" / "amarna" /
+                      "catalogue.json").read_text())["members"]
+    resolved = {}
+    with (DERIVED / "edges_corr.csv").open() as fh:
+        for r in csv.DictReader(fh):
+            resolved[r["ea"]] = r
+
+    def mark(name, conf):
+        if conf in ("restored", "disputed", "unknown"):
+            return f"{name}<sup>?</sup>"
+        return name
+
+    entries = []
+    for m in cat.values():
+        if m.get("genre") != "letter":
+            continue
+        des = m["designation"]
+        num = re.match(r"EA (\d+)([a-z]?)", des)
+        key = (int(num.group(1)), num.group(2)) if num else (9999, "")
+        r = resolved.get(des)
+        if r:
+            frm = mark(esc(disp(nodes, r["src"])), r["src_confidence"])
+            to = mark(esc(disp(nodes, r["dst"])), r["dst_confidence"])
+            has_text = r["has_text"] == "True"
+            prov = r["provenience"]
+        else:
+            frm = f"<span style='color:#777'>{esc(m.get('ancient_author') or '?')}</span>"
+            to = f"<span style='color:#777'>{esc(m.get('recipient') or '?')}</span>"
+            has_text = (ROOT / "data" / "raw" / "aemw" / "amarna" /
+                        "corpusjson" / f"{m['id_text']}.json").exists()
+            prov = m.get("provenience", "")
+        link = (f"<a href='http://oracc.museum.upenn.edu/aemw/amarna/"
+                f"{m['id_text']}'>text</a>" if has_text else "&mdash;")
+        ea_short = re.sub(r"EA 0+", "EA ", des)
+        entries.append((key, ea_short, frm, to, prov, link))
+    entries.sort()
+
+    n_resolved = sum(1 for e in entries if "color:#777" not in e[2])
+    L = [HEAD.format(
+        title="Letters index",
+        desc="Every letter in the Amarna archive: sender, addressee, "
+             "provenience, and a link to the Oracc edition.",
+        h1="Letters index",
+        tagline=f"All {len(entries)} letters, EA 1&ndash;382. Senders "
+                f"and addressees are the pipeline's resolved actors for "
+                f"{n_resolved} letters (catalogue strings, grayed, for "
+                "the rest); <sup>?</sup> marks restored or disputed "
+                "attributions. &ldquo;text&rdquo; links the lemmatized "
+                "Oracc edition where one exists.")]
+    a = L.append
+    a("<table>")
+    a("<tr><th>EA</th><th>from</th><th>to</th><th>provenience</th>"
+      "<th>edition</th></tr>")
+    for _, ea, frm, to, prov, link in entries:
+        a(f"<tr><td class='num'>{esc(ea)}</td><td>{frm}</td>"
+          f"<td>{to}</td><td>{esc(prov or '')}</td><td>{link}</td></tr>")
+    a("</table>")
+    a("<p>Not indexed here: the four administrative lists and the "
+      "twenty-eight scholarly and literary tablets found with the "
+      "archive (probably scribal training texts). Attribution "
+      "corrections against Moran (1992) and Rainey (2015) &mdash; "
+      "including three outright catalogue errors &mdash; are documented "
+      "in <span class='num'>registry/adjudication_queue.csv</span> in "
+      "<a href='https://git.sr.ht/~calgacus/ussira-pitati'>the "
+      "repository</a>.</p>")
+    a(FOOT)
+    (SITE / "letters.html").write_text("\n".join(L))
+    print("  letters.html")
+
+
 def main():
     nodes = load_nodes()
     people_page(nodes)
     accusations_page(nodes)
+    letters_page(nodes)
 
 
 if __name__ == "__main__":
