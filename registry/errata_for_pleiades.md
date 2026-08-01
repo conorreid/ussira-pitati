@@ -2,6 +2,12 @@
 
 *Prepared but NOT sent. Same contact policy as `errata_for_oracc.md`.*
 
+*Routing (verified 2026-08-01): Pleiades has no public email; the
+documented channel is the web contact form at
+https://pleiades.stoa.org/contact-info (name, email, subject, message).
+Registered users can also comment directly on the place page,
+https://pleiades.stoa.org/places/991392.*
+
 Checked against `pleiades-places-latest.csv` (atlantides.org bulk dump)
 as downloaded for this project (see README for fetch commands).
 
