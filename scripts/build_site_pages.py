@@ -108,9 +108,8 @@ def load_nodes():
 
 def disp(nodes, a):
     n = nodes.get(a)
-    if n:
-        return n["display"]
-    return a.replace("-", " ")
+    d = n["display"] if n else a.replace("-", " ")
+    return "Pharaoh" if d == "PHARAOH" else d
 
 
 def people_page(nodes):
