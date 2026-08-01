@@ -26,5 +26,6 @@ echo "== phase split ==" && uv run python scripts/phase_split.py
 echo "== phase4 QAP =="  && uv run python scripts/qap_distance.py
 echo "== distance confounds ==" && uv run python scripts/distance_confounds.py > /dev/null && echo ok
 echo "== figures ==" && uv run python scripts/make_figures.py
+echo "== site pages ==" && uv run python scripts/build_site_pages.py
 echo "== paper ==" && (cd paper && tectonic main.tex) && echo ok
 echo "== done =="

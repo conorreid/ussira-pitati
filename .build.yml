@@ -10,7 +10,7 @@ tasks:
 - package: |
     cd $repo
     mkdir -p staging/figures
-    cp site/index.html site/audit.html site/style.css staging/
+    cp site/*.html site/style.css staging/
     cp paper/figures/*.png staging/figures/
     cp paper/main.pdf staging/paper.pdf
     tar -C staging -cvz . > ~/site.tar.gz

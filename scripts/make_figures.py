@@ -712,6 +712,41 @@ def fig7():
     save(fig, "fig7_conflict_map")
 
 
+def fig8():
+    """Letters per sender, top 15: the dossier skew behind the
+    Rib-Hadda story (site figure; not in the paper)."""
+    nodes = load_nodes()
+    sent = Counter()
+    with (DERIVED / "edges_corr.csv").open() as fh:
+        for r in csv.DictReader(fh):
+            sent[r["src"]] += 1
+    top = sent.most_common(15)
+    fig, ax = plt.subplots(figsize=(6.0, 4.2))
+    ys = range(len(top))[::-1]
+    for y, (a, n) in zip(ys, top):
+        c = TIER_COLOR.get(nodes.get(a, {}).get("tier", ""), MUTED)
+        ax.barh(y, n, height=0.62, color=c, zorder=3)
+        ax.annotate(str(n), (n, y), xytext=(4, 0),
+                    textcoords="offset points", va="center", fontsize=7.5,
+                    color=INK)
+    ax.set_yticks(list(ys))
+    labels = []
+    for a, n in top:
+        d = nodes.get(a, {}).get("display", a)
+        p = nodes.get(a, {}).get("polity", "")
+        labels.append(f"{d}" + (f"  ({p})" if p else ""))
+    ax.set_yticklabels(labels, fontsize=8)
+    ax.set_xlabel("letters in the archive", fontsize=8)
+    ax.set_xlim(0, max(n for _, n in top) * 1.09)
+    ax.spines[["top", "right", "left"]].set_visible(False)
+    ax.tick_params(left=False)
+    ax.xaxis.grid(True, color=GRID, lw=0.6)
+    ax.set_axisbelow(True)
+    ax.set_title("One fifth of the archive is one man complaining",
+                 fontsize=9.5, color=INK, pad=8)
+    save(fig, "fig8_dossiers")
+
+
 if __name__ == "__main__":
     print("figures ->", FIGDIR)
     fig1()
@@ -721,3 +756,4 @@ if __name__ == "__main__":
     fig5()
     fig6()
     fig7()
+    fig8()
