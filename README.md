@@ -17,10 +17,6 @@ measures salience-to-Egypt rather than historical importance.
 - Rebuilt at full scale the mention network matches Cline & Cline's object
   (244 vs 246 persons; CC 0.409 vs 0.391) but exceeds a fair bipartite
   null by **~1.6×, not "48.75×"**.
-- Rib-Hadda's celebrated brokerage **replicates under their construction
-  and dissolves under correction** (pharaoh-node splitting + dossier
-  volume); the stable brokers are **Aziru of Amurru** and the Egyptian
-  commissioner **Yanḥamu**.
 - ERGM: reciprocity +3.78, tier anti-homophily −2.21 (both p < 0.001,
   GOF clean). Distance decays mention and conflict ties (QAP p < 0.01)
   but **not** correspondence: an apparent correspondence decay
@@ -69,9 +65,12 @@ All stages are seeded; reports regenerate byte-identically.
 - `paper/` — article draft (`draft.md` prose master; `main.tex` + 
   `references.bib` → `main.pdf` via tectonic), `figures/` (seven
   publication figures from `scripts/make_figures.py`), data-paper outline
-- `site/` — static project site (hand-written HTML; published to
-  https://calgacus.srht.site/ussira-pitati/ by `.build.yml` on push to
-  sr.ht — it assembles committed files only, no generator)
+- `site/` — static project site. `index.html` and `audit.html` are
+  hand-written; the letters, people and accusations pages are generated
+  from the registries by `scripts/build_site_pages.py`. `build-site.sh`
+  emits the published tree; this repo does not publish it —
+  `~calgacus/pages` owns https://calgacus.srht.site/ and uploads the
+  whole domain in one shot
 - `PLAN.md` — the original project plan (kept verbatim; §2.1's premise is
   corrected in coverage_report.md)
 
