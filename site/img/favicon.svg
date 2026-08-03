@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- The logo mark, thickened for 16px: rays wider, terminal nodes solid. -->
+  <circle cx="32" cy="32" r="9" fill="#9c3d2e"/>
+  <g stroke="#9c3d2e" stroke-width="4" stroke-linecap="round">
+    <path d="M42.5 32 L53 32"/>
+    <path d="M39.4 39.4 L46.8 46.8"/>
+    <path d="M32 42.5 L32 53"/>
+    <path d="M24.6 39.4 L17.2 46.8"/>
+    <path d="M21.5 32 L11 32"/>
+    <path d="M24.6 24.6 L17.2 17.2"/>
+    <path d="M32 21.5 L32 11"/>
+    <path d="M39.4 24.6 L46.8 17.2"/>
+  </g>
+  <g fill="#9c3d2e">
+    <circle cx="56.8" cy="32" r="3.6"/>
+    <circle cx="49.5" cy="49.5" r="3.6"/>
+    <circle cx="32" cy="56.8" r="3.6"/>
+    <circle cx="14.5" cy="49.5" r="3.6"/>
+    <circle cx="7.2" cy="32" r="3.6"/>
+    <circle cx="14.5" cy="14.5" r="3.6"/>
+    <circle cx="32" cy="7.2" r="3.6"/>
+    <circle cx="49.5" cy="14.5" r="3.6"/>
+  </g>
+</svg>

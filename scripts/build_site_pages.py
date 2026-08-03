@@ -22,20 +22,28 @@ HEAD = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title} — uššira piṭāti</title>
 <meta name="description" content="{desc}">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<header>
+<div class="masthead">
+<a href="index.html"><img src="img/logo.svg" width="64" height="64"
+alt="uššira piṭāti — the Aten disc, whose rays are also a star graph: a hub
+joined to every correspondent, and no edge between any two of them"></a>
+<div>
 <h1>{h1}</h1>
 <p class="tagline">{tagline}</p>
+</div>
+</div>
+</header>
 
 <nav><ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="letters.html">Letters index</a></li>
 <li><a href="people.html">Dramatis personae</a></li>
 <li><a href="accusations.html">The accusations</a></li>
-<li><a href="audit.html">The gazetteer audit</a></li>
-<li><a href="paper.pdf">Paper (PDF)</a></li>
 </ul></nav>
 """
 
@@ -63,10 +71,10 @@ ROLES = {
                   "of feeding towns to the ʿApiru; dead by EA 101.",
     "aziru": "ʿAbdi-Aširta's son. Played Egypt and Hatti against each "
              "other, captured Ṣumur, and finally defected to the "
-             "Hittites — the corrected network's top broker.",
+             "Hittites.",
     "yanhamu": "Egyptian commissioner, probably the most powerful "
                "official in Canaan; vassals beg him for grain and fear "
-               "his displeasure. Second broker once volume is corrected.",
+               "his displeasure.",
     "abdiheba": "Ruler of Jerusalem, warning pharaoh that 'the lands of "
                 "the king are lost' to the ʿApiru and his neighbors.",
     "labayu": "The 'lion' of Shechem, scourge of the Jezreel valley; "
@@ -127,10 +135,14 @@ def people_page(nodes):
     score = Counter()
     for a in set(sent) | set(recv) | set(mdeg):
         score[a] = sent[a] + recv[a] + mdeg[a]
-    # principals first (all noted actors), then top of the rest
+    # principals first (all noted actors), then top of the rest.
+    # Tie-break on actor_id: score is built by iterating a set of strings,
+    # so without it ties fall out in hash order and the page differs
+    # between runs (PYTHONHASHSEED) despite identical inputs.
     order = [a for a in ROLES if a in score]
     order.sort(key=lambda a: -score[a])
-    rest = [a for a, _ in score.most_common(40) if a not in ROLES][:12]
+    rest = [a for a in sorted(score, key=lambda a: (-score[a], a))
+            if a not in ROLES][:12]
 
     L = [HEAD.format(
         title="Dramatis personae",
@@ -145,8 +157,8 @@ def people_page(nodes):
     a('<img src="figures/fig8_dossiers.png" alt="Bar chart of letters '
       'per sender; Rib-Hadda dwarfs everyone">')
     a("<figcaption><b>The dossier skew.</b> Letters per sender, top 15. "
-      "Rib-Hadda's 63 letters are the reason volume corrections matter: "
-      "count a man's own dossier and he looks central.</figcaption>")
+      "Rib-Hadda's 63 letters are about a fifth of the "
+      "archive.</figcaption>")
     a("</figure>")
     a("<h2>The principals</h2>")
     a("<table>")
@@ -156,7 +168,7 @@ def people_page(nodes):
     for actor in order:
         n = nodes.get(actor, {})
         a(f"<tr><td><b>{esc(disp(nodes, actor))}</b></td>"
-          f"<td>{esc(n.get('polity', '') or '&mdash;')}</td>"
+          f"<td>{esc(n.get('polity', '')) or '&mdash;'}</td>"
           f"<td class='num'>{sent[actor]}</td>"
           f"<td class='num'>{recv[actor]}</td>"
           f"<td class='num'>{mdeg[actor]}</td>"
@@ -169,7 +181,7 @@ def people_page(nodes):
     for actor in rest:
         n = nodes.get(actor, {})
         a(f"<tr><td>{esc(disp(nodes, actor))}</td>"
-          f"<td>{esc(n.get('polity', '') or '&mdash;')}</td>"
+          f"<td>{esc(n.get('polity', '')) or '&mdash;'}</td>"
           f"<td class='num'>{sent[actor]}</td>"
           f"<td class='num'>{mdeg[actor]}</td></tr>")
     a("</table>")

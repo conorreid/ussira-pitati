@@ -4,14 +4,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>uššira piṭāti — the Amarna letters as a network, done carefully</title>
-<meta name="description" content="A reproducible, bias-aware network analysis of the Amarna letters: the famous small world is real but 1.6x, not 49x; Rib-Hadda's brokerage is an artifact; the stable brokers are Aziru and Yanhamu.">
+<meta name="description" content="A reproducible, bias-aware network analysis of the Amarna letters: the correspondence layer has zero triangles, and the famous small world is real but 1.6x, not 49x, once the null model knows letters come in groups.">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<header>
+<div class="masthead">
+<img src="img/logo.svg" width="64" height="64"
+alt="uššira piṭāti &mdash; the Aten disc, whose rays are also a star graph: a
+hub joined to every correspondent, and no edge between any two of them">
+<div>
 <h1>uššira piṭāti</h1>
 <p class="tagline">&ldquo;Send the archers!&rdquo; &mdash; Rib-Hadda of Byblos, <i>passim</i>.
 A network analysis of the Amarna letters, done carefully.</p>
+</div>
+</div>
+</header>
 
 <nav><ul>
 <li><a href="#findings">Findings</a></li>
@@ -19,8 +29,6 @@ A network analysis of the Amarna letters, done carefully.</p>
 <li><a href="letters.html">Letters index</a></li>
 <li><a href="people.html">Dramatis personae</a></li>
 <li><a href="accusations.html">The accusations</a></li>
-<li><a href="paper.pdf">Paper (PDF)</a></li>
-<li><a href="audit.html">The gazetteer audit</a></li>
 <li><a href="https://git.sr.ht/~calgacus/ussira-pitati">Code &amp; data</a></li>
 </ul></nav>
 
@@ -65,24 +73,6 @@ knows letters come in groups &mdash; a bipartite configuration null
 <span class="num">1.6</span>. The astronomical multiplier came from
 comparing against the weakest available baseline.</dd>
 
-<dt>Rib-Hadda's celebrated brokerage is an artifact.</dt>
-<dd>It replicates exactly under the original construction &mdash; and
-depends on it: split the pharaoh&rsquo;s identity across nodes and
-Rib-Hadda outranks each fragment; collapse it and he doesn&rsquo;t.
-Equalize every sender&rsquo;s dossier at the median (2 letters) and he
-falls to rank <span class="num">15</span> with zero bootstrap
-probability of a top-three position. His 63-letter dossier bought him
-fame, not position.</dd>
-
-<dt>The stable brokers are Aziru and Yanḫamu.</dt>
-<dd>In every corrected design, top betweenness belongs to Aziru of
-Amurru &mdash; the defector who bridged Egypt&rsquo;s orbit and
-Hatti&rsquo;s, and the most-accused man in the archive &mdash; with the
-Egyptian commissioner Yanḫamu rising to second once volume is
-corrected. The network&rsquo;s connective tissue was Egyptian
-administration and the one boundary-crosser, not the loudest
-correspondent.</dd>
-
 <dt>Geography structures whom letters talk about, not who talks to Egypt.</dt>
 <dd>Distance decays mention ties (<span class="num">r = &minus;0.147,
 p &lt; 0.001</span>) and conflict ties (<span class="num">r =
@@ -118,16 +108,6 @@ own null band, at zero.</figcaption>
 </figure>
 
 <figure>
-<img src="figures/fig3_ribhadda.png" alt="Bump chart of betweenness rank across four constructions for Rib-Hadda, Aziru, and Yanhamu">
-<figcaption><b>Rib-Hadda, decomposed.</b> His rank across four
-constructions, from the original split-pharaoh graph to the
-dossier-equalized mention layer: <span class="num">3 &rarr; 2 &rarr; 7
-&rarr; 15</span>. Aziru holds rank&nbsp;1 in every corrected design;
-Yanḫamu &mdash; invisible in the star constructions &mdash; rises once
-volume is equalized.</figcaption>
-</figure>
-
-<figure>
 <img src="figures/fig7_conflict_map.png" alt="Map of the Levant with accusation and alliance edges drawn between polities">
 <figcaption><b>The conflict network in space.</b> Accusations
 (hand-coded from hostile language, every edge carrying its source
@@ -142,18 +122,17 @@ crisis.</figcaption>
 <figcaption><b>The corrected geography of the corpus.</b> Vassal
 polities sized by letters to pharaoh, the five Egyptian
 garrison/commissioner seats, and Akhetaten, where the archive was
-found. Every coordinate is verified against the Pleiades bulk dump
-&mdash; <a href="audit.html">there is a story there</a>.</figcaption>
+found. Every coordinate is verified against the Pleiades bulk
+dump.</figcaption>
 </figure>
 
 <h2>The paper</h2>
 
-<p><a href="paper.pdf"><i>The Small World of the Amarna Letters,
-Revisited: A Reproducible, Bias-Aware Network Analysis</i></a>
-(working draft; target venue <i>Journal of Historical Network
-Research</i>). Thirteen pages, six figures, and every number in it
-regenerates from <span class="num">./run_all.sh</span> at the
-repository root.</p>
+<p><i>The Small World of the Amarna Letters, Revisited: A Reproducible,
+Bias-Aware Network Analysis</i> (working draft; target venue
+<i>Journal of Historical Network Research</i>). Thirteen pages, six
+figures, and every number in it regenerates from
+<span class="num">./run_all.sh</span> at the repository root.</p>
 
 <h2>Reproduce it</h2>
 

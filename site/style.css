@@ -21,6 +21,21 @@ h1 {
   margin-bottom: 0;
 }
 
+.masthead {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.masthead img {
+  width: 64px;
+  height: 64px;
+  flex: 0 0 64px;
+}
+
+.masthead h1 { margin-top: 0; }
+.masthead .tagline { margin-bottom: 0; }
+
 .tagline {
   color: #555555;
   font-style: italic;

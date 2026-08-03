@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none"
+     role="img" aria-label="uššira piṭāti">
+  <title>uššira piṭāti</title>
+  <desc>The Aten disc of the Amarna period, its rays reaching outward — the
+  one iconography belonging to this reign and no other. Read as a graph the
+  same figure is a star: a hub joined to every correspondent and no edge
+  between any two of them, which is what the Amarna correspondence network
+  turns out to be — zero triangles. The rays end in the correspondents rather
+  than in the Aten's hands. A design motif, not a drawing of any particular
+  relief.</desc>
+  <!-- the disc: the Egyptian court, addressee of nearly every letter -->
+  <circle cx="32" cy="32" r="6.5" fill="#9c3d2e"/>
+  <!-- the rays, which are also the edges -->
+  <g stroke="#9c3d2e" stroke-width="2.7" stroke-linecap="round">
+    <path d="M42.5 32 L53 32"/>
+    <path d="M39.4 39.4 L46.8 46.8"/>
+    <path d="M32 42.5 L32 53"/>
+    <path d="M24.6 39.4 L17.2 46.8"/>
+    <path d="M21.5 32 L11 32"/>
+    <path d="M24.6 24.6 L17.2 17.2"/>
+    <path d="M32 21.5 L32 11"/>
+    <path d="M39.4 24.6 L46.8 17.2"/>
+  </g>
+  <!-- the correspondents, joined to the centre and to nobody else -->
+  <g stroke="#9c3d2e" stroke-width="2.4" fill="none">
+    <circle cx="56.8" cy="32" r="3"/>
+    <circle cx="49.5" cy="49.5" r="3"/>
+    <circle cx="32" cy="56.8" r="3"/>
+    <circle cx="14.5" cy="49.5" r="3"/>
+    <circle cx="7.2" cy="32" r="3"/>
+    <circle cx="14.5" cy="14.5" r="3"/>
+    <circle cx="32" cy="7.2" r="3"/>
+    <circle cx="49.5" cy="14.5" r="3"/>
+  </g>
+</svg>
