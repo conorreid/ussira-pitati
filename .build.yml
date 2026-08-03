@@ -1,18 +1,24 @@
 image: alpine/edge
-oauth: pages.sr.ht/PAGES:RW
+# This repo does not publish anything. calgacus.srht.site is published by
+# ~calgacus/pages, which assembles every project and uploads the whole domain
+# in a single shot. Publishing from more than one repo races: pages.sr.ht
+# merges a subdirectory publish with a non-atomic read-modify-write, so two
+# publishes landing close together silently delete each other's subdirectory.
+# The PAGES:RW grant below is only here because sr.ht will not let a job grant
+# its child broader permissions than its own. Do not add an upload task.
+# See https://git.sr.ht/~calgacus/pages
+oauth: builds.sr.ht/JOBS:RW builds.sr.ht/SECRETS:RO pages.sr.ht/PAGES:RW
 packages:
-- hut
+- python3
+- curl
 environment:
   repo: ussira-pitati
-  domain: calgacus.srht.site
-  subdir: /ussira-pitati/
 tasks:
-- package: |
+# Build it here too, so a broken site fails in the repo that broke it
+# rather than as a mysterious red build over in ~calgacus/pages.
+- build: |
     cd $repo
-    mkdir -p staging/figures
-    cp site/*.html site/style.css staging/
-    cp paper/figures/*.png staging/figures/
-    cp paper/main.pdf staging/paper.pdf
-    tar -C staging -cvz . > ~/site.tar.gz
-- upload: |
-    hut pages publish -d $domain -s $subdir ~/site.tar.gz
+    ./build-site.sh /tmp/site
+- publish: |
+    curl -sSf https://git.sr.ht/~calgacus/pages/blob/main/trigger-publish.sh -o /tmp/trigger.sh
+    sh /tmp/trigger.sh "$repo"
